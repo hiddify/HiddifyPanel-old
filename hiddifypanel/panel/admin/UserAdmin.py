@@ -77,7 +77,7 @@ class UserAdmin(AdminLTEModelView):
     #     'uuid': {'label_name':"D"}
         
     #     }
-    column_list = ["name","UserLinks","current_usage_GB",'mode',"expiry_time","comment",'last_online',"uuid"]
+    column_list = ["name","current_usage_GB","last_online","UserLinks","mode","expiry_time","uuid","comment"]
     # can_edit = False
     # def on_model_change(self, form, model, is_created):
     #     model.password = generate_password_hash(model.password)

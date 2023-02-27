@@ -87,9 +87,6 @@
                                                 </th>
                                             {% endif %}
                                             {% block list_row_actions_header %}
-                                                {% if admin_view.column_display_actions %}
-                                                    <th class="column-header" style="width: 45px;">{{_('Actions')}}</th>
-                                                {% endif %}
                                             {% endblock %}
                                             {% for c, name in list_columns %}
                                                 {% set column = loop.index0 %}
@@ -120,7 +117,10 @@
                                                         ></a>
                                                     {% endif %}
                                                 </th>
-                                            {% endfor %}
+                                                {% endfor %}
+                                                {% if admin_view.column_display_actions %}
+                                                    <th class="column-header" style="width: 45px;">{{_('Actions')}}</th>
+                                                {% endif %}
                                             
                                         {% endblock %}
                                     </tr>
@@ -134,17 +134,7 @@
                                                                title="{{ _gettext('Select record') }}"/>
                                                     </td>
                                                 {% endif %}
-                                                {% block list_row_actions_column scoped %}
-                                                    {% if admin_view.column_display_actions %}
-                                                        <td class="list-buttons-column" style="text-align: center;">
-                                                            {% block list_row_actions scoped %}
-                                                                {% for action in list_row_actions %}
-                                                                    {{ action.render_ctx(get_pk_value(row), row) }}
-                                                                {% endfor %}
-                                                            {% endblock %}
-                                                        </td>
-                                                    {%- endif -%}
-                                                {% endblock %}
+                                                
                                                 {% for c, name in list_columns %}
                                                     <td class="col-{{ c }}">
                                                         {% if admin_view.is_editable(c) %}
@@ -159,7 +149,17 @@
                                                         {% endif %}
                                                     </td>
                                                 {% endfor %}
-                                                
+                                            {% endblock %}
+                                            {% block list_row_actions_column scoped %}
+                                                {% if admin_view.column_display_actions %}
+                                                    <td class="list-buttons-column" style="text-align: center;">
+                                                        {% block list_row_actions scoped %}
+                                                            {% for action in list_row_actions %}
+                                                                {{ action.render_ctx(get_pk_value(row), row) }}
+                                                            {% endfor %}
+                                                        {% endblock %}
+                                                    </td>
+                                                {%- endif -%}
                                             {% endblock %}
                                         </tr>
                                     {% else %}
