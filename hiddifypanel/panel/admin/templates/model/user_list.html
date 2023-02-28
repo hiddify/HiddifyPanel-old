@@ -1,54 +1,63 @@
 {% extends 'hiddify-flask-admin/list.html' %}
 
 {% block body %}
-    {{super()}}
+{{super()}}
 
-    <div class="callout callout-success">
-        {{_('User usage will be updated every 6 minutes. To update it now click <button class="btn btn-info" onclick="updateUsage()">update</button>')}}
-        <span id="spinner" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>&nbsp;
-    </div>
-    <style>
-        .table td{
-            vertical-align: middle;
-        }
-        .col-name{
-            white-space: nowrap;
-        }
-    .col-expiry_time{
+<div class="callout callout-success">
+    {{_('User usage will be updated every 6 minutes. To update it now click <button class="btn btn-info" onclick="updateUsage()">update</button>')}}
+    <span id="spinner" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>&nbsp;
+</div>
+<style>
+    .table td {
+        vertical-align: middle;
+    }
+
+    .col-name {
         white-space: nowrap;
     }
-    
-    td.col-domain{
+
+    .col-expiry_time {
+        white-space: nowrap;
+    }
+
+    td.col-domain {
         /* direction:ltr */
     }
-    .col-UserLinks a{
+
+    .col-UserLinks a {
         text-overflow: ellipsis;
-    white-space: nowrap;
-    max-width: 100px;
-    overflow: hidden;
+        white-space: nowrap;
+        max-width: 100px;
+        overflow: hidden;
     }
-    .col-uuid span{
+
+    .col-uuid span {
         text-overflow: ellipsis;
-    white-space: nowrap;
-    width: 80px;
-    overflow: hidden;
-    display: inline-block;
+        white-space: nowrap;
+        width: 80px;
+        overflow: hidden;
+        display: inline-block;
     }
-    </style>
+</style>
 
-    <script>
-        document.getElementById( 'spinner' ).style.display = 'none';
+<script>
+    document.getElementById('spinner').style.display = 'none';
 
-        const url = '{{url_for("admin.Actions:update_usage")}}'
-        const req = new XMLHttpRequest();
+    const url = '{{url_for("admin.Actions:update_usage")}}';
+    const req = new XMLHttpRequest();
 
-        function updateUsage(){
-            document.getElementById( 'spinner' ).style.display = 'inline-block';
-            req.open("GET", url);
-            req.send();
-            setTimeout(() => {
-                document.getElementById( 'spinner' ).style.display = 'none';
-            }, 1000);
-        }
-    </script>
+    function updateUsage() {
+        document.getElementById('spinner').style.display = 'inline-block';
+        req.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                setTimeout(() => {
+                    document.getElementById('spinner').style.display = 'none';
+                }, 500);
+            }
+        };
+        req.open("GET", url);
+        req.send();
+        req.onreadystatechange();
+    }
+</script>
 {% endblock %}
