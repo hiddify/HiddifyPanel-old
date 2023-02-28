@@ -4,8 +4,7 @@
     {{super()}}
 
     <div class="callout callout-success">
-        {{_('User usage will be updated every 6 minutes. To update it now click <a href="%(link)s" class="btn btn-info">here</a>',link=url_for("admin.Actions:update_usage"))}}
-        
+        {{_('User usage will be updated every 6 minutes. To update it now click <button class="btn btn-info" onclick="updateUsage()">update</button>')}}
     </div>
     <style>
         .table td{
@@ -35,4 +34,14 @@
     display: inline-block;
     }
     </style>
+
+    <script>
+        const url = '{{url_for("admin.Actions:update_usage")}}'
+        const req = new XMLHttpRequest();
+
+        function updateUsage(){
+            req.open("GET", url);
+            req.send();
+        }
+    </script>
 {% endblock %}

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: HiddifyPanel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-27 22:14+0100\n"
+"POT-Creation-Date: 2023-02-28 12:58+0100\n"
 "PO-Revision-Date: 2023-02-27 14:48-0600\n"
 "Last-Translator: hidden u\n"
 "Language-Team: English (USA)\n"
@@ -164,7 +164,6 @@ msgstr ""
 # result,"
 # | " since the use of this IP is not for proxy and it is a simple website, "
 # | "this domain and IP will never be blocked and your users can easily update
-# "
 # | "new profiles."
 #: hiddifypanel/panel/admin/ChildAdmin.py:34
 #: hiddifypanel/panel/admin/DomainAdmin.py:36
@@ -1505,16 +1504,16 @@ msgstr ""
 "If you have multiple IPv4 or IPv6 in your panel You have to add the domain pointed to them as relay."
 
 # | msgid ""
-# | "User usage will be updated every 6 minutes. To update it now click <a "
-# | "href=\"%(link)s\" class=\"btn btn-info\">here</a>."
+# | "User usage will be updated every 6 minutes. To update it now click
+# <button class=\"btn "
+# | "btn-info\" onclick=\"updateUsage()\">update</button>"
 #: hiddifypanel/panel/admin/templates/model/user_list.html:7
-#, python-format
 msgid ""
-"User usage will be updated every 6 minutes. To update it now click <a "
-"href=\"%(link)s\" class=\"btn btn-info\">here</a>"
+"User usage will be updated every 6 minutes. To update it now click <button "
+"class=\"btn btn-info\" onclick=\"updateUsage()\">update</button>"
 msgstr ""
-"User usage will be updated every 6 minutes. To update it now click <a "
-"href=\"%(link)s\" class=\"btn btn-info\">here</a>."
+"User usage will be updated every 6 minutes. To update it now click <button "
+"class=\"btn btn-info\" onclick=\"updateUsage()\">update</button>"
 
 #: hiddifypanel/panel/user/user.py:105
 msgid "This domain does not exist in the panel!"
@@ -1824,7 +1823,6 @@ msgstr "Copy"
 # | "    Some browsers might already have this setting enabled.\n"
 # | "    <h5>​​Mozilla Firefox</h5>\n"
 # | "    Select the <b>menu</b> button > <b>Settings</b>.In the General menu,
-# "
 # | "scroll down to access <b>Network Settings</b>. Select <b>Settings</b>. "
 # | "Select <b>Enable DNS over HTTPS</b>.\n"
 # | "    ​<h5>​Google Chrome</h5>\n"
@@ -2051,7 +2049,6 @@ msgstr ""
 # "
 # | "it means that this ip is so called dirty on your ISP.\n"
 # | "If the speed was low without a proxy, don't waste your time to test this
-# "
 # | "proxy.\n"
 # | "Otherwise, test with different proxies of this site and if the speed is "
 # | "similar to the speed without the proxy, then you have found the best "

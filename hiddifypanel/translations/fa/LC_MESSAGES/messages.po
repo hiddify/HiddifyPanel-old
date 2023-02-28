@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  HiddifyPanel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-27 22:14+0100\n"
+"POT-Creation-Date: 2023-02-28 12:58+0100\n"
 "PO-Revision-Date: 2023-02-27 14:48-0600\n"
 "Last-Translator: hidden u\n"
 "Language: fa\n"
@@ -145,7 +145,8 @@ msgstr "ثبت"
 # will "
 # | "run into problems. Please visit <a "
 # |
-# "href=\"https://github.com/hiddify/hiddify-config/wiki/راهنمای-تنظیم-دامنه-و-"
+# "href=\"https://github.com/hiddify/hiddify-config/wiki/راهنمای-تنظیم-
+# دامنه-و-"
 # | "نهایی-کردن-نصب#آموزش-ساخت-زیردامنه\"> Help</a> to learn how to create a "
 # | "subdomain."
 #: hiddifypanel/panel/admin/ChildAdmin.py:33
@@ -971,7 +972,8 @@ msgstr ""
 # | "It is used to simulate another website instead of your website in SNI.
 # Therefore, GTW can not filter your domain\n"
 # | "<a
-# href=\"https://github.com/hiddify/hiddify-config/wiki/%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87-%D8%A7%D8%B2-%D8%AF%D8%A7%D9%85%DB%8C%D9%86-%D9%81%D8%B1%D8%A7%D9%86%D8%AA%DB%8C%D9%86%DA%AF\">Guid</a>."
+# href=\"https://github.com/hiddify/hiddify-
+# config/wiki/%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87-%D8%A7%D8%B2-%D8%AF%D8%A7%D9%85%DB%8C%D9%86-%D9%81%D8%B1%D8%A7%D9%86%D8%AA%DB%8C%D9%86%DA%AF\">Guid</a>."
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 msgid "config.domain_fronting.description"
 msgstr ""
@@ -1554,17 +1556,17 @@ msgstr ""
 " از طریق relay اضافه کنید. \n"
 
 # | msgid ""
-# | "User usage will be updated every 6 minutes. To update it now click <a "
-# | "href=\"%(link)s\" class=\"btn btn-info\">here</a>."
+# | "User usage will be updated every 6 minutes. To update it now click
+# <button class=\"btn "
+# | "btn-info\" onclick=\"updateUsage()\">update</button>"
 #: hiddifypanel/panel/admin/templates/model/user_list.html:7
-#, python-format
 msgid ""
-"User usage will be updated every 6 minutes. To update it now click <a "
-"href=\"%(link)s\" class=\"btn btn-info\">here</a>"
+"User usage will be updated every 6 minutes. To update it now click "
+"<button class=\"btn btn-info\" onclick=\"updateUsage()\">update</button>"
 msgstr ""
 "حجم مصرفی کاربران بصورت خودکار هر ۶ دقیقه بروزرسانی می‌شود. برای "
-"بروزرسانی دستی <a href=\"%(link)s\" class=\"btn btn-info\">اینجا</a> کلیک"
-" کنید."
+"بروزرسانی دستی روی <button class=\"btn btn-info\" "
+"onclick=\"updateUsage()\">بروزرسانی</button> کلیک کنید"
 
 #: hiddifypanel/panel/user/user.py:105
 msgid "This domain does not exist in the panel!"
@@ -1703,8 +1705,8 @@ msgstr "گوگل‌پلی"
 # | "                    class=\"btn btn-warning orig-link\">Clash in Google
 # Play</a>\n"
 # | "            </div>\n"
-# | "                <a
-# href=\"/{{hconfigs[ConfigEnum.proxy_path]}}/gh/Kr328/ClashForAndroid/releases/download/v2.5.12/cfa-2.5.12-premium-universal-release.apk\"\n"
+# href=\"/{{hconfigs[ConfigEnum.proxy_path]}}/gh/Kr328/ClashForAndroid/releases/download/v2.5.12/cfa-2.5.12-premium-
+# universal-release.apk\"\n"
 # | "                    class=\"btn btn-warning orig-link\">Direct
 # Download</a>\n"
 # | "            <div class=\"alert alert-danger\">\n"
@@ -2429,9 +2431,7 @@ msgstr "حمایت"
 # btn-secondary copy-link\"><i class=\"fa-regular fa-copy\"></i></a>    \n"
 # | "<a data-copy=\"EQCWnykA-YhavOXgH3sf-uxtXLjy83_9n5bJPGRPE8r2247_\"
 # role=\"button\" class=\"btn btn-info share-link\">TON</a> </div></li>\n"
-# | "    <a role=\"button\"
 # data-copy=\"0xF15ec158318d7F5236d82d040102340B0974C3E0\" class=\"btn
-# btn-secondary copy-link\"><i class=\"fa-regular fa-copy\"></i></a>    \n"
 # | "<a data-copy=\"0xF15ec158318d7F5236d82d040102340B0974C3E0\"
 # role=\"button\" class=\"btn btn-info share-link\">Ethereum</a>
 # </div></li>\n"
@@ -2441,8 +2441,6 @@ msgstr "حمایت"
 # | "<a data-copy=\"3Epy7jyUUCVb1w12MNTu2JFVVhmfpr4EGX\" role=\"button\"
 # class=\"btn btn-info share-link\">Bitcoin</a> </div></li>\n"
 # | "    <a role=\"button\" data-copy=\"DJy27pQKwnhaRxWDbU6dG7UdHHif6yp8Jb\"
-# class=\"btn btn-secondary copy-link\"><i class=\"fa-regular
-# fa-copy\"></i></a>    \n"
 # | "<a data-copy=\"DJy27pQKwnhaRxWDbU6dG7UdHHif6yp8Jb\" role=\"button\"
 # class=\"btn btn-info share-link\">Dogecoin</a> </div></li>\n"
 # | "</ul>\n"
