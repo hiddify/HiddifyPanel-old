@@ -169,7 +169,8 @@ def get_config_form():
                 
                 if c.key ==ConfigEnum.parent_panel:
                     validators.append(wtf.validators.Regexp("()|(http(s|)://([A-Za-z0-9\-\.]+\.[a-zA-Z]{2,})/.*)",re.IGNORECASE,_("Invalid admin link")))
-
+                if c.key == ConfigEnum.telegram_bot_token:
+                    validators.append(wtf.validators.Regexp("()|^([0-9]{8,12}:[a-zA-Z0-9_-]{30,40})|$",re.IGNORECASE,_("config.Invalid telegram bot token")))
                 if c.key==ConfigEnum.branding_site :
                     validators.append(wtf.validators.Regexp("()|(http(s|)://([A-Za-z0-9\-\.]+\.[a-zA-Z]{2,})/?.*)",re.IGNORECASE,_("config.Invalid brand link")))
                     # render_kw['required']=""

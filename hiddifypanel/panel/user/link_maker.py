@@ -164,7 +164,7 @@ def to_link(proxy):
     name_link=proxy["name"]+"_"+proxy['extra_info']
     if proxy['proto']=='vmess':
         vmess_type= 'http' if proxy["transport"]=='tcp' else 'none'
-        return pbase64(f'vmess://{{"v":"2", "ps":"{name_link}", "add":"{proxy["server"]}", "port":"{proxy["port"]}", "id":"{proxy["uuid"]}", "aid":"0", "scy":"auto", "net":"{proxy["transport"]}", "type":"none", "host":"{proxy.get("host","")}", "path":"{proxy["path"] if "path" in proxy else ""}", "tls":"{proxy["l3"]}", "sni":"{proxy["sni"]}","fp":"chrome"}}')
+        return pbase64(f'vmess://{{"v":"2", "ps":"{name_link}", "add":"{proxy["server"]}", "port":"{proxy["port"]}", "id":"{proxy["uuid"]}", "aid":"0", "scy":"auto", "net":"{proxy["transport"]}", "type":"none", "host":"{proxy.get("host","")}", "path":"{proxy["path"] if "path" in proxy else ""}", "tls":"{proxy["l3"]}", "sni":"{proxy["sni"]}","fp":"android"}}')
     if proxy['proto']=="ssr":
         baseurl=f'ssr://proxy["encryption"]:{proxy["uuid"]}@{proxy["server"]}:{proxy["port"]}'
         return None
@@ -187,7 +187,7 @@ def to_link(proxy):
         infos+=f'&serviceName={proxy["grpc_service_name"]}&mode={proxy["grpc_mode"]}'
     if 'vless'==proxy['proto']:
         infos+="&encryption=none"
-    infos+="&fp=chrome" 
+    infos+="&fp=android" 
     if proxy['l3']!='quic':
         infos+='&headerType=None' #if not quic
     if proxy['mode']=='Fake':
@@ -269,7 +269,7 @@ def to_clash(proxy,meta_or_normal):
         base["servername"]= proxy["sni"]
         base["tls"]= proxy["l3"]=="tls"
     if meta_or_normal=="meta":
-        base['client-fingerprint']="chrome"
+        base['global-client-fingerprint']="android"
     if "xtls" == proxy['l3']:
         base["flow"]= proxy['flow']
         base["flow-show"]= True

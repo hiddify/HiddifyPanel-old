@@ -31,8 +31,10 @@ class ConfigCategory(StrEnum):
     ssr=auto()
     kcp=auto()
     hidden=auto()
+    advanced=auto()
 
 class ConfigEnum(StrEnum):
+    telegram_bot_token=auto()
     is_parent=auto()
     parent_panel=auto()
     unique_id=auto()
@@ -98,8 +100,9 @@ class ConfigEnum(StrEnum):
       return cls.not_found #"key not found"
     def info(self):
         map = {
+            self.telegram_bot_token: {'category': ConfigCategory.advanced,'show_in_parent':True},
             self.is_parent:{'category': ConfigCategory.hidden,'type':bool},
-            self.parent_panel:{'category': ConfigCategory.admin},
+            self.parent_panel:{'category': ConfigCategory.advanced},
             self.unique_id:{'category': ConfigCategory.hidden,},
             self.cdn_forced_host:{'category': ConfigCategory.hidden,},
             self.branding_title:{'category': ConfigCategory.branding,'show_in_parent':True},
@@ -114,7 +117,7 @@ class ConfigEnum(StrEnum):
             self.kcp_ports: {'category': ConfigCategory.kcp,'apply_mode':'apply'},
             self.kcp_enable: {'category': ConfigCategory.kcp,'type':bool,'apply_mode':'apply'},
             self.decoy_domain: {'category': ConfigCategory.general,'apply_mode':'apply'},
-            self.proxy_path: {'category': ConfigCategory.general,'apply_mode':'apply','show_in_parent':True},
+            self.proxy_path: {'category': ConfigCategory.advanced,'apply_mode':'apply','show_in_parent':True},
             self.firewall: {'category': ConfigCategory.general,'type':bool,'apply_mode':'apply'},
             self.netdata: {'category': ConfigCategory.general,'type':bool,'apply_mode':'apply'},
             self.http_proxy_enable: {'category': ConfigCategory.http,'type':bool},
