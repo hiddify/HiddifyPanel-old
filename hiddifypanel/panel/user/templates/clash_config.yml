@@ -53,11 +53,14 @@ proxy-groups:
   #     - vless
   #     - tuic
 
+# Better Performance, Fix crach on clash.Meta Android
   - name: PROXY
     proxies:
       - auto_fallback
-    use:
-      - all_proxies
+      - DIRECT  # Just I Like this Config ;)
+      - REJECT  # Just I Like this Config ;)
+#    use:
+#      - all_proxies
     type: select
 
 
@@ -98,22 +101,29 @@ proxy-groups:
   #     - REJECT
   #   % endif
     # type: select
-
-  - name: auto
-    use:
-      - all_proxies
-    type: url-test
-    url: http://cp.cloudflare.com
-    interval: 300
+# Duo to Filternet Behaive (fake ping) Auto is not recomended
+#  - name: auto
+#    use:
+#      - all_proxies
+#    type: url-test
+#    url: http://cp.cloudflare.com
+#    interval: 300
+    # Prevent Rapid Changes
+#    tolerance: 200
+#    lazy: true
 
   - name: auto_fallback
     type: fallback
     url: 'http://cp.cloudflare.com'
     interval: 300
-    proxies:
-        - auto
-        - {{OnProxyIssue}}
-{{link_maker.get_all_clash_configs(meta_or_normal,domains)}}
+    use:
+      - all_proxies
+#   proxies:
+#       - auto
+#       - {{OnProxyIssue}}
+# {{link_maker.get_all_clash_configs(meta_or_normal,domains)}}
+
+
 proxy-providers:
   all_proxies:
     type: http
@@ -126,7 +136,6 @@ proxy-providers:
 
   
 rule-providers:
-
   blocked:
     type: http
     behavior: classical
@@ -147,13 +156,13 @@ rule-providers:
     url: "https://{{domain}}/{{hconfigs[ConfigEnum.proxy_path]}}/clash/rules/open-sites.yml"
     path: ./ruleset/open.yaml
     interval: 432000    
-
-  ads:
-    type: http
-    behavior: classical
-    url: "https://{{domain}}/{{hconfigs[ConfigEnum.proxy_path]}}/clash/rules/ads-sites.yml"
-    path: ./ruleset/ads.yaml
-    interval: 432000   
+# Duo to, many unreacheable site, this rule make clash unstable
+#  ads:
+#    type: http
+#    behavior: classical
+#    url: "https://{{domain}}/{{hconfigs[ConfigEnum.proxy_path]}}/clash/rules/ads-sites.yml"
+#    path: ./ruleset/ads.yaml
+#    interval: 432000   
 
 rules:
   - DOMAIN,{{hconfigs[ConfigEnum.telegram_fakedomain]}},DIRECT
@@ -166,5 +175,5 @@ rules:
   - GEOIP,IR,{{OnIranSites}}
   - DOMAIN-SUFFIX,.ir,{{OnIranSites}}
   - RULE-SET,open,{{OnIranSites}}
-  - RULE-SET,ads,REJECT
+#  - RULE-SET,ads,REJECT
   - MATCH,{{OnNotFilteredSites}}
