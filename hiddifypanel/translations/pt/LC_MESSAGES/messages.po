@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  HiddifyPT\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-30 16:43+0200\n"
-"PO-Revision-Date: 2023-07-30 09:30-0500\n"
+"POT-Creation-Date: 2023-08-05 08:19+0200\n"
+"PO-Revision-Date: 2023-08-05 01:15-0500\n"
 "Last-Translator: lymanrudni\n"
 "Language: pt\n"
 "Language-Team: Portuguese\n"
@@ -4302,6 +4302,46 @@ msgstr ""
 "href=\"mailto:hiddify@gmail.com\">hiddify@gmail.com</a> se puder nos "
 "ajudar."
 
+# | msgid "SSH user database address"
+#: hiddifypanel/templates/fake.html:1
+#, fuzzy
+msgid "config.ssh_server_redis_url.label"
+msgstr "Endereço do banco de dados do usuário SSH"
+
+# | msgid "Not used"
+#: hiddifypanel/templates/fake.html:1
+#, fuzzy
+msgid "config.ssh_server_redis_url.description"
+msgstr "Não usado"
+
+# | msgid "SSH Proxy Port"
+#: hiddifypanel/templates/fake.html:1
+#, fuzzy
+msgid "config.ssh_server_port.label"
+msgstr "Porta Proxy SSH"
+
+# | msgid ""
+# | "This is completely different from your original ssh server. It is a "
+# | "dedicated program."
+#: hiddifypanel/templates/fake.html:1
+#, fuzzy
+msgid "config.ssh_server_port.description"
+msgstr ""
+"Isso é completamente diferente do seu servidor ssh original. É um "
+"programa dedicado."
+
+# | msgid "Enable SSH Proxy"
+#: hiddifypanel/templates/fake.html:1
+#, fuzzy
+msgid "config.ssh_server_enable.label"
+msgstr "Ativar proxy SSH"
+
+# | msgid "SSH proxy is completely different than original ssh server."
+#: hiddifypanel/templates/fake.html:1
+#, fuzzy
+msgid "config.ssh_server_enable.description"
+msgstr "O proxy SSH é completamente diferente do servidor ssh original."
+
 # | msgid "🎛️ Core"
 #: hiddifypanel/templates/fake.html:1
 #, fuzzy
@@ -4545,4 +4585,38 @@ msgstr "Ações"
 # | msgid "Can not connect to Parent Panel!"
 #~ msgid "Can not connect to parent panel!"
 #~ msgstr "Não é possível conectar ao painel principal!"
+
+#~ msgid "singbox: ssh"
+#~ msgstr "caixa de som: ssh"
+
+# | msgid "SSH"
+#~ msgid "ssh"
+#~ msgstr "SSH"
+
+#~ msgid "config.ssh_server_ports.label"
+#~ msgstr ""
+
+#~ msgid "config.ssh_server_ports.description"
+#~ msgstr ""
+
+# | msgid "SSH Proxy"
+#~ msgid "config.ssh.label"
+#~ msgstr "Proxy SSH"
+
+# | msgid ""
+# | "An SSH proxy, also known as an SSH tunnel or SSH port forwarding, is a "
+# | "secure method of creating a secure communication channel between two "
+# | "machines over an insecure network. We have a specific application which
+# is "
+# | "completely different from ssh server and can not execute any commands"
+#~ msgid "config.ssh.description"
+#~ msgstr ""
+#~ "Um proxy SSH, também conhecido como "
+#~ "túnel SSH ou encaminhamento de porta "
+#~ "SSH, é um método seguro de criar"
+#~ " um canal de comunicação seguro entre"
+#~ " duas máquinas em uma rede insegura."
+#~ " Temos um aplicativo específico que é"
+#~ " completamente diferente do servidor ssh"
+#~ " e não pode executar nenhum comando"
 

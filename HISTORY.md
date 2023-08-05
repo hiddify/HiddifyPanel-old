@@ -1,6 +1,14 @@
 # Changelog
 
 
+## 7.2.0 (2023-08-05)
+
+#### New
+
+* Add  compatibility for downgrade for ssh. 
+
+
+
 ## 7.1.9 (2023-07-30)
 
 #### Fix

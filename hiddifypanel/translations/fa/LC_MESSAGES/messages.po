@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  HiddifyPanel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-30 16:43+0200\n"
-"PO-Revision-Date: 2023-07-30 09:30-0500\n"
+"POT-Creation-Date: 2023-08-05 08:19+0200\n"
+"PO-Revision-Date: 2023-08-05 01:15-0500\n"
 "Last-Translator: hidden u\n"
 "Language: fa\n"
 "Language-Team: Persian\n"
@@ -3940,6 +3940,44 @@ msgstr ""
 "لطفاً با آدرس <a href=\"mailto:info@hiddify.com\">info@hiddify.com</a> با"
 " ما تماس بگیرید."
 
+# | msgid "SSH user database address"
+#: hiddifypanel/templates/fake.html:1
+#, fuzzy
+msgid "config.ssh_server_redis_url.label"
+msgstr "آدرس پایگاه داده کاربر SSH"
+
+# | msgid "Not used"
+#: hiddifypanel/templates/fake.html:1
+#, fuzzy
+msgid "config.ssh_server_redis_url.description"
+msgstr "استفاده نشده"
+
+# | msgid "SSH Proxy Port"
+#: hiddifypanel/templates/fake.html:1
+#, fuzzy
+msgid "config.ssh_server_port.label"
+msgstr "پورت پروکسی SSH"
+
+# | msgid ""
+# | "This is completely different from your original ssh server. It is a "
+# | "dedicated program."
+#: hiddifypanel/templates/fake.html:1
+#, fuzzy
+msgid "config.ssh_server_port.description"
+msgstr "این کاملا با سرور اصلی ssh شما متفاوت است. این یک برنامه اختصاصی است."
+
+# | msgid "Enable SSH Proxy"
+#: hiddifypanel/templates/fake.html:1
+#, fuzzy
+msgid "config.ssh_server_enable.label"
+msgstr "پروکسی SSH را فعال کنید"
+
+# | msgid "SSH proxy is completely different than original ssh server."
+#: hiddifypanel/templates/fake.html:1
+#, fuzzy
+msgid "config.ssh_server_enable.description"
+msgstr "پروکسی SSH با سرور اصلی ssh کاملا متفاوت است."
+
 # | msgid "🎛️ Core"
 #: hiddifypanel/templates/fake.html:1
 msgid "config.core_type.label"
@@ -4461,4 +4499,38 @@ msgstr "عملیات"
 #~ " خاص ممکن است در برخی از برنامه"
 #~ " ها مانند Fair VPN مشکل ایجاد "
 #~ "کند"
+
+#~ msgid "singbox: ssh"
+#~ msgstr "singbox: ssh"
+
+# | msgid "SSH"
+#~ msgid "ssh"
+#~ msgstr "SSH"
+
+#~ msgid "config.ssh_server_ports.label"
+#~ msgstr ""
+
+#~ msgid "config.ssh_server_ports.description"
+#~ msgstr ""
+
+# | msgid "SSH Proxy"
+#~ msgid "config.ssh.label"
+#~ msgstr "پروکسی SSH"
+
+# | msgid ""
+# | "An SSH proxy, also known as an SSH tunnel or SSH port forwarding, is a "
+# | "secure method of creating a secure communication channel between two "
+# | "machines over an insecure network. We have a specific application which
+# is "
+# | "completely different from ssh server and can not execute any commands"
+#~ msgid "config.ssh.description"
+#~ msgstr ""
+#~ "پروکسی SSH که به عنوان تونل SSH"
+#~ " یا ارسال پورت SSH نیز شناخته "
+#~ "می شود، روشی امن برای ایجاد یک "
+#~ "کانال ارتباطی امن بین دو ماشین در"
+#~ " یک شبکه ناامن است. ما یک "
+#~ "برنامه خاص داریم که کاملاً با سرور"
+#~ " ssh متفاوت است و نمی تواند هیچ"
+#~ " دستوری را اجرا کند"
 
