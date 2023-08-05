@@ -25,6 +25,7 @@ class ProxyTransport(StrEnum):
     # h1=auto()
     WS = auto()
     tcp = auto()
+    ssh = auto()
 
 
 class ProxyCDN(StrEnum):
@@ -40,6 +41,7 @@ class ProxyProto(StrEnum):
     ss = auto()
     v2ray = auto()
     ssr = auto()
+    ssh = auto()
 
 
 class ProxyL3(StrEnum):
@@ -49,6 +51,7 @@ class ProxyL3(StrEnum):
     reality = auto()
     http = auto()
     kcp = auto()
+    ssh = auto()
     # hysteria=auto()
 
 
