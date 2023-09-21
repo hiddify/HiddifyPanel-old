@@ -266,6 +266,14 @@ def user_by_id(id):
     return User.query.filter(User.id == id).first()
 
 
+### aliz dev
+def remove_user(commit=True, **uuid):
+    dbuser = User.by_uuid(uuid)
+    db.session.delete(dbuser)
+    if commit:
+        db.session.commit()
+### end aliz dev
+
 def add_or_update_user(commit=True, **user):
     # if not is_valid():return
     from hiddifypanel.panel import hiddify
