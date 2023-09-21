@@ -27,8 +27,9 @@ class UserResource(Resource):
 
     def post(self):
         data = request.json
+        user = User.query.filter(User.uuid == data['uuid']).first() or abort(204)
         hiddify.add_or_update_user(**data)
-        user_driver.add_client(data['uuid'])
+        user_driver.add_client(user)
         hiddify.quick_apply_users()
 
         return jsonify({'status': 200, 'msg': 'ok'})
