@@ -32,11 +32,19 @@
 
 {% macro HiddifyN_dl_link() -%}
 <div class="btn-group">
+    {% if ua.os.family=="Windows" %}
     <a class="btn btn-primary"
         href="/{{hconfigs[ConfigEnum.proxy_path]}}/gh/hiddify/HiddifyN/releases/latest/download/HiddifyN.zip">
         <i class="fa-brands fa-windows fa-margin"></i> {{_('Windows')}}</a>
-    
-
+    {% elif ua.os.family=="OS X" %}
+    <a class="btn btn-secondary"
+        href="/{{hconfigs[ConfigEnum.proxy_path]}}/gh/hiddify/hiddify-next/releases/latest/download/hiddify-macos-universal.zip">
+        <i class="fa-brands fa-apple fa-margin"></i> {{_('macOS')}}</a>
+    {% elif ua.os.family=="Linux" %}
+    <a class="btn btn-success"
+        href="/{{hconfigs[ConfigEnum.proxy_path]}}/gh/hiddify/HiddifyN/releases/latest/download/hiddify-linux-x64.zip">
+        <i class="fa-brands fa-linux fa-margin"></i> {{_('Linux')}}</a>
+    {% endif %}
 </div>
 {%- endmacro -%}
 
