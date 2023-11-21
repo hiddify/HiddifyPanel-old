@@ -1,5 +1,4 @@
 from urllib.parse import urlparse
-import httpagentparser
 from flask_restful import Resource
 from hiddifypanel.models.config import StrConfig, hconfig
 from hiddifypanel.models.config_enum import ConfigEnum
@@ -8,6 +7,7 @@ from hiddifypanel.models.user import days_to_reset, user_by_uuid
 from hiddifypanel.panel import hiddify
 from hiddifypanel.panel.database import db
 import requests
+import user_agents
 
 from flask_classful import FlaskView, route
 from flask.views import MethodView
@@ -220,7 +220,10 @@ class AppAPI(MethodView):
                 abort(400,'Your selected platform is invalid!')
             self.platform = req_platfrom.lower()
         else:
-            self.platform = httpagentparser.detect(request.user_agent.string)['os']['name'].lower()
+            platfrom = self.__get_ua_platform()
+            if not platfrom:
+                abort(400,'Your selected platform is invalid!')
+            self.platform = platfrom
 
         all_apps = request.args.get('all')
         self.all_apps = True if all_apps and all_apps.lower() == 'true' else False
@@ -279,6 +282,21 @@ class AppAPI(MethodView):
                 apps_data += ([hiddify_next_dto,hiddify_clash_dto])
 
         return apps_data
+    def __get_ua_platform(self):
+        os = user_agents.parse(request.user_agent.string).os.family
+        if os == 'Android':
+            return os.lower()
+        elif os == 'Windows':
+            return os.lower()
+        elif os == 'Mac OS X':
+            return 'mac'
+        elif os == 'iOS':
+            return os.lower()
+        elif 'Linux' in request.user_agent.string and 'X11' or 'Wayland' in request.user_agent.string:
+            return 'linux'
+
+        return None
+
     def __get_all_apps_dto(self):
         hiddifyn_app_dto = self.__get_hiddifyn_app_dto()
         v2rayng_app_dto = self.__get_v2rayng_app_dto()
