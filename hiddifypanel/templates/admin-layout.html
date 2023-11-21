@@ -21,6 +21,10 @@
         {{_("Parent Panel")}}
         %endif
     </a>
+    <a class="nav-link" href="https://github.com/hiddify/Hiddify-Manager/" target="_blank">
+      <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/hiddify/hiddify-manager?style=social&logo=star&label=%E2%AD%90">
+
+  </a>
   </div>
   <ul class="navbar-nav ml-auto">
     %if g.darkmode
@@ -40,6 +44,7 @@
     </a>
 
     %endif
+    
   </ul>
 </nav>
 <!-- /.navbar -->
@@ -57,8 +62,11 @@
     % if False and hconfig(ConfigEnum.is_parent)
     <br>
     <!-- <span class="badge">{{_("Parent Panel")}}</span> -->
+    
+
     %endif
   </a>
+  
 
 
   <!-- Sidebar -->
