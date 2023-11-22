@@ -146,7 +146,7 @@ class DomainAdmin(AdminLTEModelView):
         for td in Domain.query.filter(Domain.mode == DomainType.reality, Domain.domain != model.domain).all():
             print(td)
             if td.servernames and (model.domain in td.servernames.split(",")):
-                raise ValidationError(_("You have used this domain in: ")+_(f"config.reality_server_names.label")+" in " + d.domain)
+                raise ValidationError(_("You have used this domain in: ")+_(f"config.reality_server_names.label")+" in " + td.domain)
         myip = hiddify.get_ip(4)
         myipv6 = hiddify.get_ip(6)
 
@@ -211,22 +211,21 @@ class DomainAdmin(AdminLTEModelView):
         if model.mode == DomainType.reality:
             model.servernames = (model.servernames or model.domain).lower()
 
-            for v in [model.domain, model.servernames]:
-
+            for v in [model.domain]:
                 for d in v.split(","):
                     if not d:
                         continue
 
                     if not hiddify.is_domain_reality_friendly(d):
-                        flash(_("Domain is not REALITY friendly!")+" "+d, "warning")
+                        # flash(_("Domain is not REALITY friendly!")+" "+d, "warning")
                         # return render_template('config.html', form=form)
-                        # raise ValidationError(_("Domain is not REALITY friendly!")+" "+d)
+                        raise ValidationError(_("Domain is not REALITY friendly!")+" "+d)
 
                     hiddify.debug_flash_if_not_in_the_same_asn(d)
 
             for d in model.servernames.split(","):
                 if not hiddify.fallback_domain_compatible_with_servernames(model.domain, d):
-                    raise ValidationError(_("REALITY Fallback domain is not compaitble with server names!")+" "+d+" != "+model.domain)
+                    flash(_("REALITY Fallback domain is not compaitble with server names!")+" "+d+" != "+model.domain,'warning')
 
         if (model.cdn_ip):
             from hiddifypanel.panel import clean_ip
