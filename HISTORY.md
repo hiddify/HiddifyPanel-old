@@ -1,6 +1,14 @@
 # Changelog
 
 
+## 8.8.1 (2023-11-22)
+
+#### Other
+
+* Allow incompatible server names for reality. 
+
+
+
 ## 8.8.0 (2023-11-22)
 
 #### Other

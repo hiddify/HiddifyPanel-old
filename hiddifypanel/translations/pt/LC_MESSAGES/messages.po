@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  HiddifyPT\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-22 19:17+0100\n"
-"PO-Revision-Date: 2023-11-07 05:33-0600\n"
+"POT-Creation-Date: 2023-11-22 20:25+0100\n"
+"PO-Revision-Date: 2023-11-22 12:17-0600\n"
 "Last-Translator: lymanrudni\n"
 "Language: pt\n"
 "Language-Team: Portuguese\n"
@@ -660,18 +660,18 @@ msgstr ""
 "=%(server_ip)s"
 
 # | msgid "Domain is Not REALITY Friendly!"
-#: hiddifypanel/panel/admin/DomainAdmin.py:221
+#: hiddifypanel/panel/admin/DomainAdmin.py:222
 msgid "Domain is not REALITY friendly!"
 msgstr "O domínio não é compatível com Reality!"
 
 # | msgid "REALITY Fallback Domain is not compaitble with Server names!"
-#: hiddifypanel/panel/admin/DomainAdmin.py:229
+#: hiddifypanel/panel/admin/DomainAdmin.py:228
 #, fuzzy
 msgid "REALITY Fallback domain is not compaitble with server names!"
 msgstr "REALITY Fallback Domain não é compatível com nomes de servidores!"
 
 # | msgid "⚠️ Error in Auto CDN Format"
-#: hiddifypanel/panel/admin/DomainAdmin.py:236
+#: hiddifypanel/panel/admin/DomainAdmin.py:235
 #, fuzzy
 msgid "Error in auto cdn format"
 msgstr "Erro no formato CDN automático"
