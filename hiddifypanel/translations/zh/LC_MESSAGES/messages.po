@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  HiddifyPanel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-02 13:34+0100\n"
-"PO-Revision-Date: 2023-11-02 04:46-0500\n"
+"POT-Creation-Date: 2023-11-22 19:17+0100\n"
+"PO-Revision-Date: 2023-11-04 18:43-0500\n"
 "Last-Translator: hidden u\n"
 "Language: zh\n"
 "Language-Team: Chinese\n"
@@ -567,7 +567,7 @@ msgid ""
 msgstr "在 CDN 模式下，域名 IP=%(domain_ip)s 应该与您的 IP=%(server_ip)s 不同"
 
 # | msgid "Domain is Not REALITY Friendly!"
-#: hiddifypanel/panel/admin/DomainAdmin.py:223
+#: hiddifypanel/panel/admin/DomainAdmin.py:221
 msgid "Domain is not REALITY friendly!"
 msgstr "域名不支持 REALITY ！"
 
@@ -4582,4 +4582,8 @@ msgstr "动作"
 # | msgid "Bug/Feature"
 #~ msgid "Bug"
 #~ msgstr "错误/功能"
+
+# | msgid "API"
+#~ msgid "admin.menu.api"
+#~ msgstr "应用程序编程接口"
 

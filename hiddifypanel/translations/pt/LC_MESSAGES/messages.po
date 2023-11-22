@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  HiddifyPT\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-02 13:34+0100\n"
-"PO-Revision-Date: 2023-11-02 04:46-0500\n"
+"POT-Creation-Date: 2023-11-22 19:17+0100\n"
+"PO-Revision-Date: 2023-11-07 05:33-0600\n"
 "Last-Translator: lymanrudni\n"
 "Language: pt\n"
 "Language-Team: Portuguese\n"
@@ -660,7 +660,7 @@ msgstr ""
 "=%(server_ip)s"
 
 # | msgid "Domain is Not REALITY Friendly!"
-#: hiddifypanel/panel/admin/DomainAdmin.py:223
+#: hiddifypanel/panel/admin/DomainAdmin.py:221
 msgid "Domain is not REALITY friendly!"
 msgstr "O domínio não é compatível com Reality!"
 
@@ -5022,4 +5022,8 @@ msgstr "Ações"
 # | msgid "Bug/Feature"
 #~ msgid "Bug"
 #~ msgstr "Bug/recurso"
+
+# | msgid "API"
+#~ msgid "admin.menu.api"
+#~ msgstr "API"
 

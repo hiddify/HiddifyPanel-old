@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  HiddifyPanel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-02 13:34+0100\n"
-"PO-Revision-Date: 2023-11-02 04:46-0500\n"
+"POT-Creation-Date: 2023-11-22 19:17+0100\n"
+"PO-Revision-Date: 2023-11-04 18:43-0500\n"
 "Last-Translator: hidden u\n"
 "Language: fa\n"
 "Language-Team: Persian\n"
@@ -609,7 +609,7 @@ msgid ""
 msgstr "در حالت CDN، IP=%(domain_ip)s باید با ip=%(server_ip)s شما متفاوت باشد."
 
 # | msgid "Domain is Not REALITY Friendly!"
-#: hiddifypanel/panel/admin/DomainAdmin.py:223
+#: hiddifypanel/panel/admin/DomainAdmin.py:221
 #, fuzzy
 msgid "Domain is not REALITY friendly!"
 msgstr "دامنه سازگار با REALITY نیست!"
@@ -4834,7 +4834,7 @@ msgstr "عملیات"
 
 # | msgid "Direct Reality Port"
 #~ msgid "config.reality_port.label"
-#~ msgstr "بندر واقعیت مستقیم"
+#~ msgstr "پورت ریالیتی"
 
 # | msgid ""
 # | "You can set a customized port for your reality server to reduce the
@@ -4843,14 +4843,14 @@ msgstr "عملیات"
 #~ msgid "config.reality_port.description"
 #~ msgstr ""
 #~ "شما می توانید یک پورت سفارشی برای"
-#~ " سرور واقعیت خود تنظیم کنید تا "
-#~ "سربار سیستم را کاهش دهید. (اجازه "
+#~ " سرور ریالیتی خود تنظیم کنید تا "
+#~ "پردازش سیستم را کاهش دهید. (اجازه "
 #~ "اتصال مستقیم به پروکسی ها باید بله"
 #~ " باشد)"
 
 # | msgid "All Config Hiddify Managers"
 #~ msgid "user.home.allconfig.hiddify-managers"
-#~ msgstr "همه مدیران Config Hiddify"
+#~ msgstr "همه کانفیگ های مدیران هیدیفای"
 
 # | msgid "DNS over HTTPS"
 #~ msgid "user.home.tool.doh.title"
@@ -4866,7 +4866,7 @@ msgstr "عملیات"
 
 # | msgid "Additional Warp Sites"
 #~ msgid "config.warp_sites.label"
-#~ msgstr "سایت های Warp اضافی"
+#~ msgstr "سایت های اضافی برای WARP"
 
 # | msgid ""
 # | "Add additional sites to pass through warp (only when warp mode is not
@@ -4900,4 +4900,8 @@ msgstr "عملیات"
 # | msgid "Bug/Feature"
 #~ msgid "Bug"
 #~ msgstr "باگ/پیشنهاد"
+
+# | msgid "API"
+#~ msgid "admin.menu.api"
+#~ msgstr "API"
 

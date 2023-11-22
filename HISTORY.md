@@ -1,6 +1,14 @@
 # Changelog
 
 
+## 8.8.0 (2023-11-22)
+
+#### Other
+
+* NEW: allow reality to be incorrect. 
+
+
+
 ## 8.7.1 (2023-11-02)
 
 #### Fix

@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: HiddifyPanel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-02 13:34+0100\n"
-"PO-Revision-Date: 2023-11-02 04:46-0500\n"
+"POT-Creation-Date: 2023-11-22 19:17+0100\n"
+"PO-Revision-Date: 2023-11-04 18:43-0500\n"
 "Last-Translator: hidden u\n"
 "Language-Team: English (USA)\n"
 "Language: en_US\n"
@@ -592,7 +592,7 @@ msgstr ""
 "=%(server_ip)s"
 
 # | msgid "Domain is Not REALITY Friendly!"
-#: hiddifypanel/panel/admin/DomainAdmin.py:223
+#: hiddifypanel/panel/admin/DomainAdmin.py:221
 msgid "Domain is not REALITY friendly!"
 msgstr "Domain is Not REALITY Friendly!"
 
@@ -4673,3 +4673,7 @@ msgstr "Actions"
 # | msgid "Bug/Feature"
 #~ msgid "Bug"
 #~ msgstr "Bug/Feature"
+
+# | msgid "API"
+#~ msgid "admin.menu.api"
+#~ msgstr "API"
