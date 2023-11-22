@@ -218,9 +218,9 @@ class DomainAdmin(AdminLTEModelView):
                         continue
 
                     if not hiddify.is_domain_reality_friendly(d):
-                        # flash(_("Domain is not REALITY friendly!")+" "+d,'error')
+                        flash(_("Domain is not REALITY friendly!")+" "+d, "warning")
                         # return render_template('config.html', form=form)
-                        raise ValidationError(_("Domain is not REALITY friendly!")+" "+d)
+                        # raise ValidationError(_("Domain is not REALITY friendly!")+" "+d)
 
                     hiddify.debug_flash_if_not_in_the_same_asn(d)
 
