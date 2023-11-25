@@ -170,7 +170,7 @@ class DomainAdmin(AdminLTEModelView):
         elif not skip_check:
             if dip == None:
                 raise ValidationError(_("Domain can not be resolved! there is a problem in your domain"))
-            domain_ip_is_same_to_panel = myip == dip or dip == myipv6
+            domain_ip_is_same_to_panel = myip == dip or dip[1:-1] == myipv6
 
             if model.mode == DomainType.direct and not domain_ip_is_same_to_panel:
                 raise ValidationError(_("Domain IP=%(domain_ip)s is not matched with your ip=%(server_ip)s which is required in direct mode", server_ip=myip, domain_ip=dip))
