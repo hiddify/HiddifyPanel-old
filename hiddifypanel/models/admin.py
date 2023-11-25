@@ -1,5 +1,6 @@
 import datetime
 import uuid as uuid_mod
+from hiddifypanel.models.usage import DailyUsage
 
 from sqlalchemy_serializer import SerializerMixin
 from dateutil import relativedelta
