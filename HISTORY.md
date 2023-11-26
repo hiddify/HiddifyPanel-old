@@ -1,6 +1,22 @@
 # Changelog
 
 
+## 8.8.2 (2023-11-26)
+
+#### Other
+
+* Merge pull request #57 from Iam54r1n4/v8. 
+  _fix bug in admin.py_
+
+* Fix bug in admin.py. 
+
+* Merge pull request #55 from Iam54r1n4/v8. 
+  _fix bug in admin.py_
+
+* Fix bug in admin.py. 
+
+
+
 ## 8.8.1 (2023-11-22)
 
 #### Other

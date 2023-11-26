@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  HiddifyPanel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-22 20:25+0100\n"
-"PO-Revision-Date: 2023-11-22 12:17-0600\n"
+"POT-Creation-Date: 2023-11-26 10:46+0100\n"
+"PO-Revision-Date: 2023-11-25 15:54-0600\n"
 "Last-Translator: hidden u\n"
 "Language: fa\n"
 "Language-Team: Persian\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Generated-By: Babel 2.12.1\n"
 
 # | msgid "Owner Can Not Be Deleted!"
-#: hiddifypanel/models/admin.py:74
+#: hiddifypanel/models/admin.py:75
 msgid "Owner can not be deleted!"
 msgstr "مدیر کل را نمیتوانید حذف کنید!"
 
@@ -782,18 +782,14 @@ msgstr ""
 msgid "config.block_iran_sites.label"
 msgstr "⛔️ بلاک کردن سایت‌های ایرانی"
 
-# | msgid ""
-# | "Block Iranian Sites to prevent detection by the government (Experimental:
-# If"
-# | " there is a problem, please disable it and tell us.)"
+# | msgid "Block domestic Sites to prevent detection by the government"
 #: hiddifypanel/panel/admin/QuickSetup.py:114
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:1
 msgid "config.block_iran_sites.description"
 msgstr ""
 "برای جلوگیری از شناسایی توسط فیلترچی، دسترسی به سایت های ایرانی را مسدود "
-"می‌کند. (این قسمت بصورت آزمایشی است؛ اگر مشکلی وجود دارد، لطفاً این گزینه"
-" را غیرفعال و ما را مطلع کنید.)"
+"می‌کند."
 
 # | msgid "♈️ Enable VMess"
 #: hiddifypanel/panel/admin/QuickSetup.py:115

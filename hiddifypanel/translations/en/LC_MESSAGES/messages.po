@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: HiddifyPanel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-22 20:25+0100\n"
-"PO-Revision-Date: 2023-11-22 12:17-0600\n"
+"POT-Creation-Date: 2023-11-26 10:46+0100\n"
+"PO-Revision-Date: 2023-11-25 15:54-0600\n"
 "Last-Translator: hidden u\n"
 "Language-Team: English (USA)\n"
 "Language: en_US\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Generated-By: Babel 2.12.1\n"
 
 # | msgid "Owner Can Not Be Deleted!"
-#: hiddifypanel/models/admin.py:74
+#: hiddifypanel/models/admin.py:75
 msgid "Owner can not be deleted!"
 msgstr "Owner Can Not Be Deleted!"
 
@@ -766,17 +766,12 @@ msgstr ""
 msgid "config.block_iran_sites.label"
 msgstr "⛔️ Block Domestic Sites"
 
-# | msgid ""
-# | "Block Iranian Sites to prevent detection by the government (Experimental:
-# "
-# | "If there is a problem, please disable it and tell us.)"
+# | msgid "Block domestic Sites to prevent detection by the government"
 #: hiddifypanel/panel/admin/QuickSetup.py:114
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:1
 msgid "config.block_iran_sites.description"
-msgstr ""
-"Block Iranian Sites to prevent detection by the government (Experimental: If"
-" there is a problem, please disable it and tell us.)"
+msgstr "Block domestic Sites to prevent detection by the government"
 
 # | msgid "♈️ Enable VMess"
 #: hiddifypanel/panel/admin/QuickSetup.py:115

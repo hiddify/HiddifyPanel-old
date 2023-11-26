@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: HiddifyPT\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-06 12:20-0500\n"
-"PO-Revision-Date: 2023-11-22 12:17-0600\n"
+"PO-Revision-Date: 2023-11-22 13:26-0600\n"
 "Last-Translator: lymanrudni\n"
 "Language-Team: Russian\n"
 "Language: ru\n"
@@ -746,12 +746,12 @@ msgstr "Порт уже используется в:"
 msgid "Can not connect to parent panel!"
 msgstr "Невозможно соединиться с родительской панелью управления!"
 
-#: hiddifypanel/panel/admin/DomainAdmin.py:221 loco:64568c8d11f32d138907dfef
+#: hiddifypanel/panel/admin/DomainAdmin.py:222 loco:64568c8d11f32d138907dfef
 #| msgid "Domain is Not REALITY Friendly!"
 msgid "Domain is not REALITY friendly!"
 msgstr "Домен не подходит для использования с  Reality!"
 
-#: hiddifypanel/panel/admin/DomainAdmin.py:229 loco:64568c8d11f32d138907dff0
+#: hiddifypanel/panel/admin/DomainAdmin.py:228 loco:64568c8d11f32d138907dff0
 #| msgid "REALITY Fallback Domain is not compaitble with Server names!"
 msgid "REALITY Fallback domain is not compaitble with server names!"
 msgstr "REALITY Fallback Domain несовместим с именами серверов!"
@@ -4023,7 +4023,7 @@ msgstr ""
 "<br>\n"
 "📦 Singbox: разработан SagerNet. Это также хорошее ядро"
 
-#: hiddifypanel/panel/admin/DomainAdmin.py:236 loco:64647cd6c60fb0545306ea12
+#: hiddifypanel/panel/admin/DomainAdmin.py:235 loco:64647cd6c60fb0545306ea12
 #| msgid "⚠️ Error in Auto CDN Format"
 msgid "Error in auto cdn format"
 msgstr "⚠️ Ошибка в формате Auto CDN"

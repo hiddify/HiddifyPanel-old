@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  HiddifyPT\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-22 20:25+0100\n"
-"PO-Revision-Date: 2023-11-22 12:17-0600\n"
+"POT-Creation-Date: 2023-11-26 10:46+0100\n"
+"PO-Revision-Date: 2023-11-22 13:26-0600\n"
 "Last-Translator: lymanrudni\n"
 "Language: pt\n"
 "Language-Team: Portuguese\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Generated-By: Babel 2.12.1\n"
 
 # | msgid "Owner Can Not Be Deleted!"
-#: hiddifypanel/models/admin.py:74
+#: hiddifypanel/models/admin.py:75
 #, fuzzy
 msgid "Owner can not be deleted!"
 msgstr "O proprietário não pode ser excluído!"
