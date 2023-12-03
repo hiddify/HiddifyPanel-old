@@ -72,7 +72,8 @@ class AdminUser(db.Model, SerializerMixin):
 
     def remove(model):
         if model.id == 1 or model.id == g.admin.id:
-            raise ValidationError(_("Owner can not be deleted!"))
+            #raise ValidationError(_("Owner can not be deleted!"))
+            abort(422, __("Owner can not be deleted!"))
         users=model.recursive_users_query().all()
         for u in users:
             u.added_by=g.admin.id
