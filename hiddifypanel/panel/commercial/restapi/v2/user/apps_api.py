@@ -101,7 +101,9 @@ class AppAPI(MethodView):
                 hiddifyng_dto = self.__get_hiddifyng_app_dto()
                 v2rayng_dto = self.__get_v2rayng_app_dto()
                 hiddify_android_dto = self.__get_hiddify_android_app_dto()
-                apps_data += ([hiddify_next_dto,hiddifyng_dto,v2rayng_dto,hiddify_android_dto])
+                hiddify_clash_dto = self.__get_hiddify_clash_app_dto()
+                nekobox_dto = self.__get_nekobox_app_dto()
+                apps_data += ([hiddify_next_dto,hiddifyng_dto,v2rayng_dto,hiddify_android_dto,hiddify_clash_dto,nekobox_dto])
             case Platform.windows:
                 hiddify_next_dto = self.__get_hiddify_next_app_dto()
                 hiddifyng_dto = self.__get_hiddifyng_app_dto()
@@ -184,9 +186,11 @@ class AppAPI(MethodView):
             url = base + url_for('static',filename='apps-icon/stash.ico')
         elif app_name == _('app.hiddify.clash.title'):
             url = base + url_for('static',filename='apps-icon/hiddify_clash.ico')
+        elif app_name == _('app.nekobox.title'):
+            url = base + url_for(endpoint='static',filename='apps-icon/nekobox.ico')
 
         return url
-    
+
     def __get_app_install_dto(self,install_type:AppInstallType,url,title=''):
             install_dto = AppInstall()
             install_dto.title = title
@@ -206,6 +210,18 @@ class AppAPI(MethodView):
         dto.install = [self.__get_app_install_dto(AppInstallType.apk,ins_url)]
         return dto
 
+    def __get_nekobox_app_dto(self):
+        dto = AppSchema()
+        dto.title = _('app.nekobox.title')
+        dto.description = _('app.nekobox.description')
+        dto.icon_url = self.__get_app_icon_url(_('app.nekobox.title'))
+        dto.guide_url = ''
+        dto.deeplink = f'clash://install-config?url={self.user_panel_encoded_url}'
+
+        latest_url, version = get_latest_release_url(f'https://github.com/MatsuriDayo/NekoBoxForAndroid')
+        ins_url = latest_url.split('releases/')[0] + f'releases/download/{version}/NB4A-{version}-x86_64.apk'
+        dto.install = [self.__get_app_install_dto(AppInstallType.apk,ins_url)]
+        return dto
     def __get_v2rayng_app_dto(self):
         dto = AppSchema()
         dto.title = _('app.v2rayng.title')
