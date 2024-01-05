@@ -134,7 +134,7 @@ def is_api_call(req_path: str) -> bool:
 
 
 def is_user_api_call() -> bool:
-    if request.blueprint and request.blueprint == 'api_user':
+    if request.blueprint and (request.blueprint == 'api_user' or request.blueprint == 'api_user_uuid'):
         return True
     user_api_call_format = '/api/v2/user/'
     if user_api_call_format in request.path:
@@ -143,7 +143,7 @@ def is_user_api_call() -> bool:
 
 
 def is_admin_api_call() -> bool:
-    if request.blueprint and request.blueprint == 'api_admin' or request.blueprint == 'api_v1':
+    if request.blueprint and (request.blueprint == 'api_admin' or request.blueprint == 'api_admin_uuid' or request.blueprint == 'api_v1'):
         return True
     admin_api_call_format = '/api/v2/admin/'
     if admin_api_call_format in request.path:

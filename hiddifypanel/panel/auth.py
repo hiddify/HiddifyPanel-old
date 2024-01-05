@@ -147,6 +147,10 @@ def init_app(app):
             login_user(account, force=True)
             # print("loggining in")
             if next_url is not None and g.user_agent.is_browser:
+                if hiddify.is_user_api_call():
+                    next_url = next_url.replace('/client/', '/', 1)
+                elif hiddify.is_admin_api_call():
+                    next_url = next_url.replace('/admin/', '/', 1)
                 return redirect(next_url)
 
     @app.url_value_preprocessor

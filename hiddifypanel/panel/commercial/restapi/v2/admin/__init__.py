@@ -5,6 +5,8 @@ from hiddifypanel.models import AdminUser
 
 bp = APIBlueprint("api_admin", __name__, url_prefix="/<proxy_path>/api/v2/admin/", enable_openapi=True)
 
+bp_uuid = APIBlueprint("api_admin_uuid", __name__, url_prefix="/<proxy_path>/<uuid:secret_uuid>/api/v2/admin/", enable_openapi=True)
+
 
 def init_app(app):
 
@@ -24,7 +26,17 @@ def init_app(app):
         from .users_api import UsersApi
         bp.add_url_rule('/user/<uuid:uuid>/', view_func=UserApi)
         bp.add_url_rule('/user/', view_func=UsersApi)
+
+        bp_uuid.add_url_rule('/me/', view_func=AdminInfoApi)
+        bp_uuid.add_url_rule('/server_status/', view_func=AdminServerStatusApi)
+        bp_uuid.add_url_rule('/admin_user/<uuid:uuid>/', view_func=AdminUserApi)
+        bp_uuid.add_url_rule('/admin_user/', view_func=AdminUsersApi)
+        bp_uuid.add_url_rule('/log/', view_func=AdminLogApi)
+        bp_uuid.add_url_rule('/user/<uuid:uuid>/', view_func=UserApi)
+        bp_uuid.add_url_rule('/user/', view_func=UsersApi)
+
     app.register_blueprint(bp)
+    app.register_blueprint(bp_uuid)
 
 
 def has_permission(model) -> bool:
