@@ -1,6 +1,14 @@
 # Changelog
 
 
+## 8.8.6 (2024-01-09)
+
+#### Fix
+
+* Not import in hiddify bug. 
+
+
+
 ## 8.8.5 (2024-01-09)
 
 #### Fix
