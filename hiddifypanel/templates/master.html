@@ -309,7 +309,7 @@ var v;
 
 {% block tail %}
 {% macro pwa_install_btn() -%}
-%if g.user_agent.os.family=="iOS"
+%if g.user_agent['os']=="iOS"
 <i class="fa-solid fa-arrow-up-from-bracket"></i>
 %else
 <button class='btn btn-success' onclick='install_pwa()'>{{_("Install")}}</button>
@@ -338,8 +338,8 @@ var v;
 function cancel_video(){
   player.pauseVideo();
 
-  os="{{g.user_agent.browser.family}}"
-  is_safari=os.indexOf("Safari")>=0
+  app="{{g.user_agent['app']}}"
+  is_safari=app.indexOf("Safari")>=0
   v=$('#guide-video')[0]
   v2=$('#ytplayer')[0]
   v.pause()
@@ -374,7 +374,7 @@ const youtube_map = {
   "windows-hiddifyn": "o9L2sI2T53Q"
 };
 function show_video(file){
-  os="{{g.user_agent.browser.family}}"
+  os="{{g.user_agent['app']}}"
   is_safari=os.indexOf("Safari")>=0
 
   if(youtube_is_open && youtube_map[file]){
@@ -421,12 +421,12 @@ function show_video(file){
 is_ios=false
 {% if g.install_pwa %}
 
-%if g.user_agent.os.family=="iOS" 
+{%if g.user_agent['os']=="iOS" %}
 is_ios=true
-% if not g.pwa and request.endpoint and ("user2.UserView" in request.endpoint or "admin.Dashboard" in request.endpoint)
+{% if not g.pwa and request.endpoint and ("user2.UserView" in request.endpoint or "admin.Dashboard" in request.endpoint) %}
     show_prompt()
-%endif
-%endif
+{%endif%}
+{%endif%}
 window.addEventListener('beforeinstallprompt', (event) => {
   console.log("On before install")
   if (deferredPrompt==null) show_prompt()

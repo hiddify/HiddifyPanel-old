@@ -662,6 +662,7 @@ def add_singbox_ssh(all_base, proxy):
 
 def make_full_singbox_config(domains, **kwargs):
     ua = hiddify.get_user_agent()
+    # return render_template('base_singbox_config.json')
     base_config = json.loads(render_template('base_singbox_config.json'))
     allphttp = [p for p in request.args.get("phttp", "").split(',') if p]
     allptls = [p for p in request.args.get("ptls", "").split(',') if p]

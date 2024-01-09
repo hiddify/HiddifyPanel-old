@@ -70,8 +70,8 @@ def init_app(app):
             session['pwa'] = request.args.get('pwa', '').lower() == 'true'
         g.pwa = session.get('pwa', False)
 
-        g.user_agent = user_agents.parse(request.user_agent.string)
-        if g.user_agent.is_bot:
+        g.user_agent = hiddify.get_user_agent()
+        if g.user_agent["is_bot"]:
             abort(400, "invalid")
         g.proxy_path = values.pop('proxy_path', None) if values else None
         if g.proxy_path != hconfig(ConfigEnum.proxy_path):
