@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: HiddifyPanel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-09 01:10+0100\n"
-"PO-Revision-Date: 2024-01-09 00:11+0100\n"
+"POT-Creation-Date: 2024-01-09 02:25+0100\n"
+"PO-Revision-Date: 2024-01-08 19:23-0600\n"
 "Last-Translator: hidden u\n"
 "Language-Team: English (USA)\n"
 "Language: en_US\n"
@@ -4784,15 +4784,12 @@ msgstr "Actions"
 #~ msgid "app.nekobox.title"
 #~ msgstr "NekoBox"
 
-#, fuzzy
 #~ msgid "app.nekobox.description"
 #~ msgstr "app.nekobox.description"
 
-#, fuzzy
 #~ msgid "app.hiddify-clash-android.description"
 #~ msgstr "app.hiddify-clash-android.description"
 
-#, fuzzy
 #~ msgid "app.hiddify-clash-desktop.description"
 #~ msgstr "app.hiddify-clash-desktop.description"
 

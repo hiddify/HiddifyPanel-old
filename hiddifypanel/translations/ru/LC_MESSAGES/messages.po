@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: HiddifyPT\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-06 12:20-0500\n"
-"PO-Revision-Date: 2024-01-04 17:31-0600\n"
+"PO-Revision-Date: 2024-01-08 19:23-0600\n"
 "Last-Translator: lymanrudni\n"
 "Language-Team: Russian\n"
 "Language: ru\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Loco-Project-Id: 142885\n"
 "X-Loco-Source-Locale: en-US\n"
 
-#: hiddifypanel/models/domain.py:161 hiddifypanel/panel/user/user.py:423
+#: hiddifypanel/models/domain.py:161 hiddifypanel/panel/user/user.py:422
 #: loco:64568c8d11f32d138907df92
 #| msgid "This Domain does not exist in the Panel !"
 msgid "This domain does not exist in the panel!"
@@ -42,16 +42,16 @@ msgstr ""
 "⚠️ Эта версия Hiddify Panel устарела. пожалуйста, обновите его из панели "
 "управления администратора."
 
-#: hiddifypanel/panel/hiddify.py:83 loco:64568c8d11f32d138907df95
+#: hiddifypanel/panel/hiddify.py:96 loco:64568c8d11f32d138907df95
 msgid "Access Denied"
 msgstr "Доступ запрещен"
 
-#: hiddifypanel/panel/hiddify.py:321 loco:64568c8d11f32d138907df96
+#: hiddifypanel/panel/hiddify.py:323 loco:64568c8d11f32d138907df96
 #| msgid "Apply Configs"
 msgid "admin.config.apply_configs"
 msgstr "Применить конфигурацию"
 
-#: hiddifypanel/panel/hiddify.py:322 loco:64568c8d11f32d138907df97
+#: hiddifypanel/panel/hiddify.py:324 loco:64568c8d11f32d138907df97
 #| msgid ""
 #| "Configs have been changed successfully. Click %(link)s to apply the configs."
 #| " It may take 2 minutes to apply"
@@ -60,7 +60,7 @@ msgstr ""
 "Конфигурации успешно изменены. Нажмите %(link)s, чтобы применить их. Это "
 "может занять 2 минуты"
 
-#: hiddifypanel/panel/hiddify.py:324 loco:64568c8d11f32d138907df98
+#: hiddifypanel/panel/hiddify.py:326 loco:64568c8d11f32d138907df98
 #| msgid " ✅ Configs have been changed successfully"
 msgid "config.validation-success-no-reset"
 msgstr "✅ Конфигурации успешно изменены"
@@ -71,7 +71,7 @@ msgstr "✅ Конфигурации успешно изменены"
 #: hiddifypanel/panel/admin/DomainAdmin.py:182
 #: hiddifypanel/panel/admin/QuickSetup.py:146
 #: hiddifypanel/panel/commercial/ParentDomainAdmin.py:111
-#: hiddifypanel/panel/hiddify.py:408 loco:64568c8d11f32d138907df99
+#: hiddifypanel/panel/hiddify.py:410 loco:64568c8d11f32d138907df99
 #| msgid ""
 #| "Domain can not be resolved! There is a problem in your domain. Please check "
 #| "your Domain configurations."
@@ -80,12 +80,12 @@ msgstr ""
 "Не возможно определить IP адрес для домена! В вашем домене возникла "
 "проблема. Пожалуйста, проверьте настройки."
 
-#: hiddifypanel/panel/hiddify.py:440 loco:64568c8d11f32d138907df9a
+#: hiddifypanel/panel/hiddify.py:442 loco:64568c8d11f32d138907df9a
 #| msgid "Last Day"
 msgid "0 - Last day"
 msgstr "Последний день"
 
-#: hiddifypanel/panel/hiddify.py:745 loco:64568c8d11f32d138907df9b
+#: hiddifypanel/panel/hiddify.py:747 loco:64568c8d11f32d138907df9b
 #| msgid ""
 #| "Selected Domain for REALITY is not in the same ASN. To better use of the "
 #| "Protocol, it is better to find a Domain in the same ASN"
@@ -522,7 +522,7 @@ msgstr "Все"
 msgid "You have used this domain in: "
 msgstr "Вы уже используете этот домен в:"
 
-#: hiddifypanel/panel/admin/DomainAdmin.py:186 loco:64568c8d11f32d138907dfd2
+#: hiddifypanel/panel/admin/DomainAdmin.py:183 loco:64568c8d11f32d138907dfd2
 #, python-format
 #| msgid ""
 #| "Domain IP = %(domain_ip)s is not matched with your IP = %(server_ip)s which "
@@ -534,7 +534,7 @@ msgstr ""
 "IP адрес домена = %(domain_ip)s не соответствует вашему IP = %(server_ip)s, "
 "который требуется в режиме Direct."
 
-#: hiddifypanel/panel/admin/DomainAdmin.py:189 loco:64568c8d11f32d138907dfd3
+#: hiddifypanel/panel/admin/DomainAdmin.py:186 loco:64568c8d11f32d138907dfd3
 #, python-format
 #| msgid ""
 #| "In CDN Mode, Domain IP =%(domain_ip)s should be different to your IP "
@@ -4396,7 +4396,7 @@ msgstr ""
 "спутниковые сети, перегруженный общедоступный Wi-Fi, подключение к "
 "зарубежным серверам из Китая)"
 
-#: hiddifypanel/panel/user/link_maker.py:779 loco:64ec34971695a0f792087932
+#: hiddifypanel/panel/user/link_maker.py:780 loco:64ec34971695a0f792087932
 #, python-format
 #| msgid "📅%(expire_days)s Days Remain"
 msgid "📅%(expire_days)s days"
@@ -4746,22 +4746,28 @@ msgstr "Не удалось найти ваши IP-адреса"
 #: hiddifypanel/panel/commercial/restapi/v2/user/apps_api.py:264
 #: hiddifypanel/panel/commercial/restapi/v2/user/apps_api.py:266
 #: loco:6595640ea67eea56b70607d2
+#, fuzzy
+#| msgid "Hiddify Clash"
 msgid "app.hiddify-clash-android.title"
-msgstr ""
+msgstr "Hiddify Столкновение"
 
 #: hiddifypanel/panel/commercial/restapi/v2/user/apps_api.py:194
 #: hiddifypanel/panel/commercial/restapi/v2/user/apps_api.py:333
 #: hiddifypanel/panel/commercial/restapi/v2/user/apps_api.py:335
 #: loco:6595640ea67eea56b70607d3
+#, fuzzy
+#| msgid "Hiddify Clash"
 msgid "app.hiddify-clash-desktop.title"
-msgstr ""
+msgstr "Hiddify Столкновение"
 
 #: hiddifypanel/panel/commercial/restapi/v2/user/apps_api.py:196
 #: hiddifypanel/panel/commercial/restapi/v2/user/apps_api.py:222
 #: hiddifypanel/panel/commercial/restapi/v2/user/apps_api.py:224
 #: loco:6595640ea67eea56b70607d4
+#, fuzzy
+#| msgid "NekoBox"
 msgid "app.nekobox.title"
-msgstr ""
+msgstr "НекоБокс"
 
 #: hiddifypanel/panel/commercial/restapi/v2/user/apps_api.py:223
 #: loco:6595640ea67eea56b70607d5
@@ -4801,25 +4807,41 @@ msgid ""
 msgstr ""
 
 #: hiddifypanel/templates/fake.html:1 loco:6595640ea67eea56b70607dc
+#, fuzzy
+#| msgid "Proxy Path for Admins"
 msgid "config.proxy_path_admin.label"
-msgstr ""
+msgstr "Путь прокси для администраторов"
 
 #: hiddifypanel/templates/fake.html:1 loco:6595640ea67eea56b70607dd
+#, fuzzy
+#| msgid ""
+#| "We use secret proxy path to hide our proxies for the governments and  bots"
 msgid "config.proxy_path_admin.description"
 msgstr ""
+"Мы используем секретный путь прокси, чтобы скрыть наши прокси для "
+"правительств и ботов."
 
 #: hiddifypanel/templates/fake.html:1 loco:6595640ea67eea56b70607de
+#, fuzzy
+#| msgid "Proxy Path for Clients"
 msgid "config.proxy_path_client.label"
-msgstr ""
+msgstr "Путь прокси для клиентов"
 
 #: hiddifypanel/templates/fake.html:1 loco:6595640ea67eea56b70607df
+#, fuzzy
+#| msgid ""
+#| "Secret proxy path hide the proxies from the governments and bots"
 msgid "config.proxy_path_client.description"
-msgstr ""
+msgstr "Секретный путь прокси скрывает прокси от правительств и ботов"
 
 #: hiddifypanel/panel/common_bp/login.py:18 loco:6595c56fb9b4d39ff50e53b2
+#, fuzzy
+#| msgid "Secret Code"
 msgid "login.secret.label"
-msgstr ""
+msgstr "Секретный код"
 
 #: hiddifypanel/panel/common_bp/login.py:20 loco:6595c56fb9b4d39ff50e53b3
+#, fuzzy
+#| msgid "Secret code is given by the service provider."
 msgid "login.secret.description"
-msgstr ""
+msgstr "Секретный код предоставляется поставщиком услуг."
