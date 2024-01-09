@@ -801,7 +801,13 @@ def do_base_64(str):
 
 
 def get_user_agent():
-    return __parse_user_agent(request.user_agent.string)
+    ua = __parse_user_agent(request.user_agent.string)
+
+    if 'is_bot' not in ua:
+        __parse_user_agent.invalidate_all()
+        ua = __parse_user_agent(request.user_agent.string)
+
+    return ua
 
 
 @cache.cache()
