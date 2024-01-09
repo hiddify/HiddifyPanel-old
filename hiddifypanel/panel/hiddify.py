@@ -803,17 +803,27 @@ def do_base_64(str):
 def get_user_agent():
     ua = __parse_user_agent(request.user_agent.string)
 
-    if 'is_bot' not in ua:
+    if ua.get('v', 1) < 2:
         __parse_user_agent.invalidate_all()
         ua = __parse_user_agent(request.user_agent.string)
-
     return ua
+
+
+ua_version_pattern = re.compile(r'/(\d+\.\d+(\.\d+)?)')
 
 
 @cache.cache()
 def __parse_user_agent(ua):
+    # Example: SFA/1.8.0 (239; sing-box 1.8.0)
+    # Example: SFA/1.7.0 (239; sing-box 1.7.0)
+    # Example: HiddifyNext/0.13.6 (android) like ClashMeta v2ray sing-box
+
     uaa = user_agents.parse(request.user_agent.string)
+
+    match = re.search(ua_version_pattern, request.user_agent.string)
+    generic_version = list(map(int, match.group(1).split('.'))) if match else [0, 0, 0]
     res = {}
+    res['v'] = 2
     res["is_bot"] = uaa.is_bot
     res["is_browser"] = re.match('^Mozilla', ua, re.IGNORECASE) and True
     res['os'] = uaa.os.family
@@ -821,13 +831,18 @@ def __parse_user_agent(ua):
     res['is_clash'] = re.match('^(Clash|Stash)', ua, re.IGNORECASE) and True
     res['is_clash_meta'] = re.match('^(Clash-verge|Clash-?Meta|Stash|NekoBox|NekoRay|Pharos|hiddify-desktop)', ua, re.IGNORECASE) and True
     res['is_singbox'] = re.match('^(HiddifyNext|Dart|SFI|SFA)', ua, re.IGNORECASE) and True
-    if (res['is_singbox']):
-        res['singbox_version'] = (1, 8, 0)
-        if re.match('^(SFI|SFA).*1\.[1-7]\.', ua, re.IGNORECASE):
-            res['singbox_version'] = (1, 7, 0)
     res['is_hiddify'] = re.match('^(HiddifyNext)', ua, re.IGNORECASE) and True
+
+    if (res['is_singbox']):
+        res['singbox_version'] = generic_version
+
     if ['is_hiddify']:
-        res['hiddify_version'] = uaa
+        res['hiddify_version'] = generic_version
+        if generic_version[0] == 0 and generic_version[1] <= 13:
+            res['singbox_version'] = [1, 7, 0]
+        else:
+            res['singbox_version'] = [1, 8, 0]
+
     res['is_v2ray'] = re.match('^(Hiddify|FoXray|Fair|v2rayNG|SagerNet|Shadowrocket|V2Box|Loon|Liberty)', ua, re.IGNORECASE) and True
 
     if res['os'] == 'Other':
