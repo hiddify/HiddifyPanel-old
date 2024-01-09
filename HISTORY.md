@@ -1,6 +1,14 @@
 # Changelog
 
 
+## 8.8.8 (2024-01-09)
+
+#### Fix
+
+* User agent issue for singbox 1.7 and hiddify next. 
+
+
+
 ## 8.8.7 (2024-01-09)
 
 #### Fix

@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: HiddifyPT\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-06 12:20-0500\n"
-"PO-Revision-Date: 2024-01-09 05:52-0600\n"
+"PO-Revision-Date: 2024-01-09 07:34-0600\n"
 "Last-Translator: lymanrudni\n"
 "Language-Team: Russian\n"
 "Language: ru\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Loco-Project-Id: 142885\n"
 "X-Loco-Source-Locale: en-US\n"
 
-#: hiddifypanel/models/domain.py:161 hiddifypanel/panel/user/user.py:224
+#: hiddifypanel/models/domain.py:161 hiddifypanel/panel/user/user.py:227
 #: loco:64568c8d11f32d138907df92
 #| msgid "This Domain does not exist in the Panel !"
 msgid "This domain does not exist in the panel!"
@@ -4402,7 +4402,7 @@ msgstr ""
 msgid "📅%(expire_days)s days"
 msgstr "Осталось 📅%(expire_days) дней"
 
-#: hiddifypanel/panel/user/user.py:28 loco:64ec843e54559e5bb40b7963
+#: hiddifypanel/panel/user/user.py:27 loco:64ec843e54559e5bb40b7963
 #| msgid ""
 #| "Please open this link in a browser; it will expire in 5 minutes for security"
 #| " reasons."
