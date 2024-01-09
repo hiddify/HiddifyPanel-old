@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  HiddifyPT\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-26 10:46+0100\n"
-"PO-Revision-Date: 2023-11-22 13:26-0600\n"
+"POT-Creation-Date: 2024-01-09 01:10+0100\n"
+"PO-Revision-Date: 2024-01-04 17:31-0600\n"
 "Last-Translator: lymanrudni\n"
 "Language: pt\n"
 "Language-Team: Portuguese\n"
@@ -13,12 +13,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.12.1\n"
-
-# | msgid "Owner Can Not Be Deleted!"
-#: hiddifypanel/models/admin.py:75
-#, fuzzy
-msgid "Owner can not be deleted!"
-msgstr "O proprietário não pode ser excluído!"
 
 # | msgid "This Domain does not exist in the Panel !"
 #: hiddifypanel/models/domain.py:134 hiddifypanel/panel/user/user.py:281
@@ -282,7 +276,7 @@ msgstr "🌏 Restaurar domínio"
 msgid "Restore Domain description"
 msgstr "Selecione esta opção para restaurar seus domínios"
 
-# | msgid "Override Owner in Backup"
+# | msgid "🔁 Override Owner in Backup"
 #: hiddifypanel/panel/admin/Backup.py:85
 #, fuzzy
 msgid "Override Root Admin"
@@ -397,9 +391,9 @@ msgid "Access Denied!"
 msgstr "Acesso negado"
 
 # | msgid ""
-# | "⚠️ This version of Hiddify Panel is outdated. please update it from admin
-# "
-# | "area."
+# | "⚠️ This version of Hiddify Manager is outdated. please Update it from
+# Admin "
+# | "area"
 #: hiddifypanel/panel/admin/Dashboard.py:30 hiddifypanel/templates/500.html:9
 #, fuzzy
 msgid ""
@@ -857,10 +851,7 @@ msgstr ""
 msgid "config.block_iran_sites.label"
 msgstr "⛔️ Bloquear sites iranianos"
 
-# | msgid ""
-# | "Block Iranian Sites to prevent detection by the government (Experimental:
-# If"
-# | " there is a problem, please disable it and tell us.)"
+# | msgid "Block domestic Sites to prevent detection by the government"
 #: hiddifypanel/panel/admin/QuickSetup.py:114
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:1
@@ -1213,7 +1204,7 @@ msgid "Backup"
 msgstr "Backup"
 
 # | msgid ""
-# | "🔄 Hiddify Panel automatically takes a Backup every 6 Hours. The path of
+# | "🔄 Hiddify Manager automatically takes a Backup every 6 Hours. The path of
 # the Backup files on the server: ⬇️\n"
 # | "<br>\n"
 # | "/opt/hiddify-config/hiddify-panel/backup\n"
@@ -1260,7 +1251,7 @@ msgid "Why Going to Premium?"
 msgstr "Por que ir para premium?"
 
 # | msgid ""
-# | "Hiddify Panel Is Made For Non-Commercial Use. But If You Use This Panel
+# | "Hiddify Manager Is Made For Non-Commercial Use. But If You Use This Panel
 # Commercially, Please Help The Project Grow By Donating. <br/>\n"
 # | "In Exchange For Your Financial Support, We Also Provide Special
 # Facilities For Your Commercial Product.\n"
@@ -2186,16 +2177,16 @@ msgstr ""
 "Especifique o caminho do proxy. É importante especialmente se você "
 "estiver usando HTTP e VMess"
 
-# | msgid "🔑 WARP Plus Key"
+# | msgid "🔑 Warp Plus Key"
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:1
 msgid "config.warp_plus_code.label"
 msgstr "🔑 Chave WARP Plus"
 
 # | msgid ""
-# | "🔝 Increases browsing speed. To get the Key, go to <a
-# href=\"https://t.me/hiddify_board\"> here </a>\n"
-# | "send a message\n"
+# | "🔝 Increases browsing speed. To get the Key, go to the <a
+# href=\"https://1.1.1.1/\"> 1.1.1.1 </a>\n"
+# | "app and purchase the original KEY from Cloudflare\n"
 # | "<br>\n"
 # | "⚠️ If there is an error in this Key, the WARP will be disabled."
 #: hiddifypanel/panel/admin/templates/configfake.html:6
@@ -2209,18 +2200,17 @@ msgstr ""
 "<br>\n"
 "Caso haja algum erro nesta Chave, o WARP será desabilitado."
 
-# | msgid "✴️ WARP+ Mode"
+# | msgid "✴️ Warp+ Mode"
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:1
 msgid "config.warp_mode.label"
 msgstr "✴️ Modo WARP Plus"
 
 # | msgid ""
-# | "✴️ All : All Sites are Removed from WARP\n"
+# | "✴️ All : All Sites use Warp IPs in outbound\n"
 # | "<br>\n"
-# | "☑️ Only Domestic and Blocked Sites: Only Iranian Sites and\n"
-# | "Google, Spotify, Netflix, OpenAi, IPinfo.io\n"
-# | "They use WARP+"
+# | "☑️ Only Domestic and Blocked Sites: Only Domestic Sites and websites like
+# Google, Spotify, Netflix, OpenAi, IPinfo.io use Warp IPs in outbound"
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:1
 msgid "config.warp_mode.description"
@@ -2242,10 +2232,12 @@ msgid "config.warp.label"
 msgstr "WARP Plus"
 
 # | msgid ""
-# | "Warp is a tool that hides your server IP from the sites that your users
-# visit.\n"
+# | "Warp is a tool that hides your server IP in outbound traffic. It means if
+# the users are visiting a website the Warp IP is exposed instead of our
+# server IP.\n"
 # | "<br>\n"
-# | "For example, if you have a problem with Google, it may be fixed."
+# | "For example, if you have a problem with captcha on Google, it might be
+# fixed this way."
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:2
 msgid "config.warp.description"
@@ -2347,7 +2339,10 @@ msgstr "config.first_setup.description"
 msgid "config.warp_enable.label"
 msgstr "Habilitar WARP+"
 
-# | msgid "WARP helps you bypass Google, Spotify and Netflix block"
+# | msgid ""
+# | "Warp helps you bypass Google, Spotify and Netflix restrictions by hiding
+# "
+# | "server IP "
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:1
 msgid "config.warp_enable.description"
@@ -3069,7 +3064,7 @@ msgid "admin.config.title"
 msgstr "Configurações"
 
 # | msgid "📅%(expire_days)s Days Remain"
-#: hiddifypanel/panel/user/link_maker.py:724
+#: hiddifypanel/panel/user/link_maker.py:725
 #, fuzzy, python-format
 msgid "📅%(expire_days)s days"
 msgstr "📅Remanescem: %(expire_days)s dias"
@@ -4271,7 +4266,7 @@ msgstr "Ops! algo deu errado."
 msgid "Please contact hiddify@gmail.com with the details in this page."
 msgstr "Entre em contato com hiddify@gmail.com com os detalhes nesta página."
 
-# | msgid "Hiddify Panel"
+# | msgid "Hiddify Manager"
 #: hiddifypanel/templates/admin-layout.html:18
 #: hiddifypanel/templates/master.html:7
 #, fuzzy
@@ -4463,7 +4458,7 @@ msgstr "⚠️Tem certeza que deseja fazer esta ação?"
 # class=\"btn btn-info share-link\">Dogecoin</a> </div></li>\n"
 # | "</ul>\n"
 # | "We need also other help:\n"
-# | "<li>👥 Share Hiddify Panel with Others</li>\n"
+# | "<li>👥 Share Hiddify Manager with Others</li>\n"
 # | "<li>📝Python Developer</li>\n"
 # | "<li>📝Kotlin Developer</li>\n"
 # | "<li>🖥Content Providers</li>\n"
@@ -4864,7 +4859,7 @@ msgstr "Copiar para a área de transferência: Ctrl+C, Enter"
 msgid "Install"
 msgstr "Instalar"
 
-# | msgid "Hiddify Panel Installation"
+# | msgid "Hiddify Manager Installation"
 #: hiddifypanel/templates/master.html:416
 #, fuzzy
 msgid "Install Hiddify Application"
@@ -4897,6 +4892,10 @@ msgstr "Ações"
 # | msgid "Can not sync child with Parent Panel."
 #~ msgid "can not sync child with parent panel"
 #~ msgstr "Não é possível sincronizar o filho com o painel pai."
+
+# | msgid "Owner Can Not Be Deleted!"
+#~ msgid "Owner can not be deleted!"
+#~ msgstr "O proprietário não pode ser excluído!"
 
 # | msgid "Can not connect to Parent Panel!"
 #~ msgid "Can not connect to parent panel!"
@@ -4955,7 +4954,7 @@ msgstr "Ações"
 #~ "          Bot"
 #~ msgstr ""
 
-# | msgid "Direct Reality Port"
+# | msgid "↔️  Direct Reality Port"
 #~ msgid "config.reality_port.label"
 #~ msgstr "Porto de Realidade Direta"
 
@@ -4987,12 +4986,12 @@ msgstr "Ações"
 #~ msgid "Donation.title"
 #~ msgstr "Doação"
 
-# | msgid "Additional Warp Sites"
+# | msgid "🆚 Additional Warp Sites"
 #~ msgid "config.warp_sites.label"
 #~ msgstr "Sites Warp Adicionais"
 
 # | msgid ""
-# | "Add additional sites to pass through warp (only when warp mode is not
+# | "Add additional sites to pass through Warp (only when warp mode is not
 # None)"
 #~ msgid "config.warp_sites.description"
 #~ msgstr ""
@@ -5026,4 +5025,150 @@ msgstr "Ações"
 # | msgid "API"
 #~ msgid "admin.menu.api"
 #~ msgstr "API"
+
+# | msgid "Hiddify Next"
+#~ msgid "app.hiddify.next.title"
+#~ msgstr "Hiddificar próximo"
+
+# | msgid "HiddifyN"
+#~ msgid "app.hiddifyn.title"
+#~ msgstr "HiddificarN"
+
+# | msgid "V2RayNG"
+#~ msgid "app.v2rayng.title"
+#~ msgstr "V2RayNG"
+
+# | msgid "HiddifyNG"
+#~ msgid "app.hiddifyng.title"
+#~ msgstr "HiddifyNG"
+
+# | msgid "Hiddify Android"
+#~ msgid "app.hiddify-android.title"
+#~ msgstr "Hidificar Android"
+
+# | msgid "FoXray"
+#~ msgid "app.foxray.title"
+#~ msgstr "Raio X"
+
+# | msgid "Shadowrocket"
+#~ msgid "app.shadowrocket.title"
+#~ msgstr "Foguete Sombrio"
+
+# | msgid "Streisand"
+#~ msgid "app.streisand.title"
+#~ msgstr "Streisand"
+
+# | msgid "Loon"
+#~ msgid "app.loon.title"
+#~ msgstr "mergulhão"
+
+# | msgid "Stash"
+#~ msgid "app.stash.title"
+#~ msgstr "Esconderijo"
+
+# | msgid "Hiddify Clash"
+#~ msgid "app.hiddify.clash.title"
+#~ msgstr "Hidificar confronto"
+
+# | msgid "HiddifyN Description"
+#~ msgid "app.hiddifyn.description"
+#~ msgstr "Descrição do HiddifyN"
+
+# | msgid "V2RayNG Description"
+#~ msgid "app.v2rayng.description"
+#~ msgstr "Descrição do V2RayNG"
+
+# | msgid "HiddifyNG Description"
+#~ msgid "app.hiddifyng.description"
+#~ msgstr "Descrição do HiddifyNG"
+
+# | msgid "Hiddify Android Description"
+#~ msgid "app.hiddify-android.description"
+#~ msgstr "Descrição do Hiddify Android"
+
+# | msgid "FoXray Description"
+#~ msgid "app.foxray.description"
+#~ msgstr "Descrição do FoXray"
+
+# | msgid "Shadowrocket Description"
+#~ msgid "app.shadowrocket.description"
+#~ msgstr "Descrição do Foguete Sombrio"
+
+# | msgid "Streisand Description"
+#~ msgid "app.streisand.description"
+#~ msgstr "Descrição"
+
+# | msgid "Loon Description"
+#~ msgid "app.loon.description"
+#~ msgstr "Descrição do mergulhão"
+
+# | msgid "Stash Description"
+#~ msgid "app.stash.description"
+#~ msgstr "Descrição do estoque"
+
+# | msgid "Hiddify Clash Description"
+#~ msgid "app.hiddify.clash.description"
+#~ msgstr "Descrição do Hiddify Clash"
+
+# | msgid "Hiddify Next Description"
+#~ msgid "app.hiddify.next.description"
+#~ msgstr "Hiddify Próxima Descrição"
+
+# | msgid "Couldn't find your IP addresses"
+#~ msgid "Couldn't find your ip addresses"
+#~ msgstr "Não foi possível encontrar seus endereços IP"
+
+#~ msgid "app.hiddify-clash-android.title"
+#~ msgstr ""
+
+#~ msgid "app.hiddify-clash-desktop.title"
+#~ msgstr ""
+
+#~ msgid "app.nekobox.title"
+#~ msgstr ""
+
+#~ msgid "app.nekobox.description"
+#~ msgstr ""
+
+#~ msgid "app.hiddify-clash-android.description"
+#~ msgstr ""
+
+#~ msgid "app.hiddify-clash-desktop.description"
+#~ msgstr ""
+
+#~ msgid "Incorrect Password"
+#~ msgstr ""
+
+#~ msgid "Link is changed!"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The page has been moved to a "
+#~ "new link. Please copy and save the"
+#~ " new link."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Please connect your telegram account to"
+#~ " the panel to be informed about "
+#~ "latest news."
+#~ msgstr ""
+
+#~ msgid "config.proxy_path_admin.label"
+#~ msgstr ""
+
+#~ msgid "config.proxy_path_admin.description"
+#~ msgstr ""
+
+#~ msgid "config.proxy_path_client.label"
+#~ msgstr ""
+
+#~ msgid "config.proxy_path_client.description"
+#~ msgstr ""
+
+#~ msgid "login.secret.label"
+#~ msgstr ""
+
+#~ msgid "login.secret.description"
+#~ msgstr ""
 

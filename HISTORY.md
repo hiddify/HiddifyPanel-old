@@ -1,6 +1,23 @@
 # Changelog
 
 
+## 8.8.3 (2024-01-09)
+
+#### New
+
+* Add auto support for singbox 1.8 and 1.7. 
+
+#### Fix
+
+* Validation error bug. 
+
+#### Other
+
+* Merge pull request #62 from Iam54r1n4/v8. 
+  _fix: validation error bug_
+
+
+
 ## 8.8.2 (2023-11-26)
 
 #### Other
