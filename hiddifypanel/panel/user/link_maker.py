@@ -694,8 +694,8 @@ def make_full_singbox_config(domains, **kwargs):
     }
     base_config['outbounds'].insert(1, smart)
     res = json.dumps(base_config, indent=4)
-    if ua['is_hiddify']:
-        res = res[:-1]+',"experimental": {}}'
+    # if ua['is_hiddify']:
+    #     res = res[:-1]+',"experimental": {}}'
     return res
 
 
