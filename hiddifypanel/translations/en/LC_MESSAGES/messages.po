@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: HiddifyPanel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-13 13:29+0100\n"
-"PO-Revision-Date: 2024-01-11 00:57+0100\n"
+"POT-Creation-Date: 2024-01-13 20:22+0100\n"
+"PO-Revision-Date: 2024-01-13 20:19+0100\n"
 "Last-Translator: hidden u\n"
 "Language-Team: English (USA)\n"
 "Language: en_US\n"
@@ -4850,3 +4850,63 @@ msgstr "Actions"
 #~ msgid ""
 #~ "[Admin only visible message:] You can change this message from settings"
 #~ msgstr "[Admin-exclusive message]: Customizable via settings."
+
+#~ msgid "config.tls_fragment_enable.label"
+#~ msgstr "config.tls_fragment_enable.label"
+
+#~ msgid "config.tls_fragment_enable.description"
+#~ msgstr "config.tls_fragment_enable.description"
+
+#~ msgid "config.tls_fragment_size.label"
+#~ msgstr "config.tls_fragment_size.label"
+
+#~ msgid "config.tls_fragment_size.description"
+#~ msgstr "config.tls_fragment_size.description"
+
+#~ msgid "config.tls_fragment_sleep.label"
+#~ msgstr "config.tls_fragment_sleep.label"
+
+#~ msgid "config.tls_fragment_sleep.description"
+#~ msgstr "config.tls_fragment_sleep.description"
+
+#~ msgid "config.tls_mixed_case.label"
+#~ msgstr "config.tls_mixed_case.label"
+
+#~ msgid "config.tls_mixed_case.description"
+#~ msgstr "config.tls_mixed_case.description"
+
+#~ msgid "config.tls_padding_enable.label"
+#~ msgstr "config.tls_padding_enable.label"
+
+#~ msgid "config.tls_padding_enable.description"
+#~ msgstr "config.tls_padding_enable.description"
+
+#~ msgid "config.tls_padding_length.label"
+#~ msgstr "config.tls_padding_length.label"
+
+#~ msgid "config.tls_padding_length.description"
+#~ msgstr "config.tls_padding_length.description"
+
+#~ msgid "config.hysteria_obfs_enable.label"
+#~ msgstr "config.hysteria_obfs_enable.label"
+
+#~ msgid "config.hysteria_obfs_enable.description"
+#~ msgstr "config.hysteria_obfs_enable.description"
+
+#~ msgid "config.hysteria_up_mbps.label"
+#~ msgstr "config.hysteria_up_mbps.label"
+
+#~ msgid "config.hysteria_up_mbps.description"
+#~ msgstr "config.hysteria_up_mbps.description"
+
+#~ msgid "config.hysteria_down_mbps.label"
+#~ msgstr "config.hysteria_down_mbps.label"
+
+#~ msgid "config.hysteria_down_mbps.description"
+#~ msgstr "config.hysteria_down_mbps.description"
+
+#~ msgid "config.tls_trick.label"
+#~ msgstr "config.tls_trick.label"
+
+#~ msgid "config.tls_trick.description"
+#~ msgstr "config.tls_trick.description"

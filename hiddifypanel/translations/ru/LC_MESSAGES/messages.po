@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: HiddifyPT\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-06 12:20-0500\n"
-"PO-Revision-Date: 2024-01-10 17:57-0600\n"
+"PO-Revision-Date: 2024-01-13 13:19-0600\n"
 "Last-Translator: lymanrudni\n"
 "Language-Team: Russian\n"
 "Language: ru\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Loco-Project-Id: 142885\n"
 "X-Loco-Source-Locale: en-US\n"
 
-#: hiddifypanel/models/domain.py:161 hiddifypanel/panel/user/user.py:227
+#: hiddifypanel/models/domain.py:165 hiddifypanel/panel/user/user.py:227
 #: loco:64568c8d11f32d138907df92
 #| msgid "This Domain does not exist in the Panel !"
 msgid "This domain does not exist in the panel!"
@@ -2356,7 +2356,7 @@ msgid "Disk"
 msgstr "Жесткий диск"
 
 #: hiddifypanel/panel/admin/templates/index.html:142
-#: hiddifypanel/panel/commercial/restapi/v2/user/info_api.py:63
+#: hiddifypanel/panel/commercial/restapi/v2/user/info_api.py:68
 #: loco:64568c8d11f32d138907e0d2
 msgid "Hiddify"
 msgstr "Hiddify"
@@ -2498,24 +2498,24 @@ msgstr "Пожалуйста, подождите"
 msgid "seconds"
 msgstr "Секунды"
 
-#: hiddifypanel/panel/admin/templates/result.html:43
+#: hiddifypanel/panel/admin/templates/result.html:45
 #: loco:64568c8d11f32d138907e0e4
 #| msgid "📄 Log"
 msgid "log"
 msgstr "📄 Журнал"
 
-#: hiddifypanel/panel/admin/templates/result.html:46
+#: hiddifypanel/panel/admin/templates/result.html:48
 #: loco:64568c8d11f32d138907e0e5
 msgid "Click here to see the complete log"
 msgstr "Нажмите здесь, чтобы просмотреть весь журнал"
 
 #: hiddifypanel/panel/admin/templates/model/user_list.html:102
-#: hiddifypanel/panel/admin/templates/result.html:116
+#: hiddifypanel/panel/admin/templates/result.html:118
 #: loco:64568c8d11f32d138907e0e6
 msgid "Success"
 msgstr "Успешно"
 
-#: hiddifypanel/panel/admin/templates/result.html:117
+#: hiddifypanel/panel/admin/templates/result.html:119
 #: loco:64568c8d11f32d138907e0e7
 #| msgid "✅ The Action Done Successfully. You can now leave this page"
 msgid "The action done successfully. You can now leave this page."
@@ -4397,7 +4397,7 @@ msgstr ""
 "спутниковые сети, перегруженный общедоступный Wi-Fi, подключение к "
 "зарубежным серверам из Китая)"
 
-#: hiddifypanel/panel/user/link_maker.py:780 loco:64ec34971695a0f792087932
+#: hiddifypanel/panel/user/link_maker.py:782 loco:64ec34971695a0f792087932
 #, python-format
 #| msgid "📅%(expire_days)s Days Remain"
 msgid "📅%(expire_days)s days"
@@ -4852,7 +4852,7 @@ msgstr "Секретный код предоставляется поставщ�
 msgid "ProxyPath is already used! use different proxy path"
 msgstr "ProxyPath уже используется! используйте другой путь прокси"
 
-#: hiddifypanel/panel/commercial/restapi/v2/user/info_api.py:59
+#: hiddifypanel/panel/commercial/restapi/v2/user/info_api.py:64
 #: loco:659dcadbe5d1d131e00ba492
 #, fuzzy
 msgid ""
@@ -4861,7 +4861,7 @@ msgstr ""
 "Присоединяйтесь к нашему каналу Hiddify в Telegram, чтобы получать последние"
 " обновления Hiddify."
 
-#: hiddifypanel/panel/commercial/restapi/v2/user/info_api.py:61
+#: hiddifypanel/panel/commercial/restapi/v2/user/info_api.py:66
 #: loco:659dd4cbf5e865ef3e0f76a2
 #, fuzzy
 #| msgid "[Admin-exclusive message]: Customizable via settings."
@@ -4870,3 +4870,83 @@ msgid ""
 msgstr ""
 "[Сообщение, видимое только администратору]: Вы можете изменить это сообщение"
 " в настройках."
+
+#: hiddifypanel/templates/fake.html:1 loco:65a2e257b7ef9658390383c2
+msgid "config.tls_fragment_enable.label"
+msgstr ""
+
+#: hiddifypanel/templates/fake.html:1 loco:65a2e257b7ef9658390383c3
+msgid "config.tls_fragment_enable.description"
+msgstr ""
+
+#: hiddifypanel/templates/fake.html:1 loco:65a2e257b7ef9658390383c4
+msgid "config.tls_fragment_size.label"
+msgstr ""
+
+#: hiddifypanel/templates/fake.html:1 loco:65a2e257b7ef9658390383c5
+msgid "config.tls_fragment_size.description"
+msgstr ""
+
+#: hiddifypanel/templates/fake.html:1 loco:65a2e257b7ef9658390383c6
+msgid "config.tls_fragment_sleep.label"
+msgstr ""
+
+#: hiddifypanel/templates/fake.html:1 loco:65a2e257b7ef9658390383c7
+msgid "config.tls_fragment_sleep.description"
+msgstr ""
+
+#: hiddifypanel/templates/fake.html:1 loco:65a2e257b7ef9658390383c8
+msgid "config.tls_mixed_case.label"
+msgstr ""
+
+#: hiddifypanel/templates/fake.html:1 loco:65a2e257b7ef9658390383c9
+msgid "config.tls_mixed_case.description"
+msgstr ""
+
+#: hiddifypanel/templates/fake.html:1 loco:65a2e257b7ef9658390383ca
+msgid "config.tls_padding_enable.label"
+msgstr ""
+
+#: hiddifypanel/templates/fake.html:1 loco:65a2e257b7ef9658390383cb
+msgid "config.tls_padding_enable.description"
+msgstr ""
+
+#: hiddifypanel/templates/fake.html:1 loco:65a2e257b7ef9658390383cc
+msgid "config.tls_padding_length.label"
+msgstr ""
+
+#: hiddifypanel/templates/fake.html:1 loco:65a2e257b7ef9658390383cd
+msgid "config.tls_padding_length.description"
+msgstr ""
+
+#: hiddifypanel/templates/fake.html:1 loco:65a2e257b7ef9658390383ce
+msgid "config.hysteria_obfs_enable.label"
+msgstr ""
+
+#: hiddifypanel/templates/fake.html:1 loco:65a2e257b7ef9658390383cf
+msgid "config.hysteria_obfs_enable.description"
+msgstr ""
+
+#: hiddifypanel/templates/fake.html:1 loco:65a2e257b7ef9658390383d0
+msgid "config.hysteria_up_mbps.label"
+msgstr ""
+
+#: hiddifypanel/templates/fake.html:1 loco:65a2e257b7ef9658390383d1
+msgid "config.hysteria_up_mbps.description"
+msgstr ""
+
+#: hiddifypanel/templates/fake.html:1 loco:65a2e257b7ef9658390383d2
+msgid "config.hysteria_down_mbps.label"
+msgstr ""
+
+#: hiddifypanel/templates/fake.html:1 loco:65a2e257b7ef9658390383d3
+msgid "config.hysteria_down_mbps.description"
+msgstr ""
+
+#: hiddifypanel/templates/fake.html:2 loco:65a2e257b7ef9658390383d4
+msgid "config.tls_trick.label"
+msgstr ""
+
+#: hiddifypanel/templates/fake.html:2 loco:65a2e257b7ef9658390383d5
+msgid "config.tls_trick.description"
+msgstr ""

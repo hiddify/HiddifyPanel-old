@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  HiddifyPanel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-13 13:29+0100\n"
-"PO-Revision-Date: 2024-01-11 00:57+0100\n"
+"POT-Creation-Date: 2024-01-13 20:22+0100\n"
+"PO-Revision-Date: 2024-01-13 20:19+0100\n"
 "Last-Translator: hidden u\n"
 "Language: fa\n"
 "Language-Team: Persian\n"
@@ -5078,4 +5078,64 @@ msgstr "عملیات"
 # | msgid "[Admin-exclusive message]: Customizable via settings."
 #~ msgid "[Admin only visible message:] You can change this message from settings"
 #~ msgstr "[پیام اختصاصی ادمین]: قابل تنظیم از طریق تنظیمات."
+
+#~ msgid "config.tls_fragment_enable.label"
+#~ msgstr ""
+
+#~ msgid "config.tls_fragment_enable.description"
+#~ msgstr ""
+
+#~ msgid "config.tls_fragment_size.label"
+#~ msgstr ""
+
+#~ msgid "config.tls_fragment_size.description"
+#~ msgstr ""
+
+#~ msgid "config.tls_fragment_sleep.label"
+#~ msgstr ""
+
+#~ msgid "config.tls_fragment_sleep.description"
+#~ msgstr ""
+
+#~ msgid "config.tls_mixed_case.label"
+#~ msgstr ""
+
+#~ msgid "config.tls_mixed_case.description"
+#~ msgstr ""
+
+#~ msgid "config.tls_padding_enable.label"
+#~ msgstr ""
+
+#~ msgid "config.tls_padding_enable.description"
+#~ msgstr ""
+
+#~ msgid "config.tls_padding_length.label"
+#~ msgstr ""
+
+#~ msgid "config.tls_padding_length.description"
+#~ msgstr ""
+
+#~ msgid "config.hysteria_obfs_enable.label"
+#~ msgstr ""
+
+#~ msgid "config.hysteria_obfs_enable.description"
+#~ msgstr ""
+
+#~ msgid "config.hysteria_up_mbps.label"
+#~ msgstr ""
+
+#~ msgid "config.hysteria_up_mbps.description"
+#~ msgstr ""
+
+#~ msgid "config.hysteria_down_mbps.label"
+#~ msgstr ""
+
+#~ msgid "config.hysteria_down_mbps.description"
+#~ msgstr ""
+
+#~ msgid "config.tls_trick.label"
+#~ msgstr ""
+
+#~ msgid "config.tls_trick.description"
+#~ msgstr ""
 

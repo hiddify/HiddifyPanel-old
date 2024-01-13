@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  HiddifyPT\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-13 13:29+0100\n"
-"PO-Revision-Date: 2024-01-10 17:57-0600\n"
+"POT-Creation-Date: 2024-01-13 20:22+0100\n"
+"PO-Revision-Date: 2024-01-13 13:19-0600\n"
 "Last-Translator: lymanrudni\n"
 "Language: pt\n"
 "Language-Team: Portuguese\n"
@@ -5202,4 +5202,64 @@ msgstr "Ações"
 #~ "[Mensagem visível apenas pelo administrador]:"
 #~ " Você pode alterar esta mensagem nas"
 #~ " configurações."
+
+#~ msgid "config.tls_fragment_enable.label"
+#~ msgstr ""
+
+#~ msgid "config.tls_fragment_enable.description"
+#~ msgstr ""
+
+#~ msgid "config.tls_fragment_size.label"
+#~ msgstr ""
+
+#~ msgid "config.tls_fragment_size.description"
+#~ msgstr ""
+
+#~ msgid "config.tls_fragment_sleep.label"
+#~ msgstr ""
+
+#~ msgid "config.tls_fragment_sleep.description"
+#~ msgstr ""
+
+#~ msgid "config.tls_mixed_case.label"
+#~ msgstr ""
+
+#~ msgid "config.tls_mixed_case.description"
+#~ msgstr ""
+
+#~ msgid "config.tls_padding_enable.label"
+#~ msgstr ""
+
+#~ msgid "config.tls_padding_enable.description"
+#~ msgstr ""
+
+#~ msgid "config.tls_padding_length.label"
+#~ msgstr ""
+
+#~ msgid "config.tls_padding_length.description"
+#~ msgstr ""
+
+#~ msgid "config.hysteria_obfs_enable.label"
+#~ msgstr ""
+
+#~ msgid "config.hysteria_obfs_enable.description"
+#~ msgstr ""
+
+#~ msgid "config.hysteria_up_mbps.label"
+#~ msgstr ""
+
+#~ msgid "config.hysteria_up_mbps.description"
+#~ msgstr ""
+
+#~ msgid "config.hysteria_down_mbps.label"
+#~ msgstr ""
+
+#~ msgid "config.hysteria_down_mbps.description"
+#~ msgstr ""
+
+#~ msgid "config.tls_trick.label"
+#~ msgstr ""
+
+#~ msgid "config.tls_trick.description"
+#~ msgstr ""
 
