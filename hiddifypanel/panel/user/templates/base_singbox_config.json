@@ -41,14 +41,14 @@
                 ],
                 "outbound": "bypass"
             },
-            {
                 {% if V1_7 %}
+            {
                 "geoip": ["ir"],
-                {%else%}
                 "rule_set": "geoip-ir",
-                {%endif%}
                 "outbound": "bypass"
             },
+                {%else%}
+                {%endif%}
             {
                 "protocol": "quic",
                 "port": [
