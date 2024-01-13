@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: HiddifyPT\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-06 12:20-0500\n"
-"PO-Revision-Date: 2024-01-09 07:34-0600\n"
+"PO-Revision-Date: 2024-01-10 17:57-0600\n"
 "Last-Translator: lymanrudni\n"
 "Language-Team: Russian\n"
 "Language: ru\n"
@@ -287,7 +287,7 @@ msgstr "Выберите этот вариант, чтобы восстанов�
 #: hiddifypanel/panel/admin/ProxyAdmin.py:123
 #: hiddifypanel/panel/admin/QuickSetup.py:99
 #: hiddifypanel/panel/admin/QuickSetup.py:132
-#: hiddifypanel/panel/admin/SettingAdmin.py:281
+#: hiddifypanel/panel/admin/SettingAdmin.py:285
 #: hiddifypanel/panel/common_bp/login.py:25 loco:64568c8d11f32d138907dfba
 msgid "Submit"
 msgstr "Подтвердить"
@@ -512,7 +512,7 @@ msgid "Alias"
 msgstr "Alias"
 
 #: hiddifypanel/panel/admin/DomainAdmin.py:116
-#: hiddifypanel/panel/admin/SettingAdmin.py:178 loco:64568c8d11f32d138907dfd0
+#: hiddifypanel/panel/admin/SettingAdmin.py:182 loco:64568c8d11f32d138907dfd0
 msgid "All"
 msgstr "Все"
 
@@ -553,7 +553,7 @@ msgstr "Ошибка! Domain Fronting не установлено."
 
 #: hiddifypanel/panel/admin/ProxyAdmin.py:66
 #: hiddifypanel/panel/admin/QuickSetup.py:83
-#: hiddifypanel/panel/admin/SettingAdmin.py:109
+#: hiddifypanel/panel/admin/SettingAdmin.py:113
 #: hiddifypanel/panel/common_bp/login.py:57 loco:64568c8d11f32d138907dfd5
 #| msgid "There is an error in one of the fields."
 msgid "config.validation-error"
@@ -584,19 +584,19 @@ msgid "config.admin_lang.label"
 msgstr "🗺️ Язык панели администратора"
 
 #: hiddifypanel/panel/admin/QuickSetup.py:94
-#: hiddifypanel/panel/admin/SettingAdmin.py:182 loco:64568c8d11f32d138907dfda
+#: hiddifypanel/panel/admin/SettingAdmin.py:186 loco:64568c8d11f32d138907dfda
 #| msgid "🇺🇸 English انگلیسی 英语"
 msgid "lang.en"
 msgstr "🇺🇸 English انگلیسی 英语 Английский"
 
 #: hiddifypanel/panel/admin/QuickSetup.py:94
-#: hiddifypanel/panel/admin/SettingAdmin.py:182 loco:64568c8d11f32d138907dfdb
+#: hiddifypanel/panel/admin/SettingAdmin.py:186 loco:64568c8d11f32d138907dfdb
 #| msgid "🇮🇷 Persian فارسی 波斯语"
 msgid "lang.fa"
 msgstr "🇮🇷 Persian فارسی 波斯语 Персидский"
 
 #: hiddifypanel/panel/admin/QuickSetup.py:95
-#: hiddifypanel/panel/admin/SettingAdmin.py:182 loco:64568c8d11f32d138907dfdc
+#: hiddifypanel/panel/admin/SettingAdmin.py:186 loco:64568c8d11f32d138907dfdc
 #| msgid "🇨🇳 Chinese چینی 简体中文"
 msgid "lang.zh"
 msgstr "🇨🇳 Chinese چینی 简体中文 Китайский"
@@ -616,13 +616,13 @@ msgid "config.country.label"
 msgstr "🌍 Страна"
 
 #: hiddifypanel/panel/admin/QuickSetup.py:97
-#: hiddifypanel/panel/admin/SettingAdmin.py:185 loco:64568c8d11f32d138907dfdf
+#: hiddifypanel/panel/admin/SettingAdmin.py:189 loco:64568c8d11f32d138907dfdf
 #| msgid "🇮🇷 Iran"
 msgid "Iran"
 msgstr "🇮🇷 Иран"
 
 #: hiddifypanel/panel/admin/QuickSetup.py:97
-#: hiddifypanel/panel/admin/SettingAdmin.py:185 loco:64568c8d11f32d138907dfe0
+#: hiddifypanel/panel/admin/SettingAdmin.py:189 loco:64568c8d11f32d138907dfe0
 #| msgid "🇨🇳 China"
 msgid "China"
 msgstr "🇨🇳 Китай"
@@ -640,16 +640,16 @@ msgstr ""
 
 #: hiddifypanel/panel/admin/QuickSetup.py:118
 #: hiddifypanel/panel/admin/QuickSetup.py:131
-#: hiddifypanel/panel/admin/SettingAdmin.py:222
-#: hiddifypanel/panel/admin/SettingAdmin.py:225 loco:64568c8d11f32d138907dfe2
+#: hiddifypanel/panel/admin/SettingAdmin.py:226
+#: hiddifypanel/panel/admin/SettingAdmin.py:229 loco:64568c8d11f32d138907dfe2
 #| msgid "Error! Invalid Domain.  The Domain Format is www.google.com"
 msgid "config.Invalid domain"
 msgstr "Ошибка! Неверный домен. Формат домена: www.google.com."
 
 #: hiddifypanel/panel/admin/QuickSetup.py:120
 #: hiddifypanel/panel/admin/QuickSetup.py:122
-#: hiddifypanel/panel/admin/SettingAdmin.py:229
-#: hiddifypanel/panel/admin/SettingAdmin.py:231 loco:64568c8d11f32d138907dfe3
+#: hiddifypanel/panel/admin/SettingAdmin.py:233
+#: hiddifypanel/panel/admin/SettingAdmin.py:235 loco:64568c8d11f32d138907dfe3
 #| msgid "Domain is exist in domains section. Use another Domain"
 msgid "config.Domain already used"
 msgstr "Домен уже существует. Использовать другой домен"
@@ -730,7 +730,7 @@ msgstr ""
 "Домен (%(domain)s)-> IP = %(domain_ip)s не совпадает с вашим IP = "
 "%(server_ip)s . это требуется в режиме Direct"
 
-#: hiddifypanel/panel/admin/SettingAdmin.py:59 loco:64568c8d11f32d138907dfed
+#: hiddifypanel/panel/admin/SettingAdmin.py:60 loco:64568c8d11f32d138907dfed
 #| msgid "Port is Already Used in:"
 msgid "Port is already used! in"
 msgstr "Порт уже используется в:"
@@ -752,60 +752,60 @@ msgstr "Домен не подходит для использования с  R
 msgid "REALITY Fallback domain is not compaitble with server names!"
 msgstr "REALITY Fallback Domain несовместим с именами серверов!"
 
-#: hiddifypanel/panel/admin/SettingAdmin.py:178
+#: hiddifypanel/panel/admin/SettingAdmin.py:182
 #: hiddifypanel/panel/user/templates/home/usage.html:9
 #: loco:64568c8d11f32d138907dff1
 msgid "Disable"
 msgstr "Отключить"
 
-#: hiddifypanel/panel/admin/SettingAdmin.py:178 loco:64568c8d11f32d138907dff2
+#: hiddifypanel/panel/admin/SettingAdmin.py:182 loco:64568c8d11f32d138907dff2
 #| msgid "☑️ Only Blocked and Local Websites"
 msgid "Only Blocked and Local websites"
 msgstr "☑️ Только заблокированные и локальные сайты"
 
-#: hiddifypanel/panel/admin/SettingAdmin.py:186 loco:64568c8d11f32d138907dff3
+#: hiddifypanel/panel/admin/SettingAdmin.py:190 loco:64568c8d11f32d138907dff3
 #| msgid "🇺🇳 Others"
 msgid "Others"
 msgstr "🇺🇳 Другие"
 
-#: hiddifypanel/panel/admin/SettingAdmin.py:188 loco:64568c8d11f32d138907dff4
+#: hiddifypanel/panel/admin/SettingAdmin.py:192 loco:64568c8d11f32d138907dff4
 #| msgid "✅ Release"
 msgid "Release"
 msgstr "✅ Релиз"
 
-#: hiddifypanel/panel/admin/SettingAdmin.py:189 loco:64568c8d11f32d138907dff5
+#: hiddifypanel/panel/admin/SettingAdmin.py:193 loco:64568c8d11f32d138907dff5
 #| msgid "⚠️ Develop"
 msgid "Develop"
 msgstr "⚠️ Разработка"
 
-#: hiddifypanel/panel/admin/SettingAdmin.py:207 loco:64568c8d11f32d138907dff6
+#: hiddifypanel/panel/admin/SettingAdmin.py:211 loco:64568c8d11f32d138907dff6
 #| msgid "✅ Python : Low Performance"
 msgid "lib.telegram.python"
 msgstr "✅ Python: низкая производительность"
 
-#: hiddifypanel/panel/admin/SettingAdmin.py:207 loco:64568c8d11f32d138907dff7
+#: hiddifypanel/panel/admin/SettingAdmin.py:211 loco:64568c8d11f32d138907dff7
 #| msgid "✴️ Go : High Performance - No ad Support"
 msgid "lib.telegram.go"
 msgstr "✴️ Go: высокая производительность – без поддержки рекламы"
 
-#: hiddifypanel/panel/admin/SettingAdmin.py:207 loco:64568c8d11f32d138907dff8
+#: hiddifypanel/panel/admin/SettingAdmin.py:211 loco:64568c8d11f32d138907dff8
 #| msgid "⛔️ Not Working - Original : High Performance"
 msgid "lib.telegram.orignal"
 msgstr "⛔️ Не работает — оригинал: высокая производительность."
 
-#: hiddifypanel/panel/admin/SettingAdmin.py:207 loco:64568c8d11f32d138907dff9
+#: hiddifypanel/panel/admin/SettingAdmin.py:211 loco:64568c8d11f32d138907dff9
 #| msgid "⛔️ NOT Working - Erlang : Medium Performance"
 msgid "lib.telegram.erlang"
 msgstr "⛔️ НЕ работает — Erlang: средняя производительность"
 
-#: hiddifypanel/panel/admin/SettingAdmin.py:208
+#: hiddifypanel/panel/admin/SettingAdmin.py:212
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:1 loco:64568c8d11f32d138907dffa
 #| msgid "🔢  Telegram Proxy Library"
 msgid "config.telegram_lib.label"
 msgstr "🔢 Библиотека Telegram Proxy"
 
-#: hiddifypanel/panel/admin/SettingAdmin.py:208
+#: hiddifypanel/panel/admin/SettingAdmin.py:212
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:1 loco:64568c8d11f32d138907dffb
 #| msgid ""
@@ -829,17 +829,17 @@ msgstr "Тестируйте и предложите домеy"
 msgid "Invalid REALITY hostnames"
 msgstr "Неверные имена хостов REALITY"
 
-#: hiddifypanel/panel/admin/SettingAdmin.py:242 loco:64568c8d11f32d138907dffe
+#: hiddifypanel/panel/admin/SettingAdmin.py:246 loco:64568c8d11f32d138907dffe
 #| msgid "Invalid Admin Link"
 msgid "Invalid admin link"
 msgstr "Неверная ссылка администратора"
 
-#: hiddifypanel/panel/admin/SettingAdmin.py:244 loco:64568c8d11f32d138907dfff
+#: hiddifypanel/panel/admin/SettingAdmin.py:248 loco:64568c8d11f32d138907dfff
 #| msgid "Invalid Telegram Bot Token"
 msgid "config.Invalid telegram bot token"
 msgstr "Неверный токен Telegram-бота"
 
-#: hiddifypanel/panel/admin/SettingAdmin.py:246 loco:64568c8d11f32d138907e000
+#: hiddifypanel/panel/admin/SettingAdmin.py:250 loco:64568c8d11f32d138907e000
 #| msgid ""
 #| "Invalid Link. it should be on this format: (https or http://example.com)"
 msgid "config.Invalid brand link"
@@ -847,7 +847,7 @@ msgstr ""
 "Некорректная ссылка. Поддерживается следующий формат: (https или "
 "http://example.com)"
 
-#: hiddifypanel/panel/admin/SettingAdmin.py:251
+#: hiddifypanel/panel/admin/SettingAdmin.py:255
 #: hiddifypanel/panel/common_bp/login.py:19
 #: hiddifypanel/panel/common_bp/login.py:23 loco:64568c8d11f32d138907e001
 #| msgid ""
@@ -856,13 +856,13 @@ msgstr ""
 msgid "config.invalid uuid"
 msgstr "Неверный UUID. пример: 6098ea35-8cb2-4a08-ba15-2be25bc49cb6"
 
-#: hiddifypanel/panel/admin/SettingAdmin.py:255 loco:64568c8d11f32d138907e002
+#: hiddifypanel/panel/admin/SettingAdmin.py:259 loco:64568c8d11f32d138907e002
 #| msgid "Invalid Proxy Path. It should be ASCI string (a-z A-Z 0-9)"
 msgid "config.Invalid proxy path"
 msgstr "Неверный Proxy Path Это должна быть строка ASCI (a-z A-Z 0-9)."
 
-#: hiddifypanel/panel/admin/SettingAdmin.py:260
-#: hiddifypanel/panel/admin/SettingAdmin.py:263 loco:64568c8d11f32d138907e003
+#: hiddifypanel/panel/admin/SettingAdmin.py:264
+#: hiddifypanel/panel/admin/SettingAdmin.py:267 loco:64568c8d11f32d138907e003
 #| msgid ""
 #| "Invalid Port. it should be comma separated Integer e.g.  2052,2053"
 msgid "config.Invalid port"
@@ -2356,6 +2356,7 @@ msgid "Disk"
 msgstr "Жесткий диск"
 
 #: hiddifypanel/panel/admin/templates/index.html:142
+#: hiddifypanel/panel/commercial/restapi/v2/user/info_api.py:63
 #: loco:64568c8d11f32d138907e0d2
 msgid "Hiddify"
 msgstr "Hiddify"
@@ -3994,17 +3995,17 @@ msgid "Actions"
 msgstr "Действия"
 
 #: hiddifypanel/panel/admin/QuickSetup.py:94
-#: hiddifypanel/panel/admin/SettingAdmin.py:183 loco:6463e47b1551d9464502ce32
+#: hiddifypanel/panel/admin/SettingAdmin.py:187 loco:6463e47b1551d9464502ce32
 #| msgid "🇵🇹 Portuguese پرتغالی 葡萄牙語"
 msgid "lang.pt"
 msgstr "🇵🇹 Portuguese پرتغالی 葡萄牙語 "
 
-#: hiddifypanel/panel/admin/SettingAdmin.py:175 loco:646409edb168e60a370b1382
+#: hiddifypanel/panel/admin/SettingAdmin.py:179 loco:646409edb168e60a370b1382
 #| msgid "☢️ XRay"
 msgid "Xray"
 msgstr "☢️ XRay"
 
-#: hiddifypanel/panel/admin/SettingAdmin.py:175 loco:646409edb168e60a370b1383
+#: hiddifypanel/panel/admin/SettingAdmin.py:179 loco:646409edb168e60a370b1383
 #| msgid "📦 SingBox"
 msgid "SingBox"
 msgstr "📦 SingBox"
@@ -4468,7 +4469,7 @@ msgstr "Переопределение администратора"
 msgid "It will override the root admin to the current user"
 msgstr "Переопределение прав администратора на текущего пользователя"
 
-#: hiddifypanel/panel/admin/SettingAdmin.py:188 loco:6500fac29aa7f2841406b702
+#: hiddifypanel/panel/admin/SettingAdmin.py:192 loco:6500fac29aa7f2841406b702
 #| msgid "☑️ Beta"
 msgid "Beta"
 msgstr "☑️ Бета"
@@ -4497,7 +4498,7 @@ msgstr ""
 "нагрузку на систему. (Прямое подключение к прокси должно быть разрешено)"
 
 #: hiddifypanel/panel/admin/QuickSetup.py:95
-#: hiddifypanel/panel/admin/SettingAdmin.py:183 loco:6527aef847743be7c40f5953
+#: hiddifypanel/panel/admin/SettingAdmin.py:187 loco:6527aef847743be7c40f5953
 #| msgid "🇷🇺 Russian روسی Русский"
 msgid "lang.ru"
 msgstr "🇷🇺 Russian روسی Русский"
@@ -4845,3 +4846,27 @@ msgstr "Секретный код"
 #| msgid "Secret code is given by the service provider."
 msgid "login.secret.description"
 msgstr "Секретный код предоставляется поставщиком услуг."
+
+#: hiddifypanel/panel/admin/SettingAdmin.py:81 loco:659d6e9a83671ad0d00dfac2
+#, fuzzy
+msgid "ProxyPath is already used! use different proxy path"
+msgstr "ProxyPath уже используется! используйте другой путь прокси"
+
+#: hiddifypanel/panel/commercial/restapi/v2/user/info_api.py:59
+#: loco:659dcadbe5d1d131e00ba492
+#, fuzzy
+msgid ""
+"Join our Hiddify Telegram channel to get the latest updates on Hiddify."
+msgstr ""
+"Присоединяйтесь к нашему каналу Hiddify в Telegram, чтобы получать последние"
+" обновления Hiddify."
+
+#: hiddifypanel/panel/commercial/restapi/v2/user/info_api.py:61
+#: loco:659dd4cbf5e865ef3e0f76a2
+#, fuzzy
+#| msgid "[Admin-exclusive message]: Customizable via settings."
+msgid ""
+"[Admin only visible message:] You can change this message from settings"
+msgstr ""
+"[Сообщение, видимое только администратору]: Вы можете изменить это сообщение"
+" в настройках."
