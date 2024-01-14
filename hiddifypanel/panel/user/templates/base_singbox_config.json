@@ -22,33 +22,40 @@
         "auto_detect_interface": true,
         "override_android_vpn": true,
         "final": "Select",
-  {% if V1_7 %}
+  {% if V1_7 and hconfig(ConfigEnum.country)=="ir" %}
   "geoip": {
-      "download_url": "https://github.com/Chocolate4U/Iran-sing-box-rules/releases/latest/download/geoip.db"
-  },
-  "geosite": {
-    "download_url": "https://github.com/Chocolate4U/Iran-sing-box-rules/releases/latest/download/geosite.db"
-  },
+
+      "download_url": "https://github.com/Chocolate4U/Iran-sing-box-rules/releases/latest/download/geoip.db",
+      "download_detour":"bypass"
+    },
+    "geosite": {
+        "download_url": "https://github.com/Chocolate4U/Iran-sing-box-rules/releases/latest/download/geosite.db",
+        "download_detour":"bypass"
+    },
   {%else%}
     "rule_set": [
+        {%if hconfig(ConfigEnum.country)=="ir"%}
       {
         "tag": "geosite-ir",
         "type": "remote",
         "format": "binary",
         "url": "https:\/\/raw.githubusercontent.com\/Chocolate4U\/Iran-sing-box-rules\/rule-set\/geosite-ir.srs"
       },
+      {%endif%}
       {
         "tag": "geosite-category-ads-all",
         "type": "remote",
         "format": "binary",
         "url": "https:\/\/raw.githubusercontent.com\/Chocolate4U\/Iran-sing-box-rules\/rule-set\/geosite-category-ads-all.srs"
-      },
-      {
+      }
+      {%if hconfig(ConfigEnum.country)=="ir"%}
+      ,{
         "tag": "geoip-ir",
         "type": "remote",
         "format": "binary",
         "url": "https:\/\/raw.githubusercontent.com\/Chocolate4U\/Iran-sing-box-rules\/rule-set\/geoip-ir.srs"
       }
+      {%endif%}
     ],
   {%endif%}
         "rules": [
@@ -64,12 +71,15 @@
                 ],
                 "outbound": "dns-out"
             },
+            {%if hconfig(ConfigEnum.country)in ["ir","cn","ru"]%}
             {
                 "domain_suffix": [
-                    "ir"
+                    "{{hconfig(ConfigEnum.country)}}"
                 ],
                 "outbound": "bypass"
             },
+            {%endif%}
+            
             {
                 {% if V1_7 %}
                 "geosite": "category-ads-all",
@@ -78,15 +88,17 @@
                 {%endif%}
                 "outbound": "block"
             },
+            {%if hconfig(ConfigEnum.country) in ["ir","cn","ru"]%}
             {
                 {% if V1_7 %}
-                "geoip": ["ir"],
+                "geoip": ["{{hconfig(ConfigEnum.country)}}"],
                 {%else%}
-                "rule_set": "geoip-ir",
-                "rule_set": "geosite-ir",
+                "rule_set": "geoip-{{hconfig(ConfigEnum.country)}}",
+                "rule_set": "geosite-{{hconfig(ConfigEnum.country)}}",
                 {%endif%}
                 "outbound": "bypass"
             },
+            {%endif%}
             {
                 "protocol": "quic",
                 "port": [
@@ -156,12 +168,14 @@
                 ],
                 "server": "dns-local"
             },
+            {%if hconfig(ConfigEnum.country)in ["ir","cn","ru"]%}
             {
                 "domain_suffix": [
-                    "ir"
+                    "{{hconfig(ConfigEnum.country)}}"
                 ],
                 "server": "dns-local"
             },
+                {%endif%}
             {
                 "outbound": "direct",
                 "server": "dns-local"
