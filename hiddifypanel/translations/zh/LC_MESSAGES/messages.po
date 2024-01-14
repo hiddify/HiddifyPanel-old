@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  HiddifyPanel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-13 20:22+0100\n"
-"PO-Revision-Date: 2024-01-13 20:19+0100\n"
+"POT-Creation-Date: 2024-01-15 00:12+0100\n"
+"PO-Revision-Date: 2024-01-15 00:10+0100\n"
 "Last-Translator: hidden u\n"
 "Language: zh\n"
 "Language-Team: Chinese\n"
@@ -3344,7 +3344,7 @@ msgstr ""
 msgid "Click to Start Anti-Filter."
 msgstr "<i class=\"fa-solid fa-play\"></i> 点击启动反封锁。"
 
-# | msgid "One-click setup link for all applications (recommended)."
+# | msgid "One-click setup link for all applications (recommended)"
 #: hiddifypanel/panel/user/templates/home/one_click.html:16
 msgid "Unified link for all application."
 msgstr "为所有应用一键设置链接（推荐）。"
@@ -3990,12 +3990,12 @@ msgstr ""
 msgid "config.hysteria_enable.label"
 msgstr "启用 Hysteria"
 
-# | msgid "To enable UDP based Hysteria Protocol"
+# | msgid "To Enable UDP based Hysteria Protocol"
 #: hiddifypanel/templates/fake.html:1
 msgid "config.hysteria_enable.description"
 msgstr "启用基于 UDP 的 Hysteria 协议"
 
-# | msgid "Hysteria2 Port"
+# | msgid "🔍 Hysteria2 Port"
 #: hiddifypanel/templates/fake.html:1
 msgid "config.hysteria_port.label"
 msgstr "Hysteria 端口"
@@ -4487,7 +4487,7 @@ msgstr "动作"
 #~ msgstr "使用带有特殊字符的别名，可能会导致某些客户端出现问题，例如 FairVPN"
 
 # | msgid ""
-# | "You should visit this page without VPN Your Country=%(your_country)s\n"
+# | "You should visit this page without VPN Your Country =%(your_country)s\n"
 # | "Expected=%(expected_country)s"
 #~ msgid ""
 #~ "You should visit this page without VPN. Your country=%(your_country)s\n"
@@ -4700,9 +4700,11 @@ msgstr "动作"
 #~ msgid "app.hiddify-clash-desktop.description"
 #~ msgstr ""
 
+# | msgid "⚠️ Incorrect Password"
 #~ msgid "Incorrect Password"
 #~ msgstr ""
 
+# | msgid "ℹ️ Link is Changed!"
 #~ msgid "Link is changed!"
 #~ msgstr ""
 
@@ -4712,13 +4714,16 @@ msgstr "动作"
 #~ " new link."
 #~ msgstr ""
 
+# | msgid ""
+# | "Please connect your Telegram account to the panel to be informed about "
+# | "latest news."
 #~ msgid ""
 #~ "Please connect your telegram account to"
 #~ " the panel to be informed about "
 #~ "latest news."
 #~ msgstr ""
 
-# | msgid "Proxy Path for Admins"
+# | msgid "🔐 Proxy Path for Admins"
 #~ msgid "config.proxy_path_admin.label"
 #~ msgstr "管理员的代理路径"
 
@@ -4728,7 +4733,7 @@ msgstr "动作"
 #~ msgid "config.proxy_path_admin.description"
 #~ msgstr "我们使用秘密代理路径来为政府和机器人隐藏我们的代理"
 
-# | msgid "Proxy Path for Clients"
+# | msgid "🔏 Proxy Path for Clients"
 #~ msgid "config.proxy_path_client.label"
 #~ msgstr "客户端的代理路径"
 
@@ -4755,63 +4760,84 @@ msgstr "动作"
 #~ msgid "[Admin only visible message:] You can change this message from settings"
 #~ msgstr "[仅管理员可见的消息]：您可以从设置中更改此消息。"
 
+# | msgid "⏯ Enable TLS Fragment"
 #~ msgid "config.tls_fragment_enable.label"
 #~ msgstr ""
 
+# | msgid ""
+# | "Under some circumstances, it can bypass the SNI blacklist system"
 #~ msgid "config.tls_fragment_enable.description"
 #~ msgstr ""
 
+# | msgid "🎚 TLS Fragment Size"
 #~ msgid "config.tls_fragment_size.label"
 #~ msgstr ""
 
+# | msgid "The Size of each Packet"
 #~ msgid "config.tls_fragment_size.description"
 #~ msgstr ""
 
+# | msgid "⏱ TLS Fragment Sleep"
 #~ msgid "config.tls_fragment_sleep.label"
 #~ msgstr ""
 
+# | msgid "The time delay between Fragments"
 #~ msgid "config.tls_fragment_sleep.description"
 #~ msgstr ""
 
+# | msgid "🔠 Enable TLS Mixed SNI Case"
 #~ msgid "config.tls_mixed_case.label"
 #~ msgstr ""
 
+# | msgid "Enables TLS Mixed SNI Case Fragmentation"
 #~ msgid "config.tls_mixed_case.description"
 #~ msgstr ""
 
+# | msgid "♒️ Enable TLS Padding"
 #~ msgid "config.tls_padding_enable.label"
 #~ msgstr ""
 
+# | msgid "Enables Padding for TLS Fragmentation"
 #~ msgid "config.tls_padding_enable.description"
 #~ msgstr ""
 
+# | msgid "📏 TLS Padding"
 #~ msgid "config.tls_padding_length.label"
 #~ msgstr ""
 
+# | msgid "The length of the Padding for TLS Fragmentation"
 #~ msgid "config.tls_padding_length.description"
 #~ msgstr ""
 
+# | msgid "🚧 Hysteria OBFS Enable"
 #~ msgid "config.hysteria_obfs_enable.label"
 #~ msgstr ""
 
+# | msgid " Enables Hysteria Obfuscation (Salamander)"
 #~ msgid "config.hysteria_obfs_enable.description"
 #~ msgstr ""
 
+# | msgid "⬆️ Hysteria Upload (mbps)"
 #~ msgid "config.hysteria_up_mbps.label"
 #~ msgstr ""
 
+# | msgid "Hysteria Maximum Upload Speed"
 #~ msgid "config.hysteria_up_mbps.description"
 #~ msgstr ""
 
+# | msgid "⬇️ Hysteria Download (mbps)"
 #~ msgid "config.hysteria_down_mbps.label"
 #~ msgstr ""
 
+# | msgid "Hysteria Maximum Download Speed"
 #~ msgid "config.hysteria_down_mbps.description"
 #~ msgstr ""
 
+# | msgid "🎛 TLS Trick"
 #~ msgid "config.tls_trick.label"
 #~ msgstr ""
 
+# | msgid "TLS Fragmentation configurations could be set in this section"
 #~ msgid "config.tls_trick.description"
 #~ msgstr ""
 

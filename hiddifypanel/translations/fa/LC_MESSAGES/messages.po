@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  HiddifyPanel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-13 20:22+0100\n"
-"PO-Revision-Date: 2024-01-13 20:19+0100\n"
+"POT-Creation-Date: 2024-01-15 00:12+0100\n"
+"PO-Revision-Date: 2024-01-15 00:10+0100\n"
 "Last-Translator: hidden u\n"
 "Language: fa\n"
 "Language-Team: Persian\n"
@@ -3571,7 +3571,7 @@ msgstr ""
 msgid "Click to Start Anti-Filter."
 msgstr "<i class=\"fa-solid fa-caret-left\"></i> کلیک برای اعمال فیلترشکن"
 
-# | msgid "One-click setup link for all applications (recommended)."
+# | msgid "One-click setup link for all applications (recommended)"
 #: hiddifypanel/panel/user/templates/home/one_click.html:16
 msgid "Unified link for all application."
 msgstr "لینک یکسان برای همه برنامه‌ها"
@@ -4245,12 +4245,12 @@ msgstr ""
 msgid "config.hysteria_enable.label"
 msgstr "هیستریا را فعال کنید"
 
-# | msgid "To enable UDP based Hysteria Protocol"
+# | msgid "To Enable UDP based Hysteria Protocol"
 #: hiddifypanel/templates/fake.html:1
 msgid "config.hysteria_enable.description"
 msgstr "برای فعال کردن پروتکل هیستریا مبتنی بر UDP"
 
-# | msgid "Hysteria2 Port"
+# | msgid "🔍 Hysteria2 Port"
 #: hiddifypanel/templates/fake.html:1
 msgid "config.hysteria_port.label"
 msgstr "پورت هیستریا"
@@ -4794,7 +4794,7 @@ msgstr "عملیات"
 #~ "کند"
 
 # | msgid ""
-# | "You should visit this page without VPN Your Country=%(your_country)s\n"
+# | "You should visit this page without VPN Your Country =%(your_country)s\n"
 # | "Expected=%(expected_country)s"
 #~ msgid ""
 #~ "You should visit this page without VPN. Your country=%(your_country)s\n"
@@ -5021,11 +5021,13 @@ msgstr "عملیات"
 #~ msgid "app.hiddify-clash-desktop.description"
 #~ msgstr ""
 
+# | msgid "⚠️ Incorrect Password"
 #~ msgid "Incorrect Password"
-#~ msgstr ""
+#~ msgstr "⚠️ رمز عبور اشتباه است"
 
+# | msgid "ℹ️ Link is Changed!"
 #~ msgid "Link is changed!"
-#~ msgstr ""
+#~ msgstr "ℹ️ لینک تغییر کرد!"
 
 #~ msgid ""
 #~ "The page has been moved to a "
@@ -5033,13 +5035,16 @@ msgstr "عملیات"
 #~ " new link."
 #~ msgstr ""
 
+# | msgid ""
+# | "Please connect your Telegram account to the panel to be informed about "
+# | "latest news."
 #~ msgid ""
 #~ "Please connect your telegram account to"
 #~ " the panel to be informed about "
 #~ "latest news."
-#~ msgstr ""
+#~ msgstr "لطفا اکانت تلگرام خود را به پنل متصل کنید تا از آخرین اخبار مطلع شوید."
 
-# | msgid "Proxy Path for Admins"
+# | msgid "🔐 Proxy Path for Admins"
 #~ msgid "config.proxy_path_admin.label"
 #~ msgstr "مسیر پروکسی برای مدیران"
 
@@ -5052,7 +5057,7 @@ msgstr "عملیات"
 #~ " کردن پروکسی های خود برای دولت "
 #~ "ها و ربات ها استفاده می کنیم"
 
-# | msgid "Proxy Path for Clients"
+# | msgid "🔏 Proxy Path for Clients"
 #~ msgid "config.proxy_path_client.label"
 #~ msgstr "مسیر پروکسی برای مشتریان"
 
@@ -5079,63 +5084,84 @@ msgstr "عملیات"
 #~ msgid "[Admin only visible message:] You can change this message from settings"
 #~ msgstr "[پیام اختصاصی ادمین]: قابل تنظیم از طریق تنظیمات."
 
+# | msgid "⏯ Enable TLS Fragment"
 #~ msgid "config.tls_fragment_enable.label"
-#~ msgstr ""
+#~ msgstr "⏯ TLS Fragment را فعال کنید"
 
+# | msgid ""
+# | "Under some circumstances, it can bypass the SNI blacklist system"
 #~ msgid "config.tls_fragment_enable.description"
-#~ msgstr ""
+#~ msgstr "تحت برخی شرایط، می تواند سیستم لیست سیاه SNI را دور بزند"
 
+# | msgid "🎚 TLS Fragment Size"
 #~ msgid "config.tls_fragment_size.label"
-#~ msgstr ""
+#~ msgstr "🎚 اندازه قطعه TLS"
 
+# | msgid "The Size of each Packet"
 #~ msgid "config.tls_fragment_size.description"
-#~ msgstr ""
+#~ msgstr "اندازه هر بسته"
 
+# | msgid "⏱ TLS Fragment Sleep"
 #~ msgid "config.tls_fragment_sleep.label"
-#~ msgstr ""
+#~ msgstr "⏱ TLS Fragment Sleep"
 
+# | msgid "The time delay between Fragments"
 #~ msgid "config.tls_fragment_sleep.description"
-#~ msgstr ""
+#~ msgstr "تاخیر زمانی بین قطعات"
 
+# | msgid "🔠 Enable TLS Mixed SNI Case"
 #~ msgid "config.tls_mixed_case.label"
-#~ msgstr ""
+#~ msgstr "🔠 TLS Mixed SNI Case را فعال کنید"
 
+# | msgid "Enables TLS Mixed SNI Case Fragmentation"
 #~ msgid "config.tls_mixed_case.description"
-#~ msgstr ""
+#~ msgstr "TLS Mixed SNI Case Fragmentation را فعال می کند"
 
+# | msgid "♒️ Enable TLS Padding"
 #~ msgid "config.tls_padding_enable.label"
-#~ msgstr ""
+#~ msgstr "♒️ TLS Padding را فعال کنید"
 
+# | msgid "Enables Padding for TLS Fragmentation"
 #~ msgid "config.tls_padding_enable.description"
-#~ msgstr ""
+#~ msgstr "Padding را برای تکه تکه شدن TLS فعال می کند"
 
+# | msgid "📏 TLS Padding"
 #~ msgid "config.tls_padding_length.label"
 #~ msgstr ""
 
+# | msgid "The length of the Padding for TLS Fragmentation"
 #~ msgid "config.tls_padding_length.description"
 #~ msgstr ""
 
+# | msgid "🚧 Hysteria OBFS Enable"
 #~ msgid "config.hysteria_obfs_enable.label"
 #~ msgstr ""
 
+# | msgid " Enables Hysteria Obfuscation (Salamander)"
 #~ msgid "config.hysteria_obfs_enable.description"
 #~ msgstr ""
 
+# | msgid "⬆️ Hysteria Upload (mbps)"
 #~ msgid "config.hysteria_up_mbps.label"
 #~ msgstr ""
 
+# | msgid "Hysteria Maximum Upload Speed"
 #~ msgid "config.hysteria_up_mbps.description"
 #~ msgstr ""
 
+# | msgid "⬇️ Hysteria Download (mbps)"
 #~ msgid "config.hysteria_down_mbps.label"
 #~ msgstr ""
 
+# | msgid "Hysteria Maximum Download Speed"
 #~ msgid "config.hysteria_down_mbps.description"
 #~ msgstr ""
 
+# | msgid "🎛 TLS Trick"
 #~ msgid "config.tls_trick.label"
 #~ msgstr ""
 
+# | msgid "TLS Fragmentation configurations could be set in this section"
 #~ msgid "config.tls_trick.description"
 #~ msgstr ""
 

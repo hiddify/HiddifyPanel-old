@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: HiddifyPT\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-06 12:20-0500\n"
-"PO-Revision-Date: 2024-01-13 13:19-0600\n"
+"POT-Creation-Date: 2023-05-06 19:20+0200\n"
+"PO-Revision-Date: 2024-01-15 00:10+0100\n"
 "Last-Translator: lymanrudni\n"
 "Language-Team: Russian\n"
 "Language: ru\n"
@@ -4247,7 +4247,7 @@ msgstr "<i class=\"fa-solid fa-play\"></i> Нажмите, чтобы запус
 
 #: hiddifypanel/panel/user/templates/home/one_click.html:16
 #: loco:64ea09fde8598ac9c7025934
-#| msgid "One-click setup link for all applications (recommended)."
+#| msgid "One-click setup link for all applications (recommended)"
 msgid "Unified link for all application."
 msgstr "Единая ссылка для всех приложений"
 
@@ -4366,12 +4366,12 @@ msgid "config.hysteria_enable.label"
 msgstr "Включить Hysteria"
 
 #: hiddifypanel/templates/fake.html:1 loco:64eb16a134f28114f0034ee3
-#| msgid "To enable UDP based Hysteria Protocol"
+#| msgid "To Enable UDP based Hysteria Protocol"
 msgid "config.hysteria_enable.description"
 msgstr "Включение протокола Hysteria на основе UDP"
 
 #: hiddifypanel/templates/fake.html:1 loco:64eb16a134f28114f0034ee4
-#| msgid "Hysteria2 Port"
+#| msgid "🔍 Hysteria2 Port"
 msgid "config.hysteria_port.label"
 msgstr "Hysteria Порт"
 
@@ -4786,13 +4786,17 @@ msgid "app.hiddify-clash-desktop.description"
 msgstr ""
 
 #: hiddifypanel/panel/common_bp/login.py:69 loco:6595640ea67eea56b70607d8
+#, fuzzy
+#| msgid "⚠️ Incorrect Password"
 msgid "Incorrect Password"
-msgstr ""
+msgstr "⚠️ Неверный пароль."
 
 #: hiddifypanel/panel/user/templates/redirect_to_new_format.html:16
 #: loco:6595640ea67eea56b70607d9
+#, fuzzy
+#| msgid "ℹ️ Link is Changed!"
 msgid "Link is changed!"
-msgstr ""
+msgstr "ℹ️Ссылка изменена!"
 
 #: hiddifypanel/panel/user/templates/redirect_to_new_format.html:16
 #: loco:6595640ea67eea56b70607da
@@ -4802,14 +4806,20 @@ msgstr ""
 
 #: hiddifypanel/panel/user/templates/home/home.html:314
 #: loco:6595640ea67eea56b70607db
+#, fuzzy
+#| msgid ""
+#| "Please connect your Telegram account to the panel to be informed about "
+#| "latest news."
 msgid ""
 "Please connect your telegram account to the panel to be informed about "
 "latest news."
 msgstr ""
+"Пожалуйста, подключите свой аккаунт Telegram к панели, чтобы быть в курсе "
+"последних новостей."
 
 #: hiddifypanel/templates/fake.html:1 loco:6595640ea67eea56b70607dc
 #, fuzzy
-#| msgid "Proxy Path for Admins"
+#| msgid "🔐 Proxy Path for Admins"
 msgid "config.proxy_path_admin.label"
 msgstr "Путь прокси для администраторов"
 
@@ -4824,7 +4834,7 @@ msgstr ""
 
 #: hiddifypanel/templates/fake.html:1 loco:6595640ea67eea56b70607de
 #, fuzzy
-#| msgid "Proxy Path for Clients"
+#| msgid "🔏 Proxy Path for Clients"
 msgid "config.proxy_path_client.label"
 msgstr "Путь прокси для клиентов"
 
@@ -4872,81 +4882,123 @@ msgstr ""
 " в настройках."
 
 #: hiddifypanel/templates/fake.html:1 loco:65a2e257b7ef9658390383c2
+#, fuzzy
+#| msgid "⏯ Enable TLS Fragment"
 msgid "config.tls_fragment_enable.label"
-msgstr ""
+msgstr "⏯ Включить фрагмент TLS"
 
 #: hiddifypanel/templates/fake.html:1 loco:65a2e257b7ef9658390383c3
+#, fuzzy
+#| msgid ""
+#| "Under some circumstances, it can bypass the SNI blacklist system"
 msgid "config.tls_fragment_enable.description"
 msgstr ""
+"При некоторых обстоятельствах он может обойти систему черного списка SNI."
 
 #: hiddifypanel/templates/fake.html:1 loco:65a2e257b7ef9658390383c4
+#, fuzzy
+#| msgid "🎚 TLS Fragment Size"
 msgid "config.tls_fragment_size.label"
-msgstr ""
+msgstr "🎚 Размер фрагмента TLS"
 
 #: hiddifypanel/templates/fake.html:1 loco:65a2e257b7ef9658390383c5
+#, fuzzy
+#| msgid "The Size of each Packet"
 msgid "config.tls_fragment_size.description"
-msgstr ""
+msgstr "Размер каждого пакета"
 
 #: hiddifypanel/templates/fake.html:1 loco:65a2e257b7ef9658390383c6
+#, fuzzy
+#| msgid "⏱ TLS Fragment Sleep"
 msgid "config.tls_fragment_sleep.label"
-msgstr ""
+msgstr "⏱ Сон фрагмента TLS"
 
 #: hiddifypanel/templates/fake.html:1 loco:65a2e257b7ef9658390383c7
+#, fuzzy
+#| msgid "The time delay between Fragments"
 msgid "config.tls_fragment_sleep.description"
-msgstr ""
+msgstr "Временная задержка между фрагментами"
 
 #: hiddifypanel/templates/fake.html:1 loco:65a2e257b7ef9658390383c8
+#, fuzzy
+#| msgid "🔠 Enable TLS Mixed SNI Case"
 msgid "config.tls_mixed_case.label"
-msgstr ""
+msgstr "🔠 Включить смешанный вариант TLS SNI"
 
 #: hiddifypanel/templates/fake.html:1 loco:65a2e257b7ef9658390383c9
+#, fuzzy
+#| msgid "Enables TLS Mixed SNI Case Fragmentation"
 msgid "config.tls_mixed_case.description"
-msgstr ""
+msgstr "Включает фрагментацию случая смешанного SNI TLS"
 
 #: hiddifypanel/templates/fake.html:1 loco:65a2e257b7ef9658390383ca
+#, fuzzy
+#| msgid "♒️ Enable TLS Padding"
 msgid "config.tls_padding_enable.label"
-msgstr ""
+msgstr "♒️ Включить дополнение TLS."
 
 #: hiddifypanel/templates/fake.html:1 loco:65a2e257b7ef9658390383cb
+#, fuzzy
+#| msgid "Enables Padding for TLS Fragmentation"
 msgid "config.tls_padding_enable.description"
-msgstr ""
+msgstr "Включает заполнение для фрагментации TLS."
 
 #: hiddifypanel/templates/fake.html:1 loco:65a2e257b7ef9658390383cc
+#, fuzzy
+#| msgid "📏 TLS Padding"
 msgid "config.tls_padding_length.label"
-msgstr ""
+msgstr "📏 Заполнение TLS"
 
 #: hiddifypanel/templates/fake.html:1 loco:65a2e257b7ef9658390383cd
+#, fuzzy
+#| msgid "The length of the Padding for TLS Fragmentation"
 msgid "config.tls_padding_length.description"
-msgstr ""
+msgstr "Длина заполнения для фрагментации TLS"
 
 #: hiddifypanel/templates/fake.html:1 loco:65a2e257b7ef9658390383ce
+#, fuzzy
+#| msgid "🚧 Hysteria OBFS Enable"
 msgid "config.hysteria_obfs_enable.label"
-msgstr ""
+msgstr "🚧 Включить истерию OBFS"
 
 #: hiddifypanel/templates/fake.html:1 loco:65a2e257b7ef9658390383cf
+#, fuzzy
+#| msgid " Enables Hysteria Obfuscation (Salamander)"
 msgid "config.hysteria_obfs_enable.description"
-msgstr ""
+msgstr "Включает запутывание истерии (Саламандра)"
 
 #: hiddifypanel/templates/fake.html:1 loco:65a2e257b7ef9658390383d0
+#, fuzzy
+#| msgid "⬆️ Hysteria Upload (mbps)"
 msgid "config.hysteria_up_mbps.label"
-msgstr ""
+msgstr "⬆️ Загрузка Hysteria (Мбит/с)"
 
 #: hiddifypanel/templates/fake.html:1 loco:65a2e257b7ef9658390383d1
+#, fuzzy
+#| msgid "Hysteria Maximum Upload Speed"
 msgid "config.hysteria_up_mbps.description"
-msgstr ""
+msgstr "Максимальная скорость загрузки Hysteria"
 
 #: hiddifypanel/templates/fake.html:1 loco:65a2e257b7ef9658390383d2
+#, fuzzy
+#| msgid "⬇️ Hysteria Download (mbps)"
 msgid "config.hysteria_down_mbps.label"
-msgstr ""
+msgstr "⬇️ Скачать Hysteria (Мбит/с)"
 
 #: hiddifypanel/templates/fake.html:1 loco:65a2e257b7ef9658390383d3
+#, fuzzy
+#| msgid "Hysteria Maximum Download Speed"
 msgid "config.hysteria_down_mbps.description"
-msgstr ""
+msgstr "Максимальная скорость загрузки Hysteria"
 
 #: hiddifypanel/templates/fake.html:2 loco:65a2e257b7ef9658390383d4
+#, fuzzy
+#| msgid "🎛 TLS Trick"
 msgid "config.tls_trick.label"
-msgstr ""
+msgstr "🎛 TLS-трюк"
 
 #: hiddifypanel/templates/fake.html:2 loco:65a2e257b7ef9658390383d5
+#, fuzzy
+#| msgid "TLS Fragmentation configurations could be set in this section"
 msgid "config.tls_trick.description"
-msgstr ""
+msgstr "В этом разделе можно настроить конфигурации фрагментации TLS."

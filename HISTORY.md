@@ -1,6 +1,14 @@
 # Changelog
 
 
+## 8.8.92 (2024-01-14)
+
+#### Fix
+
+* Bug for hiddify next. 
+
+
+
 ## 8.8.91 (2024-01-13)
 
 #### Fix

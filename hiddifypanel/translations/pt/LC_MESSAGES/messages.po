@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  HiddifyPT\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-13 20:22+0100\n"
-"PO-Revision-Date: 2024-01-13 13:19-0600\n"
+"POT-Creation-Date: 2024-01-15 00:12+0100\n"
+"PO-Revision-Date: 2024-01-15 00:10+0100\n"
 "Last-Translator: lymanrudni\n"
 "Language: pt\n"
 "Language-Team: Portuguese\n"
@@ -3892,7 +3892,7 @@ msgstr ""
 msgid "Click to Start Anti-Filter."
 msgstr "<i class=\"fa-solid fa-play\"></i> Toque para iniciar o Antifiltro."
 
-# | msgid "One-click setup link for all applications (recommended)."
+# | msgid "One-click setup link for all applications (recommended)"
 #: hiddifypanel/panel/user/templates/home/one_click.html:16
 #, fuzzy
 msgid "Unified link for all application."
@@ -4622,13 +4622,13 @@ msgstr ""
 msgid "config.hysteria_enable.label"
 msgstr "Habilitar Histeria"
 
-# | msgid "To enable UDP based Hysteria Protocol"
+# | msgid "To Enable UDP based Hysteria Protocol"
 #: hiddifypanel/templates/fake.html:1
 #, fuzzy
 msgid "config.hysteria_enable.description"
 msgstr "Para ativar o protocolo de histeria baseado em udp"
 
-# | msgid "Hysteria2 Port"
+# | msgid "🔍 Hysteria2 Port"
 #: hiddifypanel/templates/fake.html:1
 #, fuzzy
 msgid "config.hysteria_port.label"
@@ -5139,11 +5139,13 @@ msgstr "Ações"
 #~ msgid "app.hiddify-clash-desktop.description"
 #~ msgstr ""
 
+# | msgid "⚠️ Incorrect Password"
 #~ msgid "Incorrect Password"
-#~ msgstr ""
+#~ msgstr "⚠️ Senha incorreta"
 
+# | msgid "ℹ️ Link is Changed!"
 #~ msgid "Link is changed!"
-#~ msgstr ""
+#~ msgstr "ℹ️ O link foi alterado!"
 
 #~ msgid ""
 #~ "The page has been moved to a "
@@ -5151,13 +5153,19 @@ msgstr "Ações"
 #~ " new link."
 #~ msgstr ""
 
+# | msgid ""
+# | "Please connect your Telegram account to the panel to be informed about "
+# | "latest news."
 #~ msgid ""
 #~ "Please connect your telegram account to"
 #~ " the panel to be informed about "
 #~ "latest news."
 #~ msgstr ""
+#~ "Conecte sua conta do Telegram ao "
+#~ "painel para ser informado sobre as "
+#~ "últimas novidades."
 
-# | msgid "Proxy Path for Admins"
+# | msgid "🔐 Proxy Path for Admins"
 #~ msgid "config.proxy_path_admin.label"
 #~ msgstr "Caminho proxy para administradores"
 
@@ -5170,7 +5178,7 @@ msgstr "Ações"
 #~ "para ocultar nossos proxies para "
 #~ "governos e bots"
 
-# | msgid "Proxy Path for Clients"
+# | msgid "🔏 Proxy Path for Clients"
 #~ msgid "config.proxy_path_client.label"
 #~ msgstr "Caminho de proxy para clientes"
 
@@ -5203,63 +5211,86 @@ msgstr "Ações"
 #~ " Você pode alterar esta mensagem nas"
 #~ " configurações."
 
+# | msgid "⏯ Enable TLS Fragment"
 #~ msgid "config.tls_fragment_enable.label"
-#~ msgstr ""
+#~ msgstr "⏯ Habilitar fragmento TLS"
 
+# | msgid ""
+# | "Under some circumstances, it can bypass the SNI blacklist system"
 #~ msgid "config.tls_fragment_enable.description"
 #~ msgstr ""
+#~ "Em algumas circunstâncias, pode contornar "
+#~ "o sistema de lista negra do SNI"
 
+# | msgid "🎚 TLS Fragment Size"
 #~ msgid "config.tls_fragment_size.label"
-#~ msgstr ""
+#~ msgstr "🎚 Tamanho do fragmento TLS"
 
+# | msgid "The Size of each Packet"
 #~ msgid "config.tls_fragment_size.description"
-#~ msgstr ""
+#~ msgstr "O tamanho de cada pacote"
 
+# | msgid "⏱ TLS Fragment Sleep"
 #~ msgid "config.tls_fragment_sleep.label"
-#~ msgstr ""
+#~ msgstr "⏱ Suspensão do fragmento TLS"
 
+# | msgid "The time delay between Fragments"
 #~ msgid "config.tls_fragment_sleep.description"
-#~ msgstr ""
+#~ msgstr "O atraso de tempo entre fragmentos"
 
+# | msgid "🔠 Enable TLS Mixed SNI Case"
 #~ msgid "config.tls_mixed_case.label"
-#~ msgstr ""
+#~ msgstr "🔠 Habilitar caso SNI misto TLS"
 
+# | msgid "Enables TLS Mixed SNI Case Fragmentation"
 #~ msgid "config.tls_mixed_case.description"
-#~ msgstr ""
+#~ msgstr "Permite fragmentação de caso SNI misto TLS"
 
+# | msgid "♒️ Enable TLS Padding"
 #~ msgid "config.tls_padding_enable.label"
-#~ msgstr ""
+#~ msgstr "♒️ Habilitar preenchimento TLS"
 
+# | msgid "Enables Padding for TLS Fragmentation"
 #~ msgid "config.tls_padding_enable.description"
-#~ msgstr ""
+#~ msgstr "Habilita preenchimento para fragmentação TLS"
 
+# | msgid "📏 TLS Padding"
 #~ msgid "config.tls_padding_length.label"
-#~ msgstr ""
+#~ msgstr "📏 Preenchimento TLS"
 
+# | msgid "The length of the Padding for TLS Fragmentation"
 #~ msgid "config.tls_padding_length.description"
-#~ msgstr ""
+#~ msgstr "O comprimento do preenchimento para fragmentação TLS"
 
+# | msgid "🚧 Hysteria OBFS Enable"
 #~ msgid "config.hysteria_obfs_enable.label"
-#~ msgstr ""
+#~ msgstr "🚧 Habilitar Histeria OBFS"
 
+# | msgid " Enables Hysteria Obfuscation (Salamander)"
 #~ msgid "config.hysteria_obfs_enable.description"
-#~ msgstr ""
+#~ msgstr "Ativa a ofuscação da histeria (Salamandra)"
 
+# | msgid "⬆️ Hysteria Upload (mbps)"
 #~ msgid "config.hysteria_up_mbps.label"
-#~ msgstr ""
+#~ msgstr "⬆️ Upload de histeria (mbps)"
 
+# | msgid "Hysteria Maximum Upload Speed"
 #~ msgid "config.hysteria_up_mbps.description"
-#~ msgstr ""
+#~ msgstr "Velocidade máxima de upload de histeria"
 
+# | msgid "⬇️ Hysteria Download (mbps)"
 #~ msgid "config.hysteria_down_mbps.label"
-#~ msgstr ""
+#~ msgstr "⬇️ Download de histeria (mbps)"
 
+# | msgid "Hysteria Maximum Download Speed"
 #~ msgid "config.hysteria_down_mbps.description"
-#~ msgstr ""
+#~ msgstr "Velocidade máxima de download da histeria"
 
+# | msgid "🎛 TLS Trick"
 #~ msgid "config.tls_trick.label"
-#~ msgstr ""
+#~ msgstr "🎛 Truque TLS"
 
+# | msgid "TLS Fragmentation configurations could be set in this section"
 #~ msgid "config.tls_trick.description"
-#~ msgstr ""
+#~ msgstr "As configurações de fragmentação TLS podem ser definidas nesta seção"
 
