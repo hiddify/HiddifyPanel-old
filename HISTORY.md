@@ -1,6 +1,14 @@
 # Changelog
 
 
+## 8.8.93 (2024-01-15)
+
+#### Other
+
+* Better singbox config. 
+
+
+
 ## 8.8.92 (2024-01-14)
 
 #### Fix
