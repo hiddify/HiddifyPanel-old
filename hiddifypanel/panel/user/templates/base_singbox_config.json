@@ -22,41 +22,41 @@
         "auto_detect_interface": true,
         "override_android_vpn": true,
         "final": "Select",
-  {% if V1_7 and hconfig(ConfigEnum.country)=="ir" %}
-  "geoip": {
-
-      "download_url": "https://github.com/Chocolate4U/Iran-sing-box-rules/releases/latest/download/geoip.db",
-      "download_detour":"bypass"
-    },
-    "geosite": {
-        "download_url": "https://github.com/Chocolate4U/Iran-sing-box-rules/releases/latest/download/geosite.db",
-        "download_detour":"bypass"
-    },
-  {%else%}
-    "rule_set": [
-        {%if hconfig(ConfigEnum.country)=="ir"%}
-      {
-        "tag": "geosite-ir",
-        "type": "remote",
-        "format": "binary",
-        "url": "https:\/\/raw.githubusercontent.com\/Chocolate4U\/Iran-sing-box-rules\/rule-set\/geosite-ir.srs"
-      },
-      {%endif%}
-      {
-        "tag": "geosite-category-ads-all",
-        "type": "remote",
-        "format": "binary",
-        "url": "https:\/\/raw.githubusercontent.com\/Chocolate4U\/Iran-sing-box-rules\/rule-set\/geosite-category-ads-all.srs"
-      }
-      {%if hconfig(ConfigEnum.country)=="ir"%}
-      ,{
-        "tag": "geoip-ir",
-        "type": "remote",
-        "format": "binary",
-        "url": "https:\/\/raw.githubusercontent.com\/Chocolate4U\/Iran-sing-box-rules\/rule-set\/geoip-ir.srs"
-      }
-      {%endif%}
-    ],
+        {% if V1_7 %}
+        "geoip": {
+               "download_url": "https://github.com/SagerNet/sing-geoip/releases/latest/download/geoip.db",
+               "download_detour": {% if hconfig(ConfigEnum.country)=='cn' %}"Select" {%else%}"bypass"{%endif%} 
+            },
+        "geosite": {
+            "download_url": "https://github.com/SagerNet/sing-geosite/releases/latest/download/geosite.db",
+            "download_detour": {% if hconfig(ConfigEnum.country)=='cn' %}"Select" {%else%}"bypass"{%endif%} 
+        }, 
+        {%else%}
+        "rule_set": [
+            {%if hconfig(ConfigEnum.country)=="ir"%}
+            {
+                "tag": "geosite-ir",
+                "type": "remote",
+                "format": "binary",
+                "url": "https:\/\/raw.githubusercontent.com\/Chocolate4U\/Iran-sing-box-rules\/rule-set\/geosite-ir.srs",
+                "download_detour": "bypass" 
+            },
+            {
+            "tag": "geoip-ir",
+            "type": "remote",
+            "format": "binary",
+            "url": "https:\/\/raw.githubusercontent.com\/Chocolate4U\/Iran-sing-box-rules\/rule-set\/geoip-ir.srs",
+            "download_detour": "bypass"
+            },
+            {%endif%}
+            {# {
+                "tag": "geosite-category-ads-all",
+                "type": "remote",
+                "format": "binary",
+                "url": "https:\/\/raw.githubusercontent.com\/Chocolate4U\/Iran-sing-box-rules\/rule-set\/geosite-category-ads-all.srs",
+                "download_detour": {% if hconfig(ConfigEnum.country)=='cn' %}"Select" {%else%}"bypass"{%endif%} 
+            } #}
+        ],
   {%endif%}
         "rules": [
             {
@@ -80,14 +80,14 @@
             },
             {%endif%}
             
-            {
+            {# {
                 {% if V1_7 %}
                 "geosite": "category-ads-all",
                 {%else%}
                 "rule_set": "geosite-category-ads-all",
                 {%endif%}
                 "outbound": "block"
-            },
+            }, #}
             {%if hconfig(ConfigEnum.country) in ["ir","cn","ru"]%}
             {
                 {% if V1_7 %}

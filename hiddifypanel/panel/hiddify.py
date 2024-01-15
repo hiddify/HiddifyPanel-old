@@ -803,7 +803,7 @@ def do_base_64(str):
 def get_user_agent():
     ua = __parse_user_agent(request.user_agent.string)
 
-    if ua.get('v', 1) < 2:
+    if ua.get('v', 1) < 3:
         __parse_user_agent.invalidate_all()
         ua = __parse_user_agent(request.user_agent.string)
     return ua
@@ -823,7 +823,7 @@ def __parse_user_agent(ua):
     match = re.search(ua_version_pattern, request.user_agent.string)
     generic_version = list(map(int, match.group(1).split('.'))) if match else [0, 0, 0]
     res = {}
-    res['v'] = 2
+    res['v'] = 3
     res["is_bot"] = uaa.is_bot
     res["is_browser"] = re.match('^Mozilla', ua, re.IGNORECASE) and True
     res['os'] = uaa.os.family
@@ -838,7 +838,7 @@ def __parse_user_agent(ua):
 
     if ['is_hiddify']:
         res['hiddify_version'] = generic_version
-        if generic_version[0] == 0 and generic_version[1] <= 13:
+        if generic_version[0] == 0 and generic_version[1] <= 14:
             res['singbox_version'] = [1, 7, 0]
         else:
             res['singbox_version'] = [1, 8, 0]
