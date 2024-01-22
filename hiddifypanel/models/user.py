@@ -145,7 +145,7 @@ class User(db.Model, SerializerMixin):
             'current_usage_GB': d.current_usage_GB,
             'last_reset_time': hiddify.date_to_json(d.last_reset_time),
             'comment': d.comment,
-            'added_by_uuid': d.admin.uuid,
+            'added_by_uuid': d.admin.uuid if d.admin else '',
             'telegram_id': d.telegram_id,
             'ed25519_private_key': d.ed25519_private_key,
             'ed25519_public_key': d.ed25519_public_key

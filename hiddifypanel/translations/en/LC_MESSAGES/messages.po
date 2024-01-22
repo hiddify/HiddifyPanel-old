@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: HiddifyPanel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-16 20:54+0100\n"
-"PO-Revision-Date: 2024-01-16 13:51-0600\n"
+"POT-Creation-Date: 2024-01-21 23:43+0100\n"
+"PO-Revision-Date: 2024-01-21 16:42-0600\n"
 "Last-Translator: hidden u\n"
 "Language-Team: English (USA)\n"
 "Language: en_US\n"
@@ -4935,3 +4935,91 @@ msgstr "Actions"
 # | msgid "TLS Fragmentation configurations could be set in this section"
 #~ msgid "config.tls_trick.description"
 #~ msgstr "TLS Fragmentation configurations could be set in this section"
+
+#, fuzzy
+#~ msgid "config.Invalid! The pattern is number-number"
+#~ msgstr "config.Invalid! The pattern is number-number"
+
+#, fuzzy
+#~ msgid "config.Invalid! it should be a number only"
+#~ msgstr "config.Invalid! it should be a number only"
+
+#, fuzzy
+#~ msgid "config.mux_enable.label"
+#~ msgstr "config.mux_enable.label"
+
+#, fuzzy
+#~ msgid "config.mux_enable.description"
+#~ msgstr "config.mux_enable.description"
+
+#, fuzzy
+#~ msgid "config.mux_protocol.label"
+#~ msgstr "config.mux_protocol.label"
+
+#, fuzzy
+#~ msgid "config.mux_protocol.description"
+#~ msgstr "config.mux_protocol.description"
+
+#, fuzzy
+#~ msgid "config.mux_max_connections.label"
+#~ msgstr "config.mux_max_connections.label"
+
+#, fuzzy
+#~ msgid "config.mux_max_connections.description"
+#~ msgstr "config.mux_max_connections.description"
+
+#, fuzzy
+#~ msgid "config.mux_min_streams.label"
+#~ msgstr "config.mux_min_streams.label"
+
+#, fuzzy
+#~ msgid "config.mux_min_streams.description"
+#~ msgstr "config.mux_min_streams.description"
+
+#, fuzzy
+#~ msgid "config.mux_max_streams.label"
+#~ msgstr "config.mux_max_streams.label"
+
+#, fuzzy
+#~ msgid "config.mux_max_streams.description"
+#~ msgstr "config.mux_max_streams.description"
+
+#, fuzzy
+#~ msgid "config.mux_padding_enable.label"
+#~ msgstr "config.mux_padding_enable.label"
+
+#, fuzzy
+#~ msgid "config.mux_padding_enable.description"
+#~ msgstr "config.mux_padding_enable.description"
+
+#, fuzzy
+#~ msgid "config.mux_brutal_enable.label"
+#~ msgstr "config.mux_brutal_enable.label"
+
+#, fuzzy
+#~ msgid "config.mux_brutal_enable.description"
+#~ msgstr "config.mux_brutal_enable.description"
+
+#, fuzzy
+#~ msgid "config.mux_brutal_up_mbps.label"
+#~ msgstr "config.mux_brutal_up_mbps.label"
+
+#, fuzzy
+#~ msgid "config.mux_brutal_up_mbps.description"
+#~ msgstr "config.mux_brutal_up_mbps.description"
+
+#, fuzzy
+#~ msgid "config.mux_brutal_down_mbps.label"
+#~ msgstr "config.mux_brutal_down_mbps.label"
+
+#, fuzzy
+#~ msgid "config.mux_brutal_down_mbps.description"
+#~ msgstr "config.mux_brutal_down_mbps.description"
+
+#, fuzzy
+#~ msgid "config.mux.label"
+#~ msgstr "config.mux.label"
+
+#, fuzzy
+#~ msgid "config.mux.description"
+#~ msgstr "config.mux.description"

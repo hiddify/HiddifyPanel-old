@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  HiddifyPanel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-16 20:54+0100\n"
-"PO-Revision-Date: 2024-01-16 13:51-0600\n"
+"POT-Creation-Date: 2024-01-21 23:43+0100\n"
+"PO-Revision-Date: 2024-01-21 16:42-0600\n"
 "Last-Translator: hidden u\n"
 "Language: fa\n"
 "Language-Team: Persian\n"
@@ -5162,5 +5162,71 @@ msgstr "عملیات"
 
 # | msgid "TLS Fragmentation configurations could be set in this section"
 #~ msgid "config.tls_trick.description"
+#~ msgstr ""
+
+#~ msgid "config.Invalid! The pattern is number-number"
+#~ msgstr ""
+
+#~ msgid "config.Invalid! it should be a number only"
+#~ msgstr ""
+
+#~ msgid "config.mux_enable.label"
+#~ msgstr ""
+
+#~ msgid "config.mux_enable.description"
+#~ msgstr ""
+
+#~ msgid "config.mux_protocol.label"
+#~ msgstr ""
+
+#~ msgid "config.mux_protocol.description"
+#~ msgstr ""
+
+#~ msgid "config.mux_max_connections.label"
+#~ msgstr ""
+
+#~ msgid "config.mux_max_connections.description"
+#~ msgstr ""
+
+#~ msgid "config.mux_min_streams.label"
+#~ msgstr ""
+
+#~ msgid "config.mux_min_streams.description"
+#~ msgstr ""
+
+#~ msgid "config.mux_max_streams.label"
+#~ msgstr ""
+
+#~ msgid "config.mux_max_streams.description"
+#~ msgstr ""
+
+#~ msgid "config.mux_padding_enable.label"
+#~ msgstr ""
+
+#~ msgid "config.mux_padding_enable.description"
+#~ msgstr ""
+
+#~ msgid "config.mux_brutal_enable.label"
+#~ msgstr ""
+
+#~ msgid "config.mux_brutal_enable.description"
+#~ msgstr ""
+
+#~ msgid "config.mux_brutal_up_mbps.label"
+#~ msgstr ""
+
+#~ msgid "config.mux_brutal_up_mbps.description"
+#~ msgstr ""
+
+#~ msgid "config.mux_brutal_down_mbps.label"
+#~ msgstr ""
+
+#~ msgid "config.mux_brutal_down_mbps.description"
+#~ msgstr ""
+
+#~ msgid "config.mux.label"
+#~ msgstr ""
+
+#~ msgid "config.mux.description"
 #~ msgstr ""
 
