@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  HiddifyPanel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-21 23:43+0100\n"
-"PO-Revision-Date: 2024-01-21 16:42-0600\n"
+"POT-Creation-Date: 2024-01-22 08:43+0100\n"
+"PO-Revision-Date: 2024-01-22 01:27+0100\n"
 "Last-Translator: hidden u\n"
 "Language: fa\n"
 "Language-Team: Persian\n"
@@ -5164,69 +5164,91 @@ msgstr "عملیات"
 #~ msgid "config.tls_trick.description"
 #~ msgstr ""
 
+# | msgid "Config Invalid! The Pattern Is Number-Number"
 #~ msgid "config.Invalid! The pattern is number-number"
 #~ msgstr ""
 
+# | msgid "Config Invalid! It Should Be a Number Only"
 #~ msgid "config.Invalid! it should be a number only"
 #~ msgstr ""
 
+# | msgid "MUX Enable"
 #~ msgid "config.mux_enable.label"
 #~ msgstr ""
 
+# | msgid "MUX Enable Description"
 #~ msgid "config.mux_enable.description"
 #~ msgstr ""
 
+# | msgid "MUX Protocol"
 #~ msgid "config.mux_protocol.label"
 #~ msgstr ""
 
+# | msgid "MUX Protocol Description"
 #~ msgid "config.mux_protocol.description"
 #~ msgstr ""
 
+# | msgid "MUX Max Connections"
 #~ msgid "config.mux_max_connections.label"
 #~ msgstr ""
 
+# | msgid "MUX Max Connections Description"
 #~ msgid "config.mux_max_connections.description"
 #~ msgstr ""
 
+# | msgid "MUX Min Streams"
 #~ msgid "config.mux_min_streams.label"
 #~ msgstr ""
 
+# | msgid "MUX Min Streams Description"
 #~ msgid "config.mux_min_streams.description"
 #~ msgstr ""
 
+# | msgid "MUX Max Streams"
 #~ msgid "config.mux_max_streams.label"
 #~ msgstr ""
 
+# | msgid "MUX Max Streams Description"
 #~ msgid "config.mux_max_streams.description"
 #~ msgstr ""
 
+# | msgid "MUX Padding Enable"
 #~ msgid "config.mux_padding_enable.label"
 #~ msgstr ""
 
+# | msgid "MUX Padding Enable Description"
 #~ msgid "config.mux_padding_enable.description"
 #~ msgstr ""
 
+# | msgid "MUX Brutal Enable"
 #~ msgid "config.mux_brutal_enable.label"
 #~ msgstr ""
 
+# | msgid "MUX Brutal Enable Description"
 #~ msgid "config.mux_brutal_enable.description"
 #~ msgstr ""
 
+# | msgid "MUX Brutal Upload mbps"
 #~ msgid "config.mux_brutal_up_mbps.label"
 #~ msgstr ""
 
+# | msgid "MUX Brutal Upload mbps Description"
 #~ msgid "config.mux_brutal_up_mbps.description"
 #~ msgstr ""
 
+# | msgid "MUX Brutal Download mbps"
 #~ msgid "config.mux_brutal_down_mbps.label"
 #~ msgstr ""
 
+# | msgid "MUX Brutal Download mbps Description"
 #~ msgid "config.mux_brutal_down_mbps.description"
 #~ msgstr ""
 
+# | msgid "MUX Config"
 #~ msgid "config.mux.label"
 #~ msgstr ""
 
+# | msgid "MUX Config Description"
 #~ msgid "config.mux.description"
 #~ msgstr ""
 

@@ -1,11 +1,11 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version:  HiddifyPanel\n"
+"Project-Id-Version:  HiddifyCH\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-21 23:43+0100\n"
-"PO-Revision-Date: 2024-01-21 16:33-0600\n"
-"Last-Translator: hidden u\n"
+"POT-Creation-Date: 2024-01-22 08:43+0100\n"
+"PO-Revision-Date: 2024-01-21 16:43-0600\n"
+"Last-Translator: Hiddify Official\n"
 "Language: zh\n"
 "Language-Team: Chinese\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -258,8 +258,7 @@ msgstr "提交"
 # will "
 # | "run into problems. Please visit <a "
 # |
-# "href=\"https://github.com/hiddify/hiddify-config/wiki/راهنمای-تنظیم-
-# دامنه-و-"
+# "href=\"https://github.com/hiddify/hiddify-config/wiki/راهنمای-تنظیم-دامنه-و-"
 # | "نهایی-کردن-نصب#آموزش-ساخت-زیردامنه\"> Help</a> to learn how to create a "
 # | "subdomain."
 #: hiddifypanel/panel/admin/ChildAdmin.py:32
@@ -1362,8 +1361,7 @@ msgstr "它用于将您的网站在 SNI 中伪装成另一个网站。这样防�
 # | "It is used to simulate another website instead of your website in SNI.
 # therefore, GFW can not filter your Domain\n"
 # | "<a
-# href=\"https://github.com/hiddify/hiddify-
-# config/wiki/%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87-%D8%A7%D8%B2-%D8%AF%D8%A7%D9%85%DB%8C%D9%86-%D9%81%D8%B1%D8%A7%D9%86%D8%AA%DB%8C%D9%86%DA%AF\">Guide</a>.
+# href=\"https://github.com/hiddify/hiddify-config/wiki/%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87-%D8%A7%D8%B2-%D8%AF%D8%A7%D9%85%DB%8C%D9%86-%D9%81%D8%B1%D8%A7%D9%86%D8%AA%DB%8C%D9%86%DA%AF\">Guide</a>.
 # ⚠️CloudFlare does not support Domain Fronting."
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:2
@@ -2850,8 +2848,8 @@ msgstr "Hiddify Android"
 # | "                    class=\"btn btn-warning orig-link\">Clash in Google
 # Play</a>\n"
 # | "            </div>\n"
-# href=\"/{{hconfigs[ConfigEnum.proxy_path]}}/gh/Kr328/ClashForAndroid/releases/download/v2.5.12/cfa-2.5.12-premium-
-# universal-release.apk\"\n"
+# | "                <a
+# href=\"/{{hconfigs[ConfigEnum.proxy_path]}}/gh/Kr328/ClashForAndroid/releases/download/v2.5.12/cfa-2.5.12-premium-universal-release.apk\"\n"
 # | "                    class=\"btn btn-warning orig-link\">Direct
 # Download</a>\n"
 # | "            <div class=\"alert alert-danger\">\n"
@@ -3276,6 +3274,7 @@ msgstr ""
 # href=\"https://apps.apple.com/us/app/stash-rule-based-proxy/id1596063349\"
 # target=\"_blank\" class=\"btn btn-success orig-link\">Download Stash</a>\n"
 # | "        </div>\n"
+# | "        <a
 # href=\"https://apps.apple.com/us/app/shadowrocket/id932747118\"
 # target=\"_blank\" class=\"btn btn-primary orig-link\">Download
 # Shadowrocket</a> \n"
@@ -3817,16 +3816,24 @@ msgstr "⚠️ 您确定要执行此操作吗？"
 # | "<a data-copy=\"TXZtFUxyBPMSykAWogu7C4zmbjySKqMcDE\" role=\"button\"
 # class=\"btn btn-info share-link\">USDT (TRC20)</a> </div></li>\n"
 # | "    <a role=\"button\" data-copy=\"MCHoh7xwaDBBnQgANPpBtXiekagV6KpdrM\"
+# class=\"btn btn-secondary copy-link\"><i class=\"fa-regular
+# fa-copy\"></i></a>    \n"
 # | "<a data-copy=\"MCHoh7xwaDBBnQgANPpBtXiekagV6KpdrM\" role=\"button\"
 # class=\"btn btn-info share-link\">Litecoin</a> </div></li>\n"
+# | "    <a role=\"button\"
 # data-copy=\"0xF5CFc65ee336B377C2a37EA3BCD0CaD0d0F0CbA0\" class=\"btn
+# btn-secondary copy-link\"><i class=\"fa-regular fa-copy\"></i></a>    \n"
 # | "<a data-copy=\"0xF5CFc65ee336B377C2a37EA3BCD0CaD0d0F0CbA0\"
 # role=\"button\" class=\"btn btn-info share-link\">Ethereum</a>
 # </div></li>\n"
+# | "    <a role=\"button\"
 # data-copy=\"bc1qkfp7n3wxu2zc9mdy20cf27d5pujj65myww8f60\" class=\"btn
+# btn-secondary copy-link\"><i class=\"fa-regular fa-copy\"></i></a>    \n"
 # | "<a data-copy=\"bc1qkfp7n3wxu2zc9mdy20cf27d5pujj65myww8f60\"
 # role=\"button\" class=\"btn btn-info share-link\">Bitcoin</a> </div></li>\n"
 # | "    <a role=\"button\" data-copy=\"DPerFS2vCu5XnE3He32BaPVTkUDcKLsEaj\"
+# class=\"btn btn-secondary copy-link\"><i class=\"fa-regular
+# fa-copy\"></i></a>    \n"
 # | "<a data-copy=\"DPerFS2vCu5XnE3He32BaPVTkUDcKLsEaj\" role=\"button\"
 # class=\"btn btn-info share-link\">Dogecoin</a> </div></li>\n"
 # | "</ul>\n"
@@ -4135,8 +4142,7 @@ msgstr "🔒 启用 TLS 域名前置"
 # | "It is used to simulate another website instead of your website in SNI.
 # therefore, GFW can not filter your Domain\n"
 # | "<a
-# href=\"https://github.com/hiddify/hiddify-config/wiki/Guide-for-domain-
-# fronting\">Guide</a>.
+# href=\"https://github.com/hiddify/hiddify-config/wiki/Guide-for-domain-fronting\">Guide</a>.
 # ⚠️CloudFlare does not support Domain Fronting."
 #: hiddifypanel/templates/flaskadmin-layout.html:122
 msgid "domain.domain_fronting.description"
@@ -4198,706 +4204,4 @@ msgstr "计数："
 #: hiddifypanel/templates/hiddify-flask-admin/list.html:91
 msgid "Actions"
 msgstr "动作"
-
-# | msgid ""
-# | "Invalid Address: The Decoy Site's URL should be a complete URL. Example:
-# "
-# | "https://www.wikipedia.org"
-#~ msgid "config.Invalid decoy_site"
-#~ msgstr "无效地址：诱饵站点的 URL 应该是完整的 URL。 示例：https://www.wikipedia.org/"
-
-# | msgid ""
-# | "Port 80 should always be presented. We use it for getting SSL
-# Certificate"
-#~ msgid "config.port 80 is required"
-#~ msgstr "应始终提供 80 端口。我们用它来获取 SSL 证书"
-
-# | msgid "Port 443 should always be presented. "
-#~ msgid "config.port 443 is required"
-#~ msgstr "应始终显示 443 端口。"
-
-# | msgid "Monthly Usage Limit (GB)"
-#~ msgid "user.monthly_usage_limit_GB"
-#~ msgstr "每月使用限额 (GB)"
-
-# | msgid "📺 Decoy Site"
-#~ msgid "config.decoy_site.label"
-#~ msgstr "📺 诱饵网站"
-
-# | msgid "Fake Site: simulates a site when someone visits your domain"
-#~ msgid "config.decoy_site.description"
-#~ msgstr "伪装网站：当有人访问您的域时伪装一个网站"
-
-# | msgid "Ports Settings"
-#~ msgid "config.ports.label"
-#~ msgstr "端口设置"
-
-# | msgid "You can select different ports of the system in the section"
-#~ msgid "config.ports.description"
-#~ msgstr "您可以在此处选择系统的不同端口"
-
-# | msgid "Allow HTTP Connection"
-#~ msgid "config.http_proxy.label"
-#~ msgstr "允许 HTTP 连接"
-
-# | msgid ""
-# | "By allowing this, your users can connect to the system with Unencrypted
-# HTTP"
-# | " Port. (Not Recommended)"
-#~ msgid "config.http_proxy.description"
-#~ msgstr "通过允许该选项，您的用户可以使用未加密的 HTTP 端口连接到系统。 （不建议）"
-
-# | msgid "Protocol Usage Chart"
-#~ msgid "admin.protocol_chart"
-#~ msgstr "协议使用情况图表"
-
-# | msgid "Users Usage Chart"
-#~ msgid "admin.user_chart"
-#~ msgstr "用户使用情况图表"
-
-# | msgid "CPU Usage"
-#~ msgid "admin.cpu_chart"
-#~ msgstr "CPU 使用率图表"
-
-# | msgid "RAM Usage"
-#~ msgid "admin.ram_chart"
-#~ msgstr "内存使用图表"
-
-# | msgid "Network Usage"
-#~ msgid "admin.network_chart"
-#~ msgstr "网络使用"
-
-# | msgid "Link copied to clipboard. "
-#~ msgid "user.home.link.success - copy"
-#~ msgstr "链接已复制到剪贴板。"
-
-# | msgid "Enable HTTP Domain Fronting"
-#~ msgid "config.domain_fronting_http.label"
-#~ msgstr "启用 HTTP 域名前置"
-
-# | msgid ""
-# | "Enabling HTTP Domain Fronting causes your domain to be blocked quickly."
-#~ msgid "config.domain_fronting_http.description"
-#~ msgstr "启用 HTTP 域名前置可能会导致您的域被快速封锁。"
-
-# | msgid "Enable TLS Domain Fronting"
-#~ msgid "config.domain_fronting_tls.label"
-#~ msgstr "启用 TLS 域名前置"
-
-# | msgid "It Will Use Port 443 To Connect To CDN"
-#~ msgid "config.domain_fronting_tls.description"
-#~ msgstr "它将使用 443 端口连接到 CDN"
-
-# | msgid "Name"
-#~ msgid "proxy.name"
-#~ msgstr "名称"
-
-# | msgid "Protocol"
-#~ msgid "proxy.protocol"
-#~ msgstr "协议"
-
-# | msgid "Transport"
-#~ msgid "proxy.transport"
-#~ msgstr "转移"
-
-# | msgid "Outer Layer"
-#~ msgid "proxy.l3"
-#~ msgstr "外层"
-
-# | msgid "CDN"
-#~ msgid "proxy.cdn"
-#~ msgstr "CDN"
-
-# | msgid "Check"
-#~ msgid "check"
-#~ msgstr "检查"
-
-# | msgid ""
-# | "Rebooting System ... This may take a few minutes. Please Wait ..."
-#~ msgid "rebooting system may takes time please wait"
-#~ msgstr "重新启动系统可能需要一些时间。请稍等..."
-
-#~ msgid ""
-#~ "The default user link is %(link)s. "
-#~ "To add or edit more users, please"
-#~ " visit users from menu."
-#~ msgstr "默认用户链接是 %(link)s。要添加或编辑更多用户，请从菜单访问用户。"
-
-#~ msgid ""
-#~ "We have opened a temporary port "
-#~ "(for 4 hours) to access the panel"
-#~ " in case of any issues. Please "
-#~ "copy this link. <a href='%(link)s' "
-#~ "class='btn btn-danger share-link'>Temporary"
-#~ " Link</a>"
-#~ msgstr ""
-#~ "我们已经打开了一个临时端口（4 小时）以在出现问题时访问该面板。请复制此链接。<a href='%(link)s'"
-#~ " class='btn btn-danger share-link'>临时链接</a>"
-
-# | msgid ""
-# | "It seems that you have not created any users yet. <a "
-# | "href=\"%(default_link)s\">Default User Link</a>"
-#~ msgid ""
-#~ "It seems that you have not created"
-#~ " any users yet. <a "
-#~ "href=\"%(default_link)s\">default user link</a>"
-#~ msgstr "您似乎还没有创建任何用户。 <a href=\"%(default_link)s\">默认用户链接</a>"
-
-# | msgid "Error !!"
-#~ msgid "Error!!!"
-#~ msgstr "错误！！！"
-
-# | msgid ""
-# | "Domain (%(domain)s)-> IP = %(domain_ip)s is not same as your IP = "
-# | "%(server_ip)s . this is required in Direct Mode"
-#~ msgid ""
-#~ "Domain (%(domain))-> IP=%(domain_ip)s is not"
-#~ " matched with your ip=%(server_ip)s which"
-#~ " is required in direct mode"
-#~ msgstr ""
-#~ "域名 (%(domain)s)-> IP=%(domain_ip)s 与您的 "
-#~ "IP=%(server_ip)s 不匹配，这在直连模式下是必需的。"
-
-# | msgid "Check Usage"
-#~ msgid "User usage update"
-#~ msgstr "检查流量"
-
-# | msgid "IPv4 Connections"
-#~ msgid "admin.ipv4 connections"
-#~ msgstr "IPv4 连接"
-
-# | msgid "Invalid IP or Domain"
-#~ msgid "config.Invalid IP or domain"
-#~ msgstr "无效的 IP 或域名"
-
-# | msgid "Should be a valid Domain"
-#~ msgid "Should be a valid domain"
-#~ msgstr "请使用有效的域"
-
-# | msgid "Should be a valid UUID"
-#~ msgid "Should be a valid uuid"
-#~ msgstr "请使用有效的 UUID"
-
-# | msgid ""
-# | "You have disabled netdata in the setting. you need to enable it to see
-# the "
-# | "information."
-#~ msgid ""
-#~ "You have disabled netdata in the "
-#~ "setting. You need to enable it to"
-#~ " see the information."
-#~ msgstr "您已在设置中禁用网络数据。您需要启用它才能看到信息。"
-
-# | msgid "IPv6 Connections"
-#~ msgid "admin.ipv6 connections"
-#~ msgstr "IPv6 连接"
-
-# | msgid "Can not sync child with Parent Panel."
-#~ msgid "can not sync child with parent panel"
-#~ msgstr "无法同步子面板与主面板。"
-
-# | msgid "Can not connect to Parent Panel!"
-#~ msgid "Can not connect to parent panel!"
-#~ msgstr "无法连接到主面板！"
-
-# | msgid "Online Users in 24 Hours"
-#~ msgid "Online Users in 24 hours"
-#~ msgstr "24 小时内在线用户数"
-
-# | msgid ""
-# | "Welcome to HiddifyBot.\n"
-# | " Please click on the link in the Panel page to start or enter your user
-# UUID."
-#~ msgid ""
-#~ "Welcome to hiddifybot.\n"
-#~ " Please click on the link in "
-#~ "the panel page to start or enter"
-#~ " your user uuid"
-#~ msgstr ""
-#~ "欢迎使用 HiddifyBot.\n"
-#~ "请单击面板页面中的链接来启动或输入您的 UUID。"
-
-# | msgid "Reset Package Days and Usage."
-#~ msgid "Reset package days and usage"
-#~ msgstr "重置套餐时间和流量"
-
-# | msgid ""
-# | "Error In Auto CDN IP! It Can Not Be Find, Please Contact Admin"
-#~ msgid "Error in morteza ip! auto cdn ip can not be find, please contact admin."
-#~ msgstr "自动 CDN IP 错误！找不到自动 CDN IP，请联系管理员"
-
-# | msgid ""
-# | "In CDN Mode You Can Only Apply One Domain Or One IP For Forced Host. Use
-# "
-# | "Auto CDN IP Mode Instead"
-#~ msgid "In CDN mode you can only apply one domain or one ip for forced host"
-#~ msgstr "CDN 模式下一台主机只能使用一个域名或一个 IP。使用自动 CDN IP 模式代替"
-
-# | msgid "⚠️ Can not Connect to Cloudflare."
-#~ msgid "Can not connect to Cloudflare."
-#~ msgstr "⚠️ 无法连接到 Cloudflare。"
-
-#~ msgid "Online"
-#~ msgstr "在线"
-
-#~ msgid "In 24 hours"
-#~ msgstr "24 小时内"
-
-#~ msgid "CPU"
-#~ msgstr "CPU"
-
-#~ msgid "Average"
-#~ msgstr "平均"
-
-#~ msgid "Highest"
-#~ msgstr "最高"
-
-#~ msgid "Connections/IP"
-#~ msgstr "连接数 / IP 数"
-
-# | msgid "CDN Make It Incorrect"
-#~ msgid "CDN make it incorrect"
-#~ msgstr "CDN 使它不正确"
-
-#~ msgid "Disable User"
-#~ msgstr "禁用用户"
-
-# | msgid "Owner Can Not Be Deleted!"
-#~ msgid "Owner can not be deleted!"
-#~ msgstr "不能删除所有者！"
-
-#~ msgid "Users"
-#~ msgstr "用户"
-
-# | msgid ""
-# | "Using Alias with Special Charachters may cause problem in some Clients
-# like "
-# | "Fair VPN"
-#~ msgid ""
-#~ "Using alias with special charachters may"
-#~ " cause problem in some clients like"
-#~ " FairVPN."
-#~ msgstr "使用带有特殊字符的别名，可能会导致某些客户端出现问题，例如 FairVPN"
-
-# | msgid ""
-# | "You should visit this page without VPN Your Country =%(your_country)s\n"
-# | "Expected=%(expected_country)s"
-#~ msgid ""
-#~ "You should visit this page without VPN. Your country=%(your_country)s\n"
-#~ "expected=%(expected_country)s"
-#~ msgstr ""
-#~ "请不要使用 VPN 连接该网站。当前国家=%(your_country)s\n"
-#~ "预期国家=%(expected_country)s"
-
-#~ msgid "Download HiddifyNext"
-#~ msgstr "下载 HiddifyNext"
-
-# | msgid "<i class=\"fa-solid fa-download\"></i>  Download App"
-#~ msgid ""
-#~ "Download\n"
-#~ "                                    App"
-#~ msgstr "<i class=\"fa-solid fa-download\"></i> 下载应用"
-
-# | msgid ""
-# | "✔️ The Proxy link is copied\n"
-# | "<br>\n"
-# | "⚠️ If the application do not open automatically, you need to only paste
-# it on your application, or:"
-#~ msgid ""
-#~ "If the application do not open "
-#~ "automatically, please click <a class='btn "
-#~ "btn-primary copy-link' href='%(sub)s'>this "
-#~ "universal link</a> to copy and paste "
-#~ "it on your application, or:"
-#~ msgstr ""
-#~ "✔️ 代理链接已复制。\n"
-#~ "<br>\n"
-#~ "⚠️ 如果应用程序没有自动打开，您只需将其粘贴到您的应用程序上，或者："
-
-# | msgid "Telegram Bot"
-#~ msgid ""
-#~ "Telegram\n"
-#~ "          Bot"
-#~ msgstr "Telegram 机器人"
-
-# | msgid "↔️  Direct Reality Port"
-#~ msgid "config.reality_port.label"
-#~ msgstr "直连 Reality 端口"
-
-# | msgid ""
-# | "You can set a customized port for your reality server to reduce the
-# system's"
-# | " overhead. (Allow direct connection to proxies should be yes)"
-#~ msgid "config.reality_port.description"
-#~ msgstr "您可以设置一个 Reality 服务的自定义端口，以节省系统开销。（允许直接连接到代理应该设置为 是）"
-
-# | msgid "All Config Hiddify Managers"
-#~ msgid "user.home.allconfig.hiddify-managers"
-#~ msgstr "所有 Hiddify Managers 配置"
-
-# | msgid "DNS over HTTPS"
-#~ msgid "user.home.tool.doh.title"
-#~ msgstr "DNS over HTTPS"
-
-# | msgid "Please create an issue on Github"
-#~ msgid "Please create an issue on Github."
-#~ msgstr "请在 Github 上创建一个 issue 。"
-
-# | msgid "Donation"
-#~ msgid "Donation.title"
-#~ msgstr "捐赠"
-
-# | msgid "🆚 Additional Warp Sites"
-#~ msgid "config.warp_sites.label"
-#~ msgstr "增加 Warp 站点"
-
-# | msgid ""
-# | "Add additional sites to pass through Warp (only when warp mode is not
-# None)"
-#~ msgid "config.warp_sites.description"
-#~ msgstr "增加通过 Warp 的额外站点（仅当 Warp 模式不为空时）"
-
-# | msgid ""
-# | "Your server is vulnerable to abuses because PasswordAuthentication is "
-# | "enabled in your SSH. To secure your server, please switch to key "
-# | "authentication mechanism and turn off PasswordAuthentication. <a "
-# |
-# "href=\"https://github.com/hiddify/Hiddify-Manager/wiki/Disable-SSH-
-# Password-"
-# | "Authentication\">read more... </a>"
-#~ msgid "ssh.password-login.warning."
-#~ msgstr ""
-#~ "由于您的服务器启用了 SSH "
-#~ "密码身份验证机制，因此很容易受到侵入导致被滥用。为了保护您的服务器，请切换到密钥身份验证机制，并关闭密码身份验证机制。 <a"
-#~ " href=\"https://github.com/hiddify/Hiddify-Manager/wiki"
-#~ "/Disable-SSH-Password-Authentication\">了解更多... "
-#~ "</a>"
-
-# | msgid "Bug/Feature"
-#~ msgid "Bug"
-#~ msgstr "错误/功能"
-
-# | msgid "API"
-#~ msgid "admin.menu.api"
-#~ msgstr "应用程序编程接口"
-
-# | msgid "Hiddify Next"
-#~ msgid "app.hiddify.next.title"
-#~ msgstr "下一个"
-
-# | msgid "HiddifyN"
-#~ msgid "app.hiddifyn.title"
-#~ msgstr "希迪菲尼"
-
-# | msgid "V2RayNG"
-#~ msgid "app.v2rayng.title"
-#~ msgstr "V2RayNG"
-
-# | msgid "HiddifyNG"
-#~ msgid "app.hiddifyng.title"
-#~ msgstr "HiddifyNG"
-
-# | msgid "Hiddify Android"
-#~ msgid "app.hiddify-android.title"
-#~ msgstr "Android 系统"
-
-# | msgid "FoXray"
-#~ msgid "app.foxray.title"
-#~ msgstr "福克斯X射线"
-
-# | msgid "Shadowrocket"
-#~ msgid "app.shadowrocket.title"
-#~ msgstr "暗影火箭"
-
-# | msgid "Streisand"
-#~ msgid "app.streisand.title"
-#~ msgstr "史翠珊"
-
-# | msgid "Loon"
-#~ msgid "app.loon.title"
-#~ msgstr "龙"
-
-# | msgid "Stash"
-#~ msgid "app.stash.title"
-#~ msgstr "藏"
-
-# | msgid "Hiddify Clash"
-#~ msgid "app.hiddify.clash.title"
-#~ msgstr "希迪冲突"
-
-# | msgid "HiddifyN Description"
-#~ msgid "app.hiddifyn.description"
-#~ msgstr "HiddifyN 描述"
-
-# | msgid "V2RayNG Description"
-#~ msgid "app.v2rayng.description"
-#~ msgstr "V2RayNG 说明"
-
-# | msgid "HiddifyNG Description"
-#~ msgid "app.hiddifyng.description"
-#~ msgstr "HiddifyNG 说明"
-
-# | msgid "Hiddify Android Description"
-#~ msgid "app.hiddify-android.description"
-#~ msgstr "Hiddify Android 说明"
-
-# | msgid "FoXray Description"
-#~ msgid "app.foxray.description"
-#~ msgstr "福克斯射线描述"
-
-# | msgid "Shadowrocket Description"
-#~ msgid "app.shadowrocket.description"
-#~ msgstr "暗影火箭描述"
-
-# | msgid "Streisand Description"
-#~ msgid "app.streisand.description"
-#~ msgstr "史翠珊描述"
-
-# | msgid "Loon Description"
-#~ msgid "app.loon.description"
-#~ msgstr "潜鸟描述"
-
-# | msgid "Stash Description"
-#~ msgid "app.stash.description"
-#~ msgstr "藏匿描述"
-
-# | msgid "Hiddify Clash Description"
-#~ msgid "app.hiddify.clash.description"
-#~ msgstr "Hiddify 冲突说明"
-
-# | msgid "Hiddify Next Description"
-#~ msgid "app.hiddify.next.description"
-#~ msgstr "Hiddify 下一个说明"
-
-# | msgid "Couldn't find your IP addresses"
-#~ msgid "Couldn't find your ip addresses"
-#~ msgstr "找不到您的 IP 地址"
-
-# | msgid "Hiddify Clash"
-#~ msgid "app.hiddify-clash-android.title"
-#~ msgstr "希迪冲突"
-
-# | msgid "Hiddify Clash"
-#~ msgid "app.hiddify-clash-desktop.title"
-#~ msgstr "希迪冲突"
-
-# | msgid "NekoBox"
-#~ msgid "app.nekobox.title"
-#~ msgstr "猫盒子"
-
-#~ msgid "app.nekobox.description"
-#~ msgstr ""
-
-#~ msgid "app.hiddify-clash-android.description"
-#~ msgstr ""
-
-#~ msgid "app.hiddify-clash-desktop.description"
-#~ msgstr ""
-
-# | msgid "⚠️ Incorrect Password"
-#~ msgid "Incorrect Password"
-#~ msgstr ""
-
-# | msgid "ℹ️ Link is Changed!"
-#~ msgid "Link is changed!"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "The page has been moved to a "
-#~ "new link. Please copy and save the"
-#~ " new link."
-#~ msgstr ""
-
-# | msgid ""
-# | "Please connect your Telegram account to the panel to be informed about "
-# | "latest news."
-#~ msgid ""
-#~ "Please connect your telegram account to"
-#~ " the panel to be informed about "
-#~ "latest news."
-#~ msgstr ""
-
-# | msgid "🔐 Proxy Path for Admins"
-#~ msgid "config.proxy_path_admin.label"
-#~ msgstr "管理员的代理路径"
-
-# | msgid ""
-# | "We use secret proxy path to hide our proxies for the governments and
-# bots"
-#~ msgid "config.proxy_path_admin.description"
-#~ msgstr "我们使用秘密代理路径来为政府和机器人隐藏我们的代理"
-
-# | msgid "🔏 Proxy Path for Clients"
-#~ msgid "config.proxy_path_client.label"
-#~ msgstr "客户端的代理路径"
-
-# | msgid ""
-# | "Secret proxy path hide the proxies from the governments and bots"
-#~ msgid "config.proxy_path_client.description"
-#~ msgstr "秘密代理路径对政府和机器人隐藏代理"
-
-# | msgid "Secret Code"
-#~ msgid "login.secret.label"
-#~ msgstr "密码"
-
-# | msgid "Secret code is given by the service provider."
-#~ msgid "login.secret.description"
-#~ msgstr "密码由服务提供商提供。"
-
-#~ msgid "ProxyPath is already used! use different proxy path"
-#~ msgstr "ProxyPath 已被使用！使用不同的代理路径"
-
-#~ msgid "Join our Hiddify Telegram channel to get the latest updates on Hiddify."
-#~ msgstr "加入我们的 Hiddify Telegram 频道，获取 Hiddify 的最新动态。"
-
-# | msgid "[Admin-exclusive message]: Customizable via settings."
-#~ msgid "[Admin only visible message:] You can change this message from settings"
-#~ msgstr "[仅管理员可见的消息]：您可以从设置中更改此消息。"
-
-# | msgid "⏯ Enable TLS Fragment"
-#~ msgid "config.tls_fragment_enable.label"
-#~ msgstr ""
-
-# | msgid ""
-# | "Under some circumstances, it can bypass the SNI blacklist system"
-#~ msgid "config.tls_fragment_enable.description"
-#~ msgstr ""
-
-# | msgid "🎚 TLS Fragment Size"
-#~ msgid "config.tls_fragment_size.label"
-#~ msgstr ""
-
-# | msgid "The Size of each Packet"
-#~ msgid "config.tls_fragment_size.description"
-#~ msgstr ""
-
-# | msgid "⏱ TLS Fragment Sleep"
-#~ msgid "config.tls_fragment_sleep.label"
-#~ msgstr ""
-
-# | msgid "The time delay between Fragments"
-#~ msgid "config.tls_fragment_sleep.description"
-#~ msgstr ""
-
-# | msgid "🔠 Enable TLS Mixed SNI Case"
-#~ msgid "config.tls_mixed_case.label"
-#~ msgstr ""
-
-# | msgid "Enables TLS Mixed SNI Case Fragmentation"
-#~ msgid "config.tls_mixed_case.description"
-#~ msgstr ""
-
-# | msgid "♒️ Enable TLS Padding"
-#~ msgid "config.tls_padding_enable.label"
-#~ msgstr ""
-
-# | msgid "Enables Padding for TLS Fragmentation"
-#~ msgid "config.tls_padding_enable.description"
-#~ msgstr ""
-
-# | msgid "📏 TLS Padding"
-#~ msgid "config.tls_padding_length.label"
-#~ msgstr ""
-
-# | msgid "The length of the Padding for TLS Fragmentation"
-#~ msgid "config.tls_padding_length.description"
-#~ msgstr ""
-
-# | msgid "🎛 Hysteria OBFS Enable"
-#~ msgid "config.hysteria_obfs_enable.label"
-#~ msgstr ""
-
-# | msgid " Enables Hysteria Obfuscation (Salamander)"
-#~ msgid "config.hysteria_obfs_enable.description"
-#~ msgstr ""
-
-# | msgid "⬆️ Hysteria Upload (mbps)"
-#~ msgid "config.hysteria_up_mbps.label"
-#~ msgstr ""
-
-# | msgid "Hysteria Maximum Upload Speed"
-#~ msgid "config.hysteria_up_mbps.description"
-#~ msgstr ""
-
-# | msgid "⬇️ Hysteria Download (mbps)"
-#~ msgid "config.hysteria_down_mbps.label"
-#~ msgstr ""
-
-# | msgid "Hysteria Maximum Download Speed"
-#~ msgid "config.hysteria_down_mbps.description"
-#~ msgstr ""
-
-# | msgid "TLS Trick"
-#~ msgid "config.tls_trick.label"
-#~ msgstr ""
-
-# | msgid "TLS Fragmentation configurations could be set in this section"
-#~ msgid "config.tls_trick.description"
-#~ msgstr ""
-
-#~ msgid "config.Invalid! The pattern is number-number"
-#~ msgstr ""
-
-#~ msgid "config.Invalid! it should be a number only"
-#~ msgstr ""
-
-#~ msgid "config.mux_enable.label"
-#~ msgstr ""
-
-#~ msgid "config.mux_enable.description"
-#~ msgstr ""
-
-#~ msgid "config.mux_protocol.label"
-#~ msgstr ""
-
-#~ msgid "config.mux_protocol.description"
-#~ msgstr ""
-
-#~ msgid "config.mux_max_connections.label"
-#~ msgstr ""
-
-#~ msgid "config.mux_max_connections.description"
-#~ msgstr ""
-
-#~ msgid "config.mux_min_streams.label"
-#~ msgstr ""
-
-#~ msgid "config.mux_min_streams.description"
-#~ msgstr ""
-
-#~ msgid "config.mux_max_streams.label"
-#~ msgstr ""
-
-#~ msgid "config.mux_max_streams.description"
-#~ msgstr ""
-
-#~ msgid "config.mux_padding_enable.label"
-#~ msgstr ""
-
-#~ msgid "config.mux_padding_enable.description"
-#~ msgstr ""
-
-#~ msgid "config.mux_brutal_enable.label"
-#~ msgstr ""
-
-#~ msgid "config.mux_brutal_enable.description"
-#~ msgstr ""
-
-#~ msgid "config.mux_brutal_up_mbps.label"
-#~ msgstr ""
-
-#~ msgid "config.mux_brutal_up_mbps.description"
-#~ msgstr ""
-
-#~ msgid "config.mux_brutal_down_mbps.label"
-#~ msgstr ""
-
-#~ msgid "config.mux_brutal_down_mbps.description"
-#~ msgstr ""
-
-#~ msgid "config.mux.label"
-#~ msgstr ""
-
-#~ msgid "config.mux.description"
-#~ msgstr ""
 
