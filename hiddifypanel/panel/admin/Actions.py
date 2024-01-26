@@ -134,7 +134,7 @@ class Actions(FlaskView):
                                out_type="info",
                                out_msg=_("Success! Please wait around 4 minutes to make sure everything is updated. During this time, please save your proxy links which are:") +
                                admin_links,
-                               log_path=get_logpath("0-install.log"),
+                               log_path=get_logpath("install.log"),
                                show_success=True,
                                domains=get_domains(),
 
