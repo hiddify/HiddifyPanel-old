@@ -112,8 +112,8 @@ def init_db():
 
     if not Child.query.filter(Child.id == 0).first():
         print(Child.query.filter(Child.id == 0).first())
-        tmpuuid=str(uuid.uuid4())
-        db.session.add(Child(unique_id=tmpuuid,name="Root", id=0))
+        tmpuuid = str(uuid.uuid4())
+        db.session.add(Child(unique_id=tmpuuid, name="Root", id=0))
         db.session.commit()
         execute(f'update child set id=0 where unique_id="{tmpuuid}"')
 
@@ -124,7 +124,8 @@ def init_db():
 
     upgrade_database()
     Child.query.filter(Child.id == 0).first().mode = ChildMode.virtual
-    if db_version<69:_v70(0)
+    if db_version < 69:
+        _v70(0)
 
     db.session.commit()
 
@@ -157,6 +158,13 @@ def init_db():
         db.session.commit()
     g.current_child_id = 0
     return BoolConfig.query.all()
+
+
+def _v71():
+    # ignore [parent_domain,show_domain,show_domain_parent]
+    tables = ['bool_config', 'str_config', 'daily_usage', 'domain', 'proxy']
+    for t in tables:
+        execute(f'ALTER TABLE {t} RENAME COLUMN child_id TO node_id')
 
 
 def _v70(child_id):
