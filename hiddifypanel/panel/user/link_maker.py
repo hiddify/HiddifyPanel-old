@@ -372,6 +372,11 @@ def add_tls_tricks_to_link(link: str) -> str:
     hconfigs = get_hconfigs()
     if hconfigs[ConfigEnum.tls_fragment_enable]:
         link += f'&fragment={hconfigs[ConfigEnum.tls_fragment_size]},{hconfigs[ConfigEnum.tls_fragment_sleep]},tlshello'
+    if g.user_agent.get('is_hiddify'):
+        if hconfigs[ConfigEnum.tls_mixed_case]:
+            link += '&mc=1'
+        if hconfigs[ConfigEnum.tls_padding_enable]:
+            link += f'&padsize={hconfigs[ConfigEnum.tls_padding_length]}'
     return link
 
     # old hiddify-next format
@@ -396,7 +401,11 @@ def add_tls_tricks_to_dict(d: dict):
     hconfigs = get_hconfigs()
     if hconfigs[ConfigEnum.tls_fragment_enable]:
         d['fragment'] = f'{hconfigs[ConfigEnum.tls_fragment_size]},{hconfigs[ConfigEnum.tls_fragment_sleep]},tlshello'
-
+    if g.user_agent.get('is_hiddify'):
+        if hconfigs[ConfigEnum.tls_mixed_case]:
+            d['mc'] = 1
+        if hconfigs[ConfigEnum.tls_padding_enable]:
+            d['padsize'] = hconfigs[ConfigEnum.tls_padding_length]
     # old hiddify-next format
     # if hconfig(ConfigEnum.tls_fragment_enable):
     #     d['fgsize'] = hconfig(ConfigEnum.tls_fragment_size)
