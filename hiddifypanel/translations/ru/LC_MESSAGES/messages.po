@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  HiddifyPT\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-08 03:16+0330\n"
-"PO-Revision-Date: 2024-02-08 01:43+0300\n"
+"POT-Creation-Date: 2024-02-17 17:53+0100\n"
+"PO-Revision-Date: 2024-02-17 10:49-0600\n"
 "Last-Translator: lymanrudni\n"
 "Language: ru\n"
 "Language-Team: Russian\n"
@@ -2415,12 +2415,12 @@ msgid "Click here to see the complete log"
 msgstr "Нажмите здесь, чтобы просмотреть весь журнал"
 
 #: hiddifypanel/panel/admin/templates/model/user_list.html:102
-#: hiddifypanel/panel/admin/templates/result.html:155
+#: hiddifypanel/panel/admin/templates/result.html:156
 msgid "Success"
 msgstr "Успешно"
 
 # | msgid "✅ The Action Done Successfully. You can now leave this page"
-#: hiddifypanel/panel/admin/templates/result.html:156
+#: hiddifypanel/panel/admin/templates/result.html:157
 msgid "The action done successfully. You can now leave this page."
 msgstr "✅Действие выполнено успешно. Теперь вы можете покинуть эту страницу"
 
@@ -2514,6 +2514,16 @@ msgstr "Наведите курсор на пользователя, чтобы 
 #: hiddifypanel/panel/admin/templates/model/user_list.html:115
 msgid "The message was not sent to"
 msgstr "Сообщение не было отправлено "
+
+#: hiddifypanel/panel/commercial/ProxyDetailsAdmin.py:30
+#, python-format
+msgid "%(count)s records were successfully disabled."
+msgstr ""
+
+#: hiddifypanel/panel/commercial/ProxyDetailsAdmin.py:39
+#, python-format
+msgid "%(count)s records were successfully enabled."
+msgstr ""
 
 # | msgid "Hiddify Next"
 #: hiddifypanel/panel/commercial/restapi/v2/user/apps_api.py:175
@@ -2852,7 +2862,7 @@ msgid "user.home.title"
 msgstr "Hiddify"
 
 # | msgid "📅%(expire_days)s Days Remain"
-#: hiddifypanel/panel/user/link_maker.py:968
+#: hiddifypanel/panel/user/link_maker.py:969
 #, python-format
 msgid "📅%(expire_days)s days"
 msgstr "Осталось 📅%(expire_days)s дней"
@@ -5092,5 +5102,8 @@ msgstr "Действия"
 #~ msgstr ""
 
 #~ msgid "config.shadowsocks.description"
+#~ msgstr ""
+
+#~ msgid " Search Settings"
 #~ msgstr ""
 

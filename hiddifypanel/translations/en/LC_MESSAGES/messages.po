@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: HiddifyPanel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-08 03:16+0330\n"
-"PO-Revision-Date: 2024-02-08 01:43+0300\n"
+"POT-Creation-Date: 2024-02-17 17:53+0100\n"
+"PO-Revision-Date: 2024-02-17 10:48-0600\n"
 "Last-Translator: hidden u\n"
 "Language-Team: English (USA)\n"
 "Language: en_US\n"
@@ -2337,12 +2337,12 @@ msgid "Click here to see the complete log"
 msgstr "Click here to see the complete log"
 
 #: hiddifypanel/panel/admin/templates/model/user_list.html:102
-#: hiddifypanel/panel/admin/templates/result.html:155
+#: hiddifypanel/panel/admin/templates/result.html:156
 msgid "Success"
 msgstr "Success"
 
 # | msgid "✅ The Action Done Successfully. You can now leave this page"
-#: hiddifypanel/panel/admin/templates/result.html:156
+#: hiddifypanel/panel/admin/templates/result.html:157
 msgid "The action done successfully. You can now leave this page."
 msgstr "✅ The Action Done Successfully. You can now leave this page"
 
@@ -2432,6 +2432,16 @@ msgstr "Hover the user to see the reason"
 #: hiddifypanel/panel/admin/templates/model/user_list.html:115
 msgid "The message was not sent to"
 msgstr "The message was not sent to"
+
+#: hiddifypanel/panel/commercial/ProxyDetailsAdmin.py:30
+#, fuzzy, python-format
+msgid "%(count)s records were successfully disabled."
+msgstr "%(count)s records were successfully disabled."
+
+#: hiddifypanel/panel/commercial/ProxyDetailsAdmin.py:39
+#, fuzzy, python-format
+msgid "%(count)s records were successfully enabled."
+msgstr "%(count)s records were successfully enabled."
 
 # | msgid "Hiddify Next"
 #: hiddifypanel/panel/commercial/restapi/v2/user/apps_api.py:175
@@ -2756,7 +2766,7 @@ msgid "user.home.title"
 msgstr "Hiddify"
 
 # | msgid "📅%(expire_days)s Days Remain"
-#: hiddifypanel/panel/user/link_maker.py:968
+#: hiddifypanel/panel/user/link_maker.py:969
 #, python-format
 msgid "📅%(expire_days)s days"
 msgstr "📅%(expire_days)s Days Remain"
@@ -5140,3 +5150,6 @@ msgstr "Actions"
 # firewalls."
 #~ msgid "config.shadowsocks.description"
 #~ msgstr "Shadowsocks is a fast tunnel proxy that helps you bypass firewalls."
+
+#~ msgid " Search Settings"
+#~ msgstr " Search Settings"

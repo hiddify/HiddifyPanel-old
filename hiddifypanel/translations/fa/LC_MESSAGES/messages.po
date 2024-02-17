@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  HiddifyPanel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-08 03:16+0330\n"
-"PO-Revision-Date: 2024-02-08 01:43+0300\n"
+"POT-Creation-Date: 2024-02-17 17:53+0100\n"
+"PO-Revision-Date: 2024-02-17 10:48-0600\n"
 "Last-Translator: hidden u\n"
 "Language: fa\n"
 "Language-Team: Persian\n"
@@ -2402,13 +2402,13 @@ msgid "Click here to see the complete log"
 msgstr "برای دیدن لاگ کامل، اینجا کلیک کنید."
 
 #: hiddifypanel/panel/admin/templates/model/user_list.html:102
-#: hiddifypanel/panel/admin/templates/result.html:155
+#: hiddifypanel/panel/admin/templates/result.html:156
 #, fuzzy
 msgid "Success"
 msgstr "موفقیت"
 
 # | msgid "✅ The Action Done Successfully. You can now leave this page"
-#: hiddifypanel/panel/admin/templates/result.html:156
+#: hiddifypanel/panel/admin/templates/result.html:157
 msgid "The action done successfully. You can now leave this page."
 msgstr "✅ عملیات با موفقیت انجام شد. اکنون می توانید این صفحه را ترک کنید"
 
@@ -2508,6 +2508,16 @@ msgstr "روی یوزر کلیک کنید تا دلیل آن را ببینید"
 #: hiddifypanel/panel/admin/templates/model/user_list.html:115
 msgid "The message was not sent to"
 msgstr "پیام نتوانست به کاربران زیر ارسال شود"
+
+#: hiddifypanel/panel/commercial/ProxyDetailsAdmin.py:30
+#, python-format
+msgid "%(count)s records were successfully disabled."
+msgstr ""
+
+#: hiddifypanel/panel/commercial/ProxyDetailsAdmin.py:39
+#, python-format
+msgid "%(count)s records were successfully enabled."
+msgstr ""
 
 # | msgid "Hiddify Next"
 #: hiddifypanel/panel/commercial/restapi/v2/user/apps_api.py:175
@@ -2833,7 +2843,7 @@ msgid "user.home.title"
 msgstr "هیدیفای"
 
 # | msgid "📅%(expire_days)s Days Remain"
-#: hiddifypanel/panel/user/link_maker.py:968
+#: hiddifypanel/panel/user/link_maker.py:969
 #, python-format
 msgid "📅%(expire_days)s days"
 msgstr "📅%(expire_days)s روز اعتبار"
@@ -5385,7 +5395,7 @@ msgstr "عملیات"
 
 # | msgid "Shadowsocks"
 #~ msgid "config.shadowsocks.label"
-#~ msgstr "جوراب سایه"
+#~ msgstr "شادوساکس"
 
 # | msgid ""
 # | "Shadowsocks is a fast tunnel proxy that helps you bypass firewalls."
@@ -5394,4 +5404,7 @@ msgstr "عملیات"
 #~ "Shadowsocks یک پروکسی تونل سریع است "
 #~ "که به شما کمک می کند فایروال "
 #~ "ها را دور بزنید."
+
+#~ msgid " Search Settings"
+#~ msgstr ""
 

@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  HiddifyPT\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-08 03:16+0330\n"
-"PO-Revision-Date: 2024-02-08 01:43+0300\n"
+"POT-Creation-Date: 2024-02-17 17:53+0100\n"
+"PO-Revision-Date: 2024-02-17 10:49-0600\n"
 "Last-Translator: lymanrudni\n"
 "Language: pt\n"
 "Language-Team: Portuguese\n"
@@ -1836,10 +1836,12 @@ msgstr ""
 "escolher."
 
 #: hiddifypanel/panel/admin/templates/configfake.html:6
+#, fuzzy
 msgid "config.restls.label"
 msgstr "config.restls.label"
 
 #: hiddifypanel/panel/admin/templates/configfake.html:6
+#, fuzzy
 msgid "config.restls.description"
 msgstr "config.restls.description"
 
@@ -2210,10 +2212,12 @@ msgid "config.reality.description"
 msgstr "REALITY elimina o recurso de impressão digital TLS do lado do servidor"
 
 #: hiddifypanel/panel/admin/templates/configfake.html:6
+#, fuzzy
 msgid "config.first_setup.label"
 msgstr "config.first_setup.label"
 
 #: hiddifypanel/panel/admin/templates/configfake.html:6
+#, fuzzy
 msgid "config.first_setup.description"
 msgstr "config.first_setup.description"
 
@@ -2231,18 +2235,22 @@ msgid "config.warp_enable.description"
 msgstr "O WARP ajuda você a contornar o bloqueio do Google, Spotify e Netflix ."
 
 #: hiddifypanel/panel/admin/templates/configfake.html:6
+#, fuzzy
 msgid "config.restls1_2_domain.label"
 msgstr "config.restls1_2_domain.label"
 
 #: hiddifypanel/panel/admin/templates/configfake.html:6
+#, fuzzy
 msgid "config.restls1_2_domain.description"
 msgstr "config.restls1_2_domain.description"
 
 #: hiddifypanel/panel/admin/templates/configfake.html:6
+#, fuzzy
 msgid "config.restls1_3_domain.label"
 msgstr "config.restls1_3_domain.label"
 
 #: hiddifypanel/panel/admin/templates/configfake.html:6
+#, fuzzy
 msgid "config.restls1_3_domain.description"
 msgstr "config.restls1_3_domain.description"
 
@@ -2266,6 +2274,7 @@ msgid "config.is_parent.label"
 msgstr "Painel pai"
 
 #: hiddifypanel/panel/admin/templates/configfake.html:6
+#, fuzzy
 msgid "config.is_parent.description"
 msgstr "config.is_parent.description"
 
@@ -2287,18 +2296,22 @@ msgstr ""
 "o uso de todos os servidores será adicionado cumulativamente."
 
 #: hiddifypanel/panel/admin/templates/configfake.html:6
+#, fuzzy
 msgid "config.unique_id.label"
 msgstr "config.unique_id.label"
 
 #: hiddifypanel/panel/admin/templates/configfake.html:6
+#, fuzzy
 msgid "config.unique_id.description"
 msgstr "config.unique_id.description"
 
 #: hiddifypanel/panel/admin/templates/configfake.html:6
+#, fuzzy
 msgid "config.last_hash.label"
 msgstr "config.last_hash.label"
 
 #: hiddifypanel/panel/admin/templates/configfake.html:6
+#, fuzzy
 msgid "config.last_hash.description"
 msgstr "config.last_hash.description"
 
@@ -2667,13 +2680,13 @@ msgid "Click here to see the complete log"
 msgstr "Clique aqui para ver o registro completo"
 
 #: hiddifypanel/panel/admin/templates/model/user_list.html:102
-#: hiddifypanel/panel/admin/templates/result.html:155
+#: hiddifypanel/panel/admin/templates/result.html:156
 #, fuzzy
 msgid "Success"
 msgstr "Sucesso"
 
 # | msgid "✅ The Action Done Successfully. You can now leave this page"
-#: hiddifypanel/panel/admin/templates/result.html:156
+#: hiddifypanel/panel/admin/templates/result.html:157
 #, fuzzy
 msgid "The action done successfully. You can now leave this page."
 msgstr "✅ A Ação Feita com Sucesso. Agora você pode sair desta página"
@@ -2769,12 +2782,23 @@ msgid "The message has been sent."
 msgstr "A mensagem foi enviada."
 
 #: hiddifypanel/panel/admin/templates/model/user_list.html:106
+#, fuzzy
 msgid "Hover the user to see the reason"
 msgstr "Hover the user to see the reason"
 
 #: hiddifypanel/panel/admin/templates/model/user_list.html:115
 msgid "The message was not sent to"
 msgstr "The message was not sent to"
+
+#: hiddifypanel/panel/commercial/ProxyDetailsAdmin.py:30
+#, python-format
+msgid "%(count)s records were successfully disabled."
+msgstr ""
+
+#: hiddifypanel/panel/commercial/ProxyDetailsAdmin.py:39
+#, python-format
+msgid "%(count)s records were successfully enabled."
+msgstr ""
 
 # | msgid "Hiddify Next"
 #: hiddifypanel/panel/commercial/restapi/v2/user/apps_api.py:175
@@ -3118,7 +3142,7 @@ msgid "user.home.title"
 msgstr "Ocultar"
 
 # | msgid "📅%(expire_days)s Days Remain"
-#: hiddifypanel/panel/user/link_maker.py:968
+#: hiddifypanel/panel/user/link_maker.py:969
 #, fuzzy, python-format
 msgid "📅%(expire_days)s days"
 msgstr "📅Remanescem: %(expire_days)s dias"
@@ -3321,6 +3345,7 @@ msgstr "Google Play"
 # | msgid ""
 # | "HiddifyNG <span class='badge badge-success'>Recommended</span>"
 #: hiddifypanel/panel/user/templates/home/android.html:26
+#, fuzzy
 msgid "HiddifyNG"
 msgstr "HiddifyNG <span class='badge badge-success'>Recommended</span>"
 
@@ -4235,6 +4260,7 @@ msgstr ""
 "Então clique no link abaixo. Fará tudo automaticamente."
 
 #: hiddifypanel/panel/user/templates/home/windows.html:63
+#, fuzzy
 msgid "HiddifyClash"
 msgstr "HiddifyClash"
 
@@ -5485,5 +5511,8 @@ msgstr "Ações"
 #~ msgstr ""
 
 #~ msgid "config.shadowsocks.description"
+#~ msgstr ""
+
+#~ msgid " Search Settings"
 #~ msgstr ""
 

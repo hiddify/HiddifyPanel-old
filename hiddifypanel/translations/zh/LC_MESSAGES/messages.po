@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-08 03:16+0330\n"
+"POT-Creation-Date: 2024-02-17 17:53+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh\n"
@@ -1532,11 +1532,11 @@ msgid "Click here to see the complete log"
 msgstr ""
 
 #: hiddifypanel/panel/admin/templates/model/user_list.html:102
-#: hiddifypanel/panel/admin/templates/result.html:155
+#: hiddifypanel/panel/admin/templates/result.html:156
 msgid "Success"
 msgstr ""
 
-#: hiddifypanel/panel/admin/templates/result.html:156
+#: hiddifypanel/panel/admin/templates/result.html:157
 msgid "The action done successfully. You can now leave this page."
 msgstr ""
 
@@ -1599,6 +1599,16 @@ msgstr ""
 
 #: hiddifypanel/panel/admin/templates/model/user_list.html:115
 msgid "The message was not sent to"
+msgstr ""
+
+#: hiddifypanel/panel/commercial/ProxyDetailsAdmin.py:30
+#, python-format
+msgid "%(count)s records were successfully disabled."
+msgstr ""
+
+#: hiddifypanel/panel/commercial/ProxyDetailsAdmin.py:39
+#, python-format
+msgid "%(count)s records were successfully enabled."
 msgstr ""
 
 #: hiddifypanel/panel/commercial/restapi/v2/user/apps_api.py:175
@@ -1840,7 +1850,7 @@ msgstr ""
 msgid "user.home.title"
 msgstr ""
 
-#: hiddifypanel/panel/user/link_maker.py:968
+#: hiddifypanel/panel/user/link_maker.py:969
 #, python-format
 msgid "📅%(expire_days)s days"
 msgstr ""
