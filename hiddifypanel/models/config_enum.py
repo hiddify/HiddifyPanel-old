@@ -42,6 +42,7 @@ class ConfigCategory(StrEnum):
 
 
 class ConfigEnum(StrEnum):
+    create_easysetup_link = auto()
     ssh_server_redis_url = auto()
     ssh_server_port = auto()
     ssh_server_enable = auto()
@@ -146,6 +147,7 @@ class ConfigEnum(StrEnum):
 
     def info(self):
         map = {
+            self.create_easysetup_link: {'category': ConfigCategory.hidden},
             self.ssh_server_redis_url: {'category': ConfigCategory.hidden},
             self.ssh_server_port: {'category': ConfigCategory.ssh, 'apply_mode': 'apply'},
             self.ssh_server_enable: {'category': ConfigCategory.ssh, 'type': bool, 'apply_mode': 'apply'},

@@ -1,7 +1,7 @@
 from hiddifypanel.models import *
 import flask_babel
 import flask_babelex
-
+import uuid
 # from flask_babelex import lazy_gettext as _
 from flask_babelex import gettext as _
 import wtforms as wtf
@@ -13,7 +13,7 @@ from flask_admin.base import expose
 from wtforms.validators import Regexp, ValidationError
 
 import re
-from flask import render_template, current_app, Markup, redirect, url_for
+from flask import render_template, current_app, Markup, redirect, url_for, request
 from hiddifypanel.models import User, Domain, DomainType, StrConfig, ConfigEnum, get_hconfigs
 from hiddifypanel.panel.database import db
 from wtforms.fields import *
@@ -29,6 +29,9 @@ class QuickSetup(FlaskView):
 
     def post(self):
         set_hconfig(ConfigEnum.first_setup, False)
+        if request.args.get('changepw') == "true":
+            AdminUser.current_admin_or_owner().uuid = str(uuid.uuid4())
+
         quick_form = get_quick_setup_form()
         lang_form = get_lang_form()
         if lang_form.lang_submit.data:
@@ -109,9 +112,11 @@ def get_quick_setup_form(empty=False):
                              ]
         domain = wtf.fields.StringField(_("domain.domain"), domain_validators, description=_("domain.description"), render_kw={
                                         "class": "ltr", "pattern": domain_validators[0].regex.pattern, "title": domain_validators[0].message, "required": "", "placeholder": "sub.domain.com"})
-        enable_telegram = SwitchField(_("config.telegram_enable.label"), description=_("config.telegram_enable.description"), default=hconfig(ConfigEnum.telegram_enable))
+        enable_telegram = SwitchField(_("config.telegram_enable.label"), description=_(
+            "config.telegram_enable.description"), default=hconfig(ConfigEnum.telegram_enable))
         enable_firewall = SwitchField(_("config.firewall.label"), description=_("config.firewall.description"), default=hconfig(ConfigEnum.firewall))
-        block_iran_sites = SwitchField(_("config.block_iran_sites.label"), description=_("config.block_iran_sites.description"), default=hconfig(ConfigEnum.block_iran_sites))
+        block_iran_sites = SwitchField(_("config.block_iran_sites.label"), description=_(
+            "config.block_iran_sites.description"), default=hconfig(ConfigEnum.block_iran_sites))
         enable_vmess = SwitchField(_("config.vmess_enable.label"), description=_("config.vmess_enable.description"), default=hconfig(ConfigEnum.vmess_enable))
         decoy_domain = wtf.fields.StringField(_("config.decoy_domain.label"), description=_("config.decoy_domain.description"), default=hconfig(
             ConfigEnum.decoy_domain), validators=[wtf.validators.Regexp(domain_regex, re.IGNORECASE, _("config.Invalid domain")), hiddify.validate_domain_exist])
@@ -135,6 +140,6 @@ def validate_domain(form, field):
 def admin_link():
     domains = get_panel_domains()
     if len(domains):
-        return "https://"+domains[0].domain+hiddify.get_admin_path()
+        return "https://" + domains[0].domain + hiddify.get_admin_path()
     else:
-        return "https://"+hiddify.get_ip(4)+hiddify.get_admin_path()
+        return "https://" + hiddify.get_ip(4) + hiddify.get_admin_path()
