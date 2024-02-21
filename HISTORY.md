@@ -1,6 +1,23 @@
 # Changelog
 
 
+## 8.8.96 (2024-02-21)
+
+#### New
+
+* Add more security for first setup. 
+
+#### Fix
+
+* Log file name bug. 
+
+#### Other
+
+* Merge pull request #104 from Iam54r1n4/v8. 
+  _fix: log file name bug_
+
+
+
 ## 8.8.95 (2024-01-22)
 
 #### Fix

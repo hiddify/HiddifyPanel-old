@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  HiddifyPT\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-22 08:43+0100\n"
-"PO-Revision-Date: 2024-01-21 16:43-0600\n"
+"POT-Creation-Date: 2024-02-21 11:57+0330\n"
+"PO-Revision-Date: 2024-02-17 19:54+0300\n"
 "Last-Translator: lymanrudni\n"
 "Language: pt\n"
 "Language-Team: Portuguese\n"
@@ -12,7 +12,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.14.0\n"
 
 # | msgid "This Domain does not exist in the Panel !"
 #: hiddifypanel/models/domain.py:134 hiddifypanel/panel/user/user.py:281
@@ -63,7 +63,7 @@ msgstr "✅ As configurações foram alteradas com sucesso"
 #: hiddifypanel/panel/admin/DomainAdmin.py:154
 #: hiddifypanel/panel/admin/DomainAdmin.py:176
 #: hiddifypanel/panel/admin/DomainAdmin.py:179
-#: hiddifypanel/panel/admin/QuickSetup.py:127
+#: hiddifypanel/panel/admin/QuickSetup.py:132
 #: hiddifypanel/panel/commercial/ParentDomainAdmin.py:107
 #: hiddifypanel/panel/hiddify.py:370
 #, fuzzy
@@ -294,8 +294,8 @@ msgstr ""
 #: hiddifypanel/panel/admin/Backup.py:86
 #: hiddifypanel/panel/admin/ProxyAdmin.py:97
 #: hiddifypanel/panel/admin/ProxyAdmin.py:128
-#: hiddifypanel/panel/admin/QuickSetup.py:85
-#: hiddifypanel/panel/admin/QuickSetup.py:118
+#: hiddifypanel/panel/admin/QuickSetup.py:88
+#: hiddifypanel/panel/admin/QuickSetup.py:123
 #: hiddifypanel/panel/admin/SettingAdmin.py:265
 #, fuzzy
 msgid "Submit"
@@ -304,14 +304,13 @@ msgstr "Enviar"
 # | msgid ""
 # | "Please fill in this field carefully and correctly. Otherwise, proxies
 # will "
-# | "run into problems. Please visit <a "
-# |
-# "href=\"https://github.com/hiddify/hiddify-config/wiki/راهنمای-تنظیم-دامنه-و-"
-# | "نهایی-کردن-نصب#آموزش-ساخت-زیردامنه\"> Help</a> to learn how to create a "
-# | "subdomain."
+# | "run into problems. Please visit <a
+# href='https://github.com/hiddify/hiddify-"
+# | "config/wiki/راهنمای-تنظیم-دامنه-و-نهایی-کردن-نصب#آموزش-ساخت-زیردامنه'> "
+# | "Help</a> to learn how to create a subdomain."
 #: hiddifypanel/panel/admin/ChildAdmin.py:32
 #: hiddifypanel/panel/admin/DomainAdmin.py:45
-#: hiddifypanel/panel/admin/QuickSetup.py:110
+#: hiddifypanel/panel/admin/QuickSetup.py:113
 #: hiddifypanel/panel/commercial/ParentDomainAdmin.py:32
 #: hiddifypanel/templates/flaskadmin-layout.html:129
 #, fuzzy
@@ -319,8 +318,8 @@ msgid "domain.description"
 msgstr ""
 "Por favor, preencha este campo com cuidado e corretamente. Caso "
 "contrário, os proxies terão problemas. Visite <a "
-"href=\"https://github.com/hiddify/hiddify-"
-"config/wiki/راهنمای-تنظیم-دامنه-و-نهایی-کردن-نصب#آموزش-ساخت-زیردامنه\"> "
+"href='https://github.com/hiddify/hiddify-"
+"config/wiki/راهنمای-تنظیم-دامنه-و-نهایی-کردن-نصب#آموزش-ساخت-زیردامنه'> "
 "Ajuda</a> para aprenda como criar um subdomínio."
 
 # | msgid ""
@@ -353,7 +352,7 @@ msgstr ""
 # | msgid "Domain"
 #: hiddifypanel/panel/admin/ChildAdmin.py:53
 #: hiddifypanel/panel/admin/DomainAdmin.py:79
-#: hiddifypanel/panel/admin/QuickSetup.py:110
+#: hiddifypanel/panel/admin/QuickSetup.py:113
 #: hiddifypanel/panel/commercial/ParentDomainAdmin.py:54
 #: hiddifypanel/templates/flaskadmin-layout.html:128
 #, fuzzy
@@ -403,14 +402,18 @@ msgstr ""
 "Esta versão do painel Hiddify está desatualizada. Atualize-o na Área "
 "Administrativa."
 
+# | msgid ""
+# | "It seems that you have not setup the system completely. <a class='btn
+# btn-"
+# | "success' href='%(quick_setup)s'>Click here</a> to complete setup."
 #: hiddifypanel/panel/admin/Dashboard.py:62
 #, fuzzy, python-format
 msgid ""
 "It seems that you have not setup the system completely. <a class=\"btn "
 "btn-success\" href=\"%(quick_setup)s\">Click here</a> to complete setup."
 msgstr ""
-"Parece que você não configurou o sistema completamente. <a class=\"btn "
-"btn-success\" href=\"%(quick_setup)s\">Clique aqui</a> para concluir a "
+"Parece que você não configurou o sistema completamente. <a class='btn "
+"btn-success' href='%(quick_setup)s'>Clique aqui</a> para concluir a "
 "configuração."
 
 # | msgid ""
@@ -468,13 +471,13 @@ msgstr "Child removido"
 # server's domain. (Proxy Mode On)<br>\n"
 # | "☑️ <b>Automatic CDN IP Selector:</b> This mode functions similarly to CDN
 # mode but with an automated IP assignment based on the IP provided by <a
-# href=\"https://ircf.space\" target=\"_blank\">ircf.space</a>. In Auto CDN IP
+# href='https://ircf.space' target='_blank'>ircf.space</a>. In Auto CDN IP
 # mode, the IP address is resolved from the domain, while in CDN mode, the
 # domain is returned.<br>\n"
 # | "♾️ <b>Relay:</b> Select this mode if you are using one or more
 # Intermediary servers. <a
-# href=\"https://github.com/hiddify/hiddify-config/discussions/129\"
-# target=\"_blank\">Read More</a>\n"
+# href='https://github.com/hiddify/hiddify-config/discussions/129'
+# target='_blank'>Read More</a>\n"
 # | "✴️ <b>Cloudflare Worker:</b> This mode enables automatic creation of
 # workers for your domain in Cloudflare. Simplify the setup and management of
 # workers by registering this domain, as the necessary steps for worker
@@ -499,8 +502,8 @@ msgstr ""
 "Auto_CDN_IP, o IP será resolvido do domínio, mas no modo cdn, o domínio "
 "será retornado<br>\n"
 "Modo <b>Relay</b>: escolha este modo se estiver usando um ou mais "
-"servidores intermediários. <a href=\"https://github.com/hiddify/hiddify-"
-"config/discussions/129\" target=\"_blank\">Leia mais</a>\n"
+"servidores intermediários. <a href='https://github.com/hiddify/hiddify-"
+"config/discussions/129' target='_blank'>Leia mais</a>\n"
 "<br>\n"
 "Modo <b>Fake</b>: escolha este modo se quiser usar um domínio falso (por "
 "exemplo, Soft98.ir) para ignorar o proxy SNI whitelist. (Não recomendado)"
@@ -509,11 +512,11 @@ msgstr ""
 # | "In this part you can use a set of specific domains or IPs for your server
 # to be override in the user links. \n"
 # | "\n"
-# | "If you use <a href=\"https://ircf.space/export.php\">this template </a>,
+# | "If you use <a href='https://ircf.space/export.php'>this template </a>,
 # the relevant IP will be selected according to the user's operator, and if
 # you put a range of IPs The IP will be randomly selected from that range.\n"
-# | "Use <a target=\"_blank\" href=\"https://ip-format.hiddify.com\">this
-# link</a> to set personal IPs."
+# | "Use <a target='_blank' href='https://ip-format.hiddify.com'>this link</a>
+# to set personal IPs."
 #: hiddifypanel/panel/admin/DomainAdmin.py:47
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:1
@@ -523,12 +526,12 @@ msgstr ""
 "Nesta parte, você pode usar um conjunto de domínios ou IPs específicos "
 "para que seu servidor cdn seja substituído nos links do usuário.\n"
 "\n"
-"Se você usar <a href=\"https://ircf.space/export.php\">este modelo </a>, "
-"o IP relevante será selecionado de acordo com a operadora do usuário e se"
-" você colocar um intervalo de IPs O IP serão selecionados aleatoriamente "
+"Se você usar <a href='https://ircf.space/export.php'>este modelo </a>, o "
+"IP relevante será selecionado de acordo com a operadora do usuário e se "
+"você colocar um intervalo de IPs O IP serão selecionados aleatoriamente "
 "desse intervalo.\n"
-"Use <a target=\"_blank\" href=\"https://ip-format.hiddify.com\">este "
-"link</a> para definir IPs pessoais."
+"Use <a target='_blank' href='https://ip-format.hiddify.com'>este link</a>"
+" para definir IPs pessoais."
 
 # | msgid "The name that will be shown in the Configs for this Domain."
 #: hiddifypanel/panel/admin/DomainAdmin.py:49
@@ -678,7 +681,7 @@ msgstr "Erro! Fronting de domínio não definido."
 
 # | msgid "There is an error in one of the fields."
 #: hiddifypanel/panel/admin/ProxyAdmin.py:71
-#: hiddifypanel/panel/admin/QuickSetup.py:74
+#: hiddifypanel/panel/admin/QuickSetup.py:77
 #: hiddifypanel/panel/admin/SettingAdmin.py:108
 #, fuzzy
 msgid "config.validation-error"
@@ -693,19 +696,19 @@ msgid "config.domain_fronting.label"
 msgstr "Frente de domínio"
 
 # | msgid "Changing the Language was Successful."
-#: hiddifypanel/panel/admin/QuickSetup.py:46
+#: hiddifypanel/panel/admin/QuickSetup.py:49
 #, fuzzy
 msgid "quicksetup.setlang.success"
 msgstr "A alteração do idioma foi bem-sucedida."
 
 # | msgid "An error occurred while changing language."
-#: hiddifypanel/panel/admin/QuickSetup.py:48
+#: hiddifypanel/panel/admin/QuickSetup.py:51
 #, fuzzy
 msgid "quicksetup.setlang.error"
 msgstr "Ocorreu um erro ao alterar o idioma."
 
 # | msgid "🗺️ Admin Panel Language"
-#: hiddifypanel/panel/admin/QuickSetup.py:80
+#: hiddifypanel/panel/admin/QuickSetup.py:83
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:1
 #, fuzzy
@@ -713,40 +716,40 @@ msgid "config.admin_lang.label"
 msgstr "Idioma do Painel Administrativo"
 
 # | msgid "🇺🇸 English انگلیسی 英语"
-#: hiddifypanel/panel/admin/QuickSetup.py:80
+#: hiddifypanel/panel/admin/QuickSetup.py:83
 #: hiddifypanel/panel/admin/SettingAdmin.py:181
 #, fuzzy
 msgid "lang.en"
 msgstr "🇺🇸 Inglês انگلیسی 英语"
 
 # | msgid "🇮🇷 Persian فارسی 波斯语"
-#: hiddifypanel/panel/admin/QuickSetup.py:80
+#: hiddifypanel/panel/admin/QuickSetup.py:83
 #: hiddifypanel/panel/admin/SettingAdmin.py:181
 #, fuzzy
 msgid "lang.fa"
 msgstr "🇮🇷 Persian فارسی 波斯语"
 
 # | msgid "🇵🇹 Portuguese پرتغالی 葡萄牙語"
-#: hiddifypanel/panel/admin/QuickSetup.py:80
+#: hiddifypanel/panel/admin/QuickSetup.py:83
 #: hiddifypanel/panel/admin/SettingAdmin.py:182
 #, fuzzy
 msgid "lang.pt"
 msgstr "🇵🇹 Portugal پرتغالی 葡萄牙"
 
 # | msgid "🇨🇳 Chinese چینی 简体中文"
-#: hiddifypanel/panel/admin/QuickSetup.py:81
+#: hiddifypanel/panel/admin/QuickSetup.py:84
 #: hiddifypanel/panel/admin/SettingAdmin.py:181
 msgid "lang.zh"
 msgstr "🇨🇳 Chinese چینی 简体中文"
 
 # | msgid "🇷🇺 Russian روسی Русский"
-#: hiddifypanel/panel/admin/QuickSetup.py:81
+#: hiddifypanel/panel/admin/QuickSetup.py:84
 #: hiddifypanel/panel/admin/SettingAdmin.py:182
 msgid "lang.ru"
 msgstr "🇷🇺 Russian روسی Русский"
 
 # | msgid "Choose Language For Admin Area"
-#: hiddifypanel/panel/admin/QuickSetup.py:81
+#: hiddifypanel/panel/admin/QuickSetup.py:84
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:1
 #, fuzzy
@@ -754,21 +757,21 @@ msgid "config.admin_lang.description"
 msgstr "Escolha o idioma para a área administrativa"
 
 # | msgid "🌍 Country"
-#: hiddifypanel/panel/admin/QuickSetup.py:83
+#: hiddifypanel/panel/admin/QuickSetup.py:86
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:1
 msgid "config.country.label"
 msgstr "Country"
 
 # | msgid "🇮🇷 Iran"
-#: hiddifypanel/panel/admin/QuickSetup.py:83
+#: hiddifypanel/panel/admin/QuickSetup.py:86
 #: hiddifypanel/panel/admin/SettingAdmin.py:184
 #, fuzzy
 msgid "Iran"
 msgstr "🇮🇷 Irã"
 
 # | msgid "🇨🇳 China"
-#: hiddifypanel/panel/admin/QuickSetup.py:83
+#: hiddifypanel/panel/admin/QuickSetup.py:86
 #: hiddifypanel/panel/admin/SettingAdmin.py:184
 #, fuzzy
 msgid "China"
@@ -777,7 +780,7 @@ msgstr "🇨🇳 China"
 # | msgid ""
 # | "It applies the appropriate settings for each country according to the "
 # | "filtering conditions of that country"
-#: hiddifypanel/panel/admin/QuickSetup.py:84
+#: hiddifypanel/panel/admin/QuickSetup.py:87
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:1
 #, fuzzy
@@ -787,8 +790,8 @@ msgstr ""
 "condições de filtragem desse país"
 
 # | msgid "Error! Invalid Domain.  The Domain Format is www.google.com"
-#: hiddifypanel/panel/admin/QuickSetup.py:104
-#: hiddifypanel/panel/admin/QuickSetup.py:117
+#: hiddifypanel/panel/admin/QuickSetup.py:107
+#: hiddifypanel/panel/admin/QuickSetup.py:122
 #: hiddifypanel/panel/admin/SettingAdmin.py:206
 #: hiddifypanel/panel/admin/SettingAdmin.py:209
 #, fuzzy
@@ -796,8 +799,8 @@ msgid "config.Invalid domain"
 msgstr "Erro! Domínio inválido. O formato do domínio é www.google.com"
 
 # | msgid "Domain is exist in domains section. Use another Domain"
-#: hiddifypanel/panel/admin/QuickSetup.py:106
-#: hiddifypanel/panel/admin/QuickSetup.py:108
+#: hiddifypanel/panel/admin/QuickSetup.py:109
+#: hiddifypanel/panel/admin/QuickSetup.py:111
 #: hiddifypanel/panel/admin/SettingAdmin.py:213
 #: hiddifypanel/panel/admin/SettingAdmin.py:215
 #, fuzzy
@@ -805,7 +808,7 @@ msgid "config.Domain already used"
 msgstr "O domínio existe na seção de domínios. Usar outro domínio"
 
 # | msgid "✔️ Enable Telegram MTProto"
-#: hiddifypanel/panel/admin/QuickSetup.py:112
+#: hiddifypanel/panel/admin/QuickSetup.py:115
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:1
 #, fuzzy
@@ -814,7 +817,7 @@ msgstr "✔️ Habilitar Telegram MTProto"
 
 # | msgid ""
 # | "Telegram MTProto is used for Encapsulate Telegram Proxy as a tls traffic"
-#: hiddifypanel/panel/admin/QuickSetup.py:112
+#: hiddifypanel/panel/admin/QuickSetup.py:115
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:1
 #, fuzzy
@@ -824,7 +827,7 @@ msgstr ""
 "tls"
 
 # | msgid "🛡️ Firewall"
-#: hiddifypanel/panel/admin/QuickSetup.py:113
+#: hiddifypanel/panel/admin/QuickSetup.py:117
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:1
 #, fuzzy
@@ -834,7 +837,7 @@ msgstr "🛡️ Firewall"
 # | msgid ""
 # | "Enabling Firewall will open used Ports (at least 22,443,80 and SSH) and "
 # | "close all other Ports"
-#: hiddifypanel/panel/admin/QuickSetup.py:113
+#: hiddifypanel/panel/admin/QuickSetup.py:117
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:1
 #, fuzzy
@@ -844,7 +847,7 @@ msgstr ""
 "SSH) e fechará todas as outras portas"
 
 # | msgid "⛔️ Block Domestic Sites"
-#: hiddifypanel/panel/admin/QuickSetup.py:114
+#: hiddifypanel/panel/admin/QuickSetup.py:118
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:1
 #, fuzzy
@@ -852,7 +855,7 @@ msgid "config.block_iran_sites.label"
 msgstr "⛔️ Bloquear sites iranianos"
 
 # | msgid "Block domestic Sites to prevent detection by the government"
-#: hiddifypanel/panel/admin/QuickSetup.py:114
+#: hiddifypanel/panel/admin/QuickSetup.py:118
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:1
 #, fuzzy
@@ -862,7 +865,7 @@ msgstr ""
 "(Experimental: se houver algum problema, desative-o e informe-nos.)"
 
 # | msgid "♈️ Enable VMess"
-#: hiddifypanel/panel/admin/QuickSetup.py:115
+#: hiddifypanel/panel/admin/QuickSetup.py:120
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:1
 #, fuzzy
@@ -873,7 +876,7 @@ msgstr "♈️ Habilitar VMess"
 # | "It is reported by several people that VMess causes the system to be
 # detected"
 # | " by the government. So it is Not Recommended"
-#: hiddifypanel/panel/admin/QuickSetup.py:115
+#: hiddifypanel/panel/admin/QuickSetup.py:120
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:1
 #, fuzzy
@@ -883,7 +886,7 @@ msgstr ""
 "detectado pelo governo. Então não é recomendado"
 
 # | msgid "📺 Decoy Site"
-#: hiddifypanel/panel/admin/QuickSetup.py:116
+#: hiddifypanel/panel/admin/QuickSetup.py:121
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:1
 #, fuzzy
@@ -898,7 +901,7 @@ msgstr "🔀 Site Decoy"
 # | "⛔ Be sure to check the site and make sure that it is the right site,
 # otherwise you may receive a phishing warning.<br>\n"
 # | "⛔⛔ Check this domain again so that there is no problem in the future"
-#: hiddifypanel/panel/admin/QuickSetup.py:116
+#: hiddifypanel/panel/admin/QuickSetup.py:121
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:1
 #, fuzzy
@@ -911,7 +914,7 @@ msgstr ""
 # | msgid ""
 # | "Domain (%(domain)s)-> IP = %(domain_ip)s is not same as your IP = "
 # | "%(server_ip)s . this is required in Direct Mode"
-#: hiddifypanel/panel/admin/QuickSetup.py:131
+#: hiddifypanel/panel/admin/QuickSetup.py:136
 #, fuzzy, python-format
 msgid ""
 "Domain (%(domain)s)-> IP=%(domain_ip)s is not matched with your "
@@ -1271,7 +1274,7 @@ msgstr "Por que ir para premium?"
 # | "</ul>\n"
 # | "\n"
 # | "Please Contact <a
-# href=\"tg://resolve?domain=HiddifyCommercial\">@HiddifyCommercial</a> After
+# href='tg://resolve?domain=HiddifyCommercial'>@HiddifyCommercial</a> After
 # Donating.\n"
 # | "Send a Message To Get a Special Version for business users."
 #: hiddifypanel/panel/admin/templates/commercial_info.html:9
@@ -1304,8 +1307,8 @@ msgstr ""
 "</ul>\n"
 "\n"
 "Entre em contato com <a "
-"href=\"tg://resolve?domain=HiddifyCommercial\">@HiddifyCommercial</a> "
-"após a doação.\n"
+"href='tg://resolve?domain=HiddifyCommercial'>@HiddifyCommercial</a> após "
+"a doação.\n"
 "Envie uma mensagem para obter uma versão especial para usuários "
 "corporativos."
 
@@ -1617,7 +1620,7 @@ msgstr ""
 # | "It is used to simulate another website instead of your website in SNI.
 # therefore, GFW can not filter your Domain\n"
 # | "<a
-# href=\"https://github.com/hiddify/hiddify-config/wiki/%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87-%D8%A7%D8%B2-%D8%AF%D8%A7%D9%85%DB%8C%D9%86-%D9%81%D8%B1%D8%A7%D9%86%D8%AA%DB%8C%D9%86%DA%AF\">Guide</a>.
+# href='https://github.com/hiddify/hiddify-config/wiki/%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87-%D8%A7%D8%B2-%D8%AF%D8%A7%D9%85%DB%8C%D9%86-%D9%81%D8%B1%D8%A7%D9%86%D8%AA%DB%8C%D9%86%DA%AF'>Guide</a>.
 # ⚠️CloudFlare does not support Domain Fronting."
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:2
@@ -1626,10 +1629,10 @@ msgid "config.domain_fronting.description"
 msgstr ""
 "Ele é usado para simular outro site em vez do seu site no SNI. portanto, "
 "GTW não pode filtrar seu domínio\n"
-"<a href=\"https://github.com/hiddify/hiddify-"
+"<a href='https://github.com/hiddify/hiddify-"
 "config/wiki/%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87- "
 "%D8%A7%D8%B2-%D8%AF%D8%A7%D9%85%DB%8C%D9%86-%D9%81%D8%B1%D8%A7%D9%86%D8%AA"
-" %DB%8C%D9%86%DA%AF\">Guia</a>."
+" %DB%8C%D9%86%DA%AF'>Guia</a>."
 
 # | msgid "📍 Telegram AD Tag"
 #: hiddifypanel/panel/admin/templates/configfake.html:6
@@ -1902,11 +1905,13 @@ msgstr ""
 
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:2
+#, fuzzy
 msgid "config.restls.label"
 msgstr "config.restls.label"
 
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:2
+#, fuzzy
 msgid "config.restls.description"
 msgstr "config.restls.description"
 
@@ -2146,17 +2151,18 @@ msgstr "🔑 API Cloudflare"
 
 # | msgid ""
 # | "Please follow <a
-# href=\"https://github.com/hiddify/hiddify-config/wiki/Get-"
-# | "Cloudflare-API\" target=\"_blank\">the instruction</a> and paste the "
-# | "Cloudflare API Key"
+# href='https://github.com/hiddify/hiddify-config/wiki/Get-"
+# | "Cloudflare-API' target='_blank'>the instruction</a> and paste the
+# Cloudflare"
+# | " API Key"
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:1
 #, fuzzy
 msgid "config.cloudflare.description"
 msgstr ""
-"Por favor, siga <a href=\"https://github.com/hiddify/hiddify-config/wiki"
-"/Get-Cloudflare-API\" target=\"_blank\">a instrução</a> e cole a chave de"
-" API Cloudflare"
+"Por favor, siga <a href='https://github.com/hiddify/hiddify-config/wiki"
+"/Get-Cloudflare-API' target='_blank'>a instrução</a> e cole a chave de "
+"API Cloudflare"
 
 # | msgid "Very Advanced Settings"
 #: hiddifypanel/panel/admin/templates/configfake.html:6
@@ -2185,7 +2191,7 @@ msgstr "🔑 Chave WARP Plus"
 
 # | msgid ""
 # | "🔝 Increases browsing speed. To get the Key, go to the <a
-# href=\"https://1.1.1.1/\"> 1.1.1.1 </a>\n"
+# href='https://1.1.1.1/'> 1.1.1.1 </a>\n"
 # | "app and purchase the original KEY from Cloudflare\n"
 # | "<br>\n"
 # | "⚠️ If there is an error in this Key, the WARP will be disabled."
@@ -2194,7 +2200,7 @@ msgstr "🔑 Chave WARP Plus"
 msgid "config.warp_plus_code.description"
 msgstr ""
 "Aumenta a velocidade de navegação. \n"
-"Para obter a chave, acesse <a href=\"https://t.me/hiddify_board\"> aqui "
+"Para obter a chave, acesse <a href='https://t.me/hiddify_board'> aqui "
 "</a>\n"
 "envie uma mensagem\n"
 "<br>\n"
@@ -2325,11 +2331,13 @@ msgstr "REALITY elimina o recurso de impressão digital TLS do lado do servidor"
 
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:1
+#, fuzzy
 msgid "config.first_setup.label"
 msgstr "config.first_setup.label"
 
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:1
+#, fuzzy
 msgid "config.first_setup.description"
 msgstr "config.first_setup.description"
 
@@ -2350,21 +2358,25 @@ msgstr "O WARP ajuda você a contornar o bloqueio do Google, Spotify e Netflix .
 
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:1
+#, fuzzy
 msgid "config.restls1_2_domain.label"
 msgstr "config.restls1_2_domain.label"
 
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:1
+#, fuzzy
 msgid "config.restls1_2_domain.description"
 msgstr "config.restls1_2_domain.description"
 
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:1
+#, fuzzy
 msgid "config.restls1_3_domain.label"
 msgstr "config.restls1_3_domain.label"
 
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:1
+#, fuzzy
 msgid "config.restls1_3_domain.description"
 msgstr "config.restls1_3_domain.description"
 
@@ -2392,6 +2404,7 @@ msgstr "Painel pai"
 
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:1
+#, fuzzy
 msgid "config.is_parent.description"
 msgstr "config.is_parent.description"
 
@@ -2416,21 +2429,25 @@ msgstr ""
 
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:1
+#, fuzzy
 msgid "config.unique_id.label"
 msgstr "config.unique_id.label"
 
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:1
+#, fuzzy
 msgid "config.unique_id.description"
 msgstr "config.unique_id.description"
 
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:1
+#, fuzzy
 msgid "config.last_hash.label"
 msgstr "config.last_hash.label"
 
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:1
+#, fuzzy
 msgid "config.last_hash.description"
 msgstr "config.last_hash.description"
 
@@ -2766,10 +2783,10 @@ msgstr "Link salvo"
 # | msgid ""
 # | "Please note that your panel can be accessed only via the following link.
 # please save this link.\n"
-# | "<p><a href=\"%(adminlink)s\" class=\"btn btn-secondary copy-link\"><i
-# class=\"fa-solid fa-copy\"></i></a>\n"
-# | "<a href=\"%(adminlink)s\" class=\"copy-link\" style=\"word-break:
-# break-all;\">%(adminlink)s</a></p> "
+# | "<p><a href='%(adminlink)s' class='btn btn-secondary copy-link'><i
+# class='fa-solid fa-copy'></i></a>\n"
+# | "<a href='%(adminlink)s' class='copy-link' style='word-break:
+# break-all;'>%(adminlink)s</a></p> "
 #: hiddifypanel/panel/admin/templates/quick_setup.html:8
 #, fuzzy, python-format
 msgid ""
@@ -2779,10 +2796,10 @@ msgid ""
 msgstr ""
 "Por favor, note que seu painel pode ser acessado apenas através do link a"
 " seguir. por favor, salve este link.\n"
-"<p><a href=\"%(adminlink)s\" class=\"btn btn-secondary copy-link\"><i "
-"class=\"fa-solid fa-copy\"></i></a>\n"
-"<a href=\"%(adminlink)s\" class=\"copy-link\" style=\"word-break: break-"
-"all;\">%(adminlink)s</a></p>"
+"<p><a href='%(adminlink)s' class='btn btn-secondary copy-link'><i class"
+"='fa-solid fa-copy'></i></a>\n"
+"<a href='%(adminlink)s' class='copy-link' style='word-break: break-"
+"all;'>%(adminlink)s</a></p>"
 
 # | msgid "Quick Setup"
 #: hiddifypanel/panel/admin/templates/quick_setup.html:60
@@ -2889,7 +2906,7 @@ msgstr "✅ A Ação Feita com Sucesso. Agora você pode sair desta página"
 # | "<br>\n"
 # | "2️⃣ If you want to lessen the probability of having dirty IP, you can add
 # Multiple Relay Server <a
-# href=\"https://github.com/hiddify/hiddify-config/discussions/129\">Read
+# href='https://github.com/hiddify/hiddify-config/discussions/129'>Read
 # More</a>.\n"
 # | "3️⃣ If you have Multiple IPv4 or IPv6 in your Panel you have to add the
 # domain pointed to them as Relay."
@@ -2902,8 +2919,8 @@ msgstr ""
 "Nesta seção, você pode adicionar seu domínio.\n"
 "<br>\n"
 "Se você deseja diminuir a probabilidade de ter um IP sujo, pode adicionar"
-" Multiple Relay Server <a href=\"https://github.com/hiddify/hiddify-"
-"config/discussions/129\">Leia mais</a>.\n"
+" Multiple Relay Server <a href='https://github.com/hiddify/hiddify-"
+"config/discussions/129'>Leia mais</a>.\n"
 "<br>\n"
 "Se você tiver Múltiplos IPv4 ou IPv6 em seu Painel, deverá adicionar o "
 "domínio apontado para eles como Relay."
@@ -2947,7 +2964,7 @@ msgstr "Off-line por mais de 1 semana"
 
 # | msgid ""
 # | "🔄 User usage will be updated every 1 Minutes. to update it now <a "
-# | "href=\"%(link)s\" class=\"btn btn-info\">Click Here</a>"
+# | "href='%(link)s' class='btn btn-info'>Click Here</a>"
 #: hiddifypanel/panel/admin/templates/model/user_list.html:23
 #, fuzzy, python-format
 msgid ""
@@ -2955,7 +2972,7 @@ msgid ""
 "href=\"%(link)s\" class=\"btn btn-info\">here</a>"
 msgstr ""
 "♻️ O uso do usuário será atualizado a cada 1 minuto. para atualizá-lo "
-"agora <a href=\"%(link)s\" class=\"btn btn-info\">Clique aqui</a>"
+"agora <a href='%(link)s' class='btn btn-info'>Clique aqui</a>"
 
 # | msgid "✏️  Please write your message to send to the Telegram:"
 #: hiddifypanel/panel/admin/templates/model/user_list.html:63
@@ -2975,6 +2992,7 @@ msgid "The message has been sent."
 msgstr "A mensagem foi enviada."
 
 #: hiddifypanel/panel/admin/templates/model/user_list.html:101
+#, fuzzy
 msgid "Hover the user to see the reason"
 msgstr "Hover the user to see the reason"
 
@@ -3241,7 +3259,7 @@ msgstr ""
 msgid "download"
 msgstr "Download direto"
 
-# | msgid "<i class=\"fa-brands fa-google-play\"></i> Google Play"
+# | msgid "<i class='fa-brands fa-google-play'></i> Google Play"
 #: hiddifypanel/panel/user/templates/home/android.html:19
 #: hiddifypanel/panel/user/templates/home/android.html:65
 #: hiddifypanel/panel/user/templates/home/one_click.html:74
@@ -3250,10 +3268,12 @@ msgstr "Download direto"
 msgid "install from google play"
 msgstr "Google Play"
 
-# | msgid "HiddifyNG <span class=\"badge badge-success\">Recommended</span>"
+# | msgid ""
+# | "HiddifyNG <span class='badge badge-success'>Recommended</span>"
 #: hiddifypanel/panel/user/templates/home/android.html:26
+#, fuzzy
 msgid "HiddifyNG"
-msgstr "HiddifyNG <span class=\"badge badge-success\">Recommended</span>"
+msgstr "HiddifyNG <span class='badge badge-success'>Recommended</span>"
 
 # | msgid ""
 # | "📌 Please install HiddifyNG from either of these links:\n"
@@ -3277,8 +3297,8 @@ msgstr "Click to Import"
 
 # | msgid ""
 # | "Alternative v2rayNG <button class='btn btn-sm btn-default'
-# onclick='show_video(\"android-v2rayng\")'><i class=\"fa-solid
-# fa-question\"></i> </button>\n"
+# onclick='show_video('android-v2rayng')'><i class='fa-solid fa-question'></i>
+# </button>\n"
 # | "<br />\n"
 # | "<br />"
 #: hiddifypanel/panel/user/templates/home/android.html:36
@@ -3286,16 +3306,16 @@ msgstr "Click to Import"
 msgid "V2rayNG"
 msgstr ""
 "Alternativa v2rayNG <button class='btn btn-sm btn-default' "
-"onclick='show_video(\"android-v2rayng\")'><i class=\"fa-solid fa-"
-"question\"></i> </button>"
+"onclick='show_video('android-v2rayng')'><i class='fa-solid fa-"
+"question'></i> </button>"
 
 # | msgid ""
 # | "Please install v2rayNG from either of these links: %(dl_link)s
 # %(play_link)s.\n"
 # | "Then copy the link below and paste it in v2rayNG according to the video
 # tutorial <button class='btn btn-sm btn-default'
-# onclick='show_video(\"android-v2rayng\")'><i class=\"fa-solid
-# fa-question\"></i> </button>.\n"
+# onclick='show_video('android-v2rayng')'><i class='fa-solid fa-question'></i>
+# </button>.\n"
 # | "<br />"
 #: hiddifypanel/panel/user/templates/home/android.html:37
 #, fuzzy
@@ -3304,8 +3324,8 @@ msgstr ""
 "Instale o v2rayNG a partir de um destes links: %(dl_link)s %(play_link)s."
 "\n"
 "Então copie o link abaixo e cole no v2rayNG conforme o vídeo tutorial "
-"<button class='btn btn-sm btn-default' onclick='show_video(\"android-"
-"v2rayng\")'><i class=\"fa-solid fa -question\"></i> </button>.\n"
+"<button class='btn btn-sm btn-default' onclick='show_video('android-"
+"v2rayng')'><i class='fa-solid fa -question'></i> </button>.\n"
 "<br />"
 
 # | msgid "Hiddify Android "
@@ -3318,33 +3338,33 @@ msgstr "Ocultar Android"
 # | "Please install Hiddify Android from %(dl_link)s  %(play_link)s. \n"
 # | "\n"
 # | "<!--\n"
-# | "<div class=\"callout callout-danger\">\n"
+# | "<div class='callout callout-danger'>\n"
 # | "    <b>Update Hiddify Android to Version 0.14</b>\n"
 # | "</div>-->\n"
 # | "<details>\n"
 # | "<summary>Why Hiddify Android?</summary>\n"
-# | "<div class=\"callout callout-info\">\n"
+# | "<div class='callout callout-info'>\n"
 # | "        Hiddify Android is an Open Source Fork Of Clash That Supports
 # More Protocols.\n"
 # | "        <br>\n"
 # | "        It's Source Codes Exist in\n"
 # | "        <a
-# href=\"https://github.com/hiddify/HiddifyProxyAndroid\">GitHub</a>.\n"
+# href='https://github.com/hiddify/HiddifyProxyAndroid'>GitHub</a>.\n"
 # | "        \n"
 # | "        Therefore, it is safe.\n"
 # | "        <details>\n"
 # | "            <summary>Alternative: Normal Clash</summary>\n"
-# | "            <div class=\"btn-group\">\n"
+# | "            <div class='btn-group'>\n"
 # | "                <a
-# href=\"https://play.google.com/store/apps/details?id=com.github.kr328.clash\"\n"
-# | "                    class=\"btn btn-warning orig-link\">Clash in Google
+# href='https://play.google.com/store/apps/details?id=com.github.kr328.clash'\n"
+# | "                    class='btn btn-warning orig-link'>Clash in Google
 # Play</a>\n"
 # | "            </div>\n"
 # | "                <a
-# href=\"/{{hconfigs[ConfigEnum.proxy_path]}}/gh/Kr328/ClashForAndroid/releases/download/v2.5.12/cfa-2.5.12-premium-universal-release.apk\"\n"
-# | "                    class=\"btn btn-warning orig-link\">Direct
+# href='/{{hconfigs[ConfigEnum.proxy_path]}}/gh/Kr328/ClashForAndroid/releases/download/v2.5.12/cfa-2.5.12-premium-universal-release.apk'\n"
+# | "                    class='btn btn-warning orig-link'>Direct
 # Download</a>\n"
-# | "            <div class=\"alert alert-danger\">\n"
+# | "            <div class='alert alert-danger'>\n"
 # | "            \tClash does not support VLess protocol. therefore, we need
 # to add another link for it.\n"
 # | "            \n"
@@ -3358,41 +3378,41 @@ msgstr ""
 "Por favor, instale Hiddify Android de %(dl_link)s %(play_link)s.\n"
 "\n"
 "<!--\n"
-"<div class=\"callout callout-danger\">\n"
+"<div class='callout callout-danger'>\n"
 "    <b>Atualize o Hiddify Android para a versão 0.14</b>\n"
 "</div>-->\n"
 "<detalhes>\n"
 "<summary>Por que ocultar o Android?</summary>\n"
-"<div class=\"callout callout-info\">\n"
+"<div class='callout callout-info'>\n"
 "\n"
 "        Hiddify Android é um Fork Of Clash de código aberto que suporta "
 "mais protocolos.\n"
 "        <br>\n"
 "        Seus códigos-fonte existem em\n"
 "        <a "
-"href=\"https://github.com/hiddify/HiddifyProxyAndroid\">GitHub</a>.\n"
+"href='https://github.com/hiddify/HiddifyProxyAndroid'>GitHub</a>.\n"
 "        \n"
 "        <br>\n"
 "        Portanto, é seguro.\n"
 "\n"
 "        <detalhes>\n"
 "            <summary>Alternativa: Conflito normal</summary>\n"
-"            <div class=\"btn-group\">\n"
+"            <div class='btn-group'>\n"
 "                <a "
-"href=\"https://play.google.com/store/apps/details?id=com.github.kr328.clash\""
+"href='https://play.google.com/store/apps/details?id=com.github.kr328.clash'"
 "\n"
-"                    class=\"btn btn-warning orig-link\">Clash no Google "
+"                    class='btn btn-warning orig-link'>Clash no Google "
 "Play</a>\n"
 "            </div>\n"
-"            <div class=\"btn-group\">\n"
+"            <div class='btn-group'>\n"
 "                <a "
-"href=\"/{{hconfigs[ConfigEnum.proxy_path]}}/gh/Kr328/ClashForAndroid/releases/download/v2.5.12/cfa-2.5.12"
-"-premium-universal-release.apk\"\n"
-"                    class=\"btn btn-warning orig-link\">Download "
-"direto</a>\n"
+"href='/{{hconfigs[ConfigEnum.proxy_path]}}/gh/Kr328/ClashForAndroid/releases/download/v2.5.12/cfa-2.5.12"
+"-premium-universal-release.apk'\n"
+"                    class='btn btn-warning orig-link'>Download direto</a>"
+"\n"
 "            </div>\n"
 "\n"
-"            <div class=\"alert alert-danger\">\n"
+"            <div class='alert alert-danger'>\n"
 "            O Clash não oferece suporte ao protocolo VLess. portanto, "
 "precisamos adicionar outro link para ele.\n"
 "            </div>\n"
@@ -3441,7 +3461,7 @@ msgstr "Apenas para sites bloqueados"
 
 # | msgid ""
 # | "This mode is suggested. It only forwards the blocked sites via Proxy.\n"
-# | "            <div class=\"callout callout-success\">\n"
+# | "            <div class='callout callout-success'>\n"
 # | "                In this mode, you will not feel any change in the
 # speed.\n"
 # | "            </div>"
@@ -3451,7 +3471,7 @@ msgid "user.home.clash_configs.only_for_blocked_sites.description"
 msgstr ""
 "Este modo é sugerido. Ele apenas encaminha os sites bloqueados via Proxy."
 "\n"
-"            <div class=\"callout callout-success\">\n"
+"            <div class='callout callout-success'>\n"
 "                Neste modo, você não sentirá nenhuma mudança na "
 "velocidade.\n"
 "            </div>"
@@ -3487,7 +3507,7 @@ msgstr "Proxy de Sites Estrangeiros"
 
 # | msgid ""
 # | "Use Proxy for all foreign sites (even not blocked ones).\n"
-# | "<div class=\"callout callout-warning\">\n"
+# | "<div class='callout callout-warning'>\n"
 # | "\tThis mode is useful in accessing some sanctaioned sites.\n"
 # | "</div>\n"
 #: hiddifypanel/panel/user/templates/home/clash-links.html:32
@@ -3495,7 +3515,7 @@ msgstr "Proxy de Sites Estrangeiros"
 msgid "user.home.clash_configs.foreign_sites.description"
 msgstr ""
 "Use Proxy para todos os sites estrangeiros (mesmo os não bloqueados).\n"
-"<div class=\"callout callout-warning\">\n"
+"<div class='callout callout-warning'>\n"
 "Este modo é útil para acessar alguns sites sancionados.\n"
 "</div>"
 
@@ -3514,7 +3534,7 @@ msgstr "Proxy para todos os sites"
 
 # | msgid ""
 # | "Use Proxy for all websites even for local websites.\n"
-# | "<div class=\"callout callout-danger\">\n"
+# | "<div class='callout callout-danger'>\n"
 # | "    Loading local sites will be slower and will endanger your privacy.\n"
 # | "</div>\n"
 #: hiddifypanel/panel/user/templates/home/clash-links.html:58
@@ -3522,7 +3542,7 @@ msgstr "Proxy para todos os sites"
 msgid "user.home.clash_configs.all_sites.description"
 msgstr ""
 "Use Proxy para todos os sites, mesmo para sites locais.\n"
-"<div class=\"callout callout-danger\">\n"
+"<div class='callout callout-danger'>\n"
 "    O carregamento de sites locais será mais lento e colocará em risco "
 "sua privacidade.\n"
 "</div>"
@@ -3789,38 +3809,37 @@ msgstr ""
 
 # | msgid ""
 # | "<button class='btn btn-sm btn-default'
-# onclick='show_video(\"ios-stash\")'><i class=\"fa-solid fa-question\"></i>
+# onclick='show_video('ios-stash')'><i class='fa-solid fa-question'></i>
 # Stash</button>\n"
 # | "          <button class='btn btn-sm btn-default'
-# onclick='show_video(\"ios-shadowrocket\")'><i class=\"fa-solid
-# fa-question\"></i> Shadowrocket</button>\n"
-# | " <span class=\"badge badge-success\">Recommended</span>"
+# onclick='show_video('ios-shadowrocket')'><i class='fa-solid
+# fa-question'></i> Shadowrocket</button>\n"
+# | " <span class='badge badge-success'>Recommended</span>"
 #: copy.html:6 hiddifypanel/panel/user/templates/home/ios
 #: hiddifypanel/panel/user/templates/home/ios.html:6
 #, fuzzy
 msgid "user.home.ios.stash.title"
 msgstr ""
-"<button class='btn btn-sm btn-default' onclick='show_video(\"ios-"
-"stash\")'><i class=\"fa-solid fa-question\"></i> Esconderijo</button>\n"
+"<button class='btn btn-sm btn-default' onclick='show_video('ios-"
+"stash')'><i class='fa-solid fa-question'></i> Esconderijo</button>\n"
 "          <button class='btn btn-sm btn-default' onclick='show_video"
-"(\"ios-shadowrocket\")'><i class=\"fa-solid fa-question\"></i> "
+"('ios-shadowrocket')'><i class='fa-solid fa-question'></i> "
 "Shadowrocket</button>\n"
-" <span class=\"badge badge-success\">Recomendado</span>"
+" <span class='badge badge-success'>Recomendado</span>"
 
 # | msgid ""
 # | "Stash & Shadowrocket are both great applications. Either one is worth
 # buying.\n"
 # | "<br>\n"
 # | "<br />\n"
-# | "  <div class=\"btn-group\">\n"
+# | "  <div class='btn-group'>\n"
 # | "        <a
-# href=\"https://apps.apple.com/us/app/stash-rule-based-proxy/id1596063349\"
-# target=\"_blank\" class=\"btn btn-success orig-link\">Download Stash</a>\n"
+# href='https://apps.apple.com/us/app/stash-rule-based-proxy/id1596063349'
+# target='_blank' class='btn btn-success orig-link'>Download Stash</a>\n"
 # | "        </div>\n"
-# | "        <a
-# href=\"https://apps.apple.com/us/app/shadowrocket/id932747118\"
-# target=\"_blank\" class=\"btn btn-primary orig-link\">Download
-# Shadowrocket</a> \n"
+# | "        <a href='https://apps.apple.com/us/app/shadowrocket/id932747118'
+# target='_blank' class='btn btn-primary orig-link'>Download Shadowrocket</a>
+# \n"
 # | "        </div><br>\n"
 # | "<br />"
 #: copy.html:17 hiddifypanel/panel/user/templates/home/ios
@@ -3831,15 +3850,14 @@ msgstr ""
 "Stash & Shadowrocket é um ótimo aplicativo. Achamos que vale a pena "
 "comprar.\n"
 "<br>\n"
-"  <div class=\"btn-group\">\n"
-"        <a href=\"https://apps.apple.com/us/app/stash-rule-based-"
-"proxy/id1596063349\" target=\"_blank\" class=\"btn btn-success orig-"
-"link\">Faça o download do Stash</ a>\n"
+"  <div class='btn-group'>\n"
+"        <a href='https://apps.apple.com/us/app/stash-rule-based-"
+"proxy/id1596063349' target='_blank' class='btn btn-success orig-"
+"link'>Faça o download do Stash</ a>\n"
 "        </div>\n"
-"  <div class=\"btn-group\">\n"
-"        <a "
-"href=\"https://apps.apple.com/us/app/shadowrocket/id932747118\" "
-"target=\"_blank\" class=\"btn btn-primary orig-link\">Faça o download do "
+"  <div class='btn-group'>\n"
+"        <a href='https://apps.apple.com/us/app/shadowrocket/id932747118' "
+"target='_blank' class='btn btn-primary orig-link'>Faça o download do "
 "Shadowrocket</a>\n"
 "        </div><br>"
 
@@ -3852,12 +3870,12 @@ msgstr "Wings X e Fair VPN"
 # | msgid ""
 # | "First install one of the following Applications:\n"
 # | "\n"
-# | "<div class=\"btn-group\">\n"
-# | "\t<a href=\"https://apps.apple.com/us/app/foxray/id6448898396\"\n"
-# | "        class=\"btn btn-primary orig-link\">FoXray</a>\n"
+# | "<div class='btn-group'>\n"
+# | "\t<a href='https://apps.apple.com/us/app/foxray/id6448898396'\n"
+# | "        class='btn btn-primary orig-link'>FoXray</a>\n"
 # | "</div>\n"
-# | "\t<a href=\"https://apps.apple.com/us/app/fair-vpn/id1533873488\"\n"
-# | "        class=\"btn btn-primary orig-link\">Fair VPN</a>\n"
+# | "\t<a href='https://apps.apple.com/us/app/fair-vpn/id1533873488'\n"
+# | "        class='btn btn-primary orig-link'>Fair VPN</a>\n"
 # | "<br />\n"
 # | "Then apply the following configs:\n"
 # | "<br />"
@@ -3867,30 +3885,30 @@ msgid "user.home.ios.others.intro"
 msgstr ""
 "Primeiro instale um dos seguintes aplicativos:\n"
 "\n"
-"<div class=\"btn-group\">\n"
+"<div class='btn-group'>\n"
 "\n"
 "<a "
-"href=\"https://apps.apple.com/ca/app/wings-x/id6446119727?platform=iphone\""
+"href='https://apps.apple.com/ca/app/wings-x/id6446119727?platform=iphone'"
 "\n"
-"        class=\"btn btn-primary orig-link\">Asas X</a>\n"
+"        class='btn btn-primary orig-link'>Asas X</a>\n"
 "\n"
 "</div>\n"
 "\n"
-"<div class=\"btn-group\">\n"
+"<div class='btn-group'>\n"
 "\n"
-"<a href=\"https://apps.apple.com/us/app/fair-vpn/id1533873488\"\n"
-"        class=\"btn btn-primary orig-link\">VPN justa</a>\n"
+"<a href='https://apps.apple.com/us/app/fair-vpn/id1533873488'\n"
+"        class='btn btn-primary orig-link'>VPN justa</a>\n"
 "</div>\n"
 "\n"
 "<br />\n"
 "Em seguida, aplique as seguintes configurações:\n"
 "<br />"
 
-# | msgid "<i class=\"fa-solid fa-play\"></i> Tap to Set up Anti-Filter"
+# | msgid "<i class='fa-solid fa-play'></i> Tap to Set up Anti-Filter"
 #: hiddifypanel/panel/user/templates/home/one_click.html:14
 #, fuzzy
 msgid "Click to Start Anti-Filter."
-msgstr "<i class=\"fa-solid fa-play\"></i> Toque para iniciar o Antifiltro."
+msgstr "<i class='fa-solid fa-play'></i> Toque para iniciar o Antifiltro."
 
 # | msgid "One-click setup link for all applications (recommended)"
 #: hiddifypanel/panel/user/templates/home/one_click.html:16
@@ -3942,7 +3960,7 @@ msgstr ""
 msgid "Use HiddifyNext:"
 msgstr "Use HiddifyNext:"
 
-# | msgid "<i class=\"fa-solid fa-download\"></i> Download App"
+# | msgid "<i class='fa-solid fa-download'></i> Download App"
 #: hiddifypanel/panel/user/templates/home/one_click.html:71
 #: hiddifypanel/panel/user/templates/home/one_click.html:86
 #: hiddifypanel/panel/user/templates/home/one_click.html:95
@@ -3961,7 +3979,7 @@ msgstr "Use HiddifyNext:"
 #: hiddifypanel/panel/user/templates/home/one_click.html:258
 #, fuzzy
 msgid "Download App"
-msgstr "<i class=\"fa-solid fa-download\"></i> Baixar aplicativo"
+msgstr "<i class='fa-solid fa-download'></i> Baixar aplicativo"
 
 # | msgid "Import in App"
 #: hiddifypanel/panel/user/templates/home/one_click.html:76
@@ -4006,11 +4024,11 @@ msgid ""
 "                                App"
 msgstr "Baixar aplicativo"
 
-# | msgid "<i class=\"fa-solid fa-qrcode\"></i> QRCode"
+# | msgid "<i class='fa-solid fa-qrcode'></i> QRCode"
 #: hiddifypanel/panel/user/templates/home/one_click.html:269
 #, fuzzy
 msgid "QRCode"
-msgstr "<i class=\"fa-solid fa-qrcode\"></i> QRCode"
+msgstr "<i class='fa-solid fa-qrcode'></i> QRCode"
 
 #: hiddifypanel/panel/user/templates/home/one_click.html:280
 #, fuzzy
@@ -4164,10 +4182,10 @@ msgstr "Mac OS"
 msgid "Linux"
 msgstr "Linux"
 
-# | msgid "HiddifyN <span class=\"badge badge-success\">Recommended</span>"
+# | msgid "HiddifyN <span class='badge badge-success'>Recommended</span>"
 #: hiddifypanel/panel/user/templates/home/windows.html:50
 msgid "HiddigyN"
-msgstr "HiddigyN <span class=\"badge badge-success\">Recommended</span>"
+msgstr "HiddigyN <span class='badge badge-success'>Recommended</span>"
 
 # | msgid ""
 # | "Please install HiddifyN from %(dl_link)s.\n"
@@ -4181,6 +4199,7 @@ msgstr ""
 "Então clique no link abaixo. Fará tudo automaticamente."
 
 #: hiddifypanel/panel/user/templates/home/windows.html:63
+#, fuzzy
 msgid "HiddifyClash"
 msgstr "HiddifyClash"
 
@@ -4192,18 +4211,18 @@ msgstr "HiddifyClash"
 # | "\n"
 # | "<details>\n"
 # | "<summary>Why Hiddify Desktop ?</summary>\n"
-# | "<div class=\"callout callout-info\">\n"
+# | "<div class='callout callout-info'>\n"
 # | "        Hiddify Desktop is an safe and open source fork of Clash that
 # supports more VLESS  and UTLS Fingerprinting.\n"
 # | "        <br>\n"
 # | "        Its source codes exist in\n"
 # | "        <a
-# href=\"https://github.com/hiddify/HiddifyDesktop\">GitHub</a>.\n"
+# href='https://github.com/hiddify/HiddifyDesktop'>GitHub</a>.\n"
 # | "        \n"
 # | "        <details>\n"
 # | "            <summary>Alternative: Normal Clash</summary>\n"
 # | "            %(normal_clash_link)s\n"
-# | "            <div class=\"alert alert-danger\">\n"
+# | "            <div class='alert alert-danger'>\n"
 # | "            \tClash does not support browser fingerprinting and VLESS
 # protocol . Therefore, we need to add another link for it.\n"
 # | "            </div>\n"
@@ -4224,21 +4243,20 @@ msgstr ""
 "\n"
 "<detalhes>\n"
 "<summary>Por que Hiddify Desktop?</summary>\n"
-"<div class=\"callout callout-info\">\n"
+"<div class='callout callout-info'>\n"
 "\n"
 "        O Hiddify Desktop é um fork seguro e de código aberto do Clash "
 "que suporta mais impressão digital VLESS e UTLS.\n"
 "        <br>\n"
 "        Seus códigos-fonte existem em\n"
-"        <a href=\"https://github.com/hiddify/HiddifyDesktop\">GitHub</a>."
-"\n"
+"        <a href='https://github.com/hiddify/HiddifyDesktop'>GitHub</a>.\n"
 "        \n"
 "\n"
 "        <detalhes>\n"
 "            <summary>Alternativa: Conflito normal</summary>\n"
 "            %(normal_clash_link)s\n"
 "\n"
-"            <div class=\"alert alert-danger\">\n"
+"            <div class='alert alert-danger'>\n"
 "            O Clash não oferece suporte à impressão digital do navegador "
 "e ao protocolo VLESS. Portanto, precisamos adicionar outro link para ele."
 "\n"
@@ -4414,45 +4432,44 @@ msgstr "⚠️Tem certeza que deseja fazer esta ação?"
 # | "✳️ We need your help In Developing this Project\n"
 # | "<br>\n"
 # | "If you are developer or content producer, please contact us at <a
-# href=\"mailto:info@hiddify.com\">info@hiddify.com</a>\n"
+# href='mailto:info@hiddify.com'>info@hiddify.com</a>\n"
 # | "<br><br>\n"
 # | "\n"
 # | "ℹ️ Also, we need financial help to further develop this panel and our
 # service (we are Non-Profit).\n"
 # | "<h5>Payment Methods :</h5>\n"
 # | "<ul>\n"
-# | "<li> <div class=\"btn-group\">\n"
-# | "    <a role=\"button\"
-# data-copy=\"EQCWnykA-YhavOXgH3sf-uxtXLjy83_9n5bJPGRPE8r2247_\" class=\"btn
-# btn-secondary copy-link\"><i class=\"fa-regular fa-copy\"></i></a>    \n"
-# | "<a data-copy=\"EQCWnykA-YhavOXgH3sf-uxtXLjy83_9n5bJPGRPE8r2247_\"
-# role=\"button\" class=\"btn btn-info share-link\">TON</a> </div></li>\n"
-# | "    <a role=\"button\" data-copy=\"TXZtFUxyBPMSykAWogu7C4zmbjySKqMcDE\"
-# class=\"btn btn-secondary copy-link\"><i class=\"fa-regular
-# fa-copy\"></i></a>    \n"
-# | "<a data-copy=\"TXZtFUxyBPMSykAWogu7C4zmbjySKqMcDE\" role=\"button\"
-# class=\"btn btn-info share-link\">USDT (TRC20)</a> </div></li>\n"
-# | "    <a role=\"button\" data-copy=\"MCHoh7xwaDBBnQgANPpBtXiekagV6KpdrM\"
-# class=\"btn btn-secondary copy-link\"><i class=\"fa-regular
-# fa-copy\"></i></a>    \n"
-# | "<a data-copy=\"MCHoh7xwaDBBnQgANPpBtXiekagV6KpdrM\" role=\"button\"
-# class=\"btn btn-info share-link\">Litecoin</a> </div></li>\n"
-# | "    <a role=\"button\"
-# data-copy=\"0xF5CFc65ee336B377C2a37EA3BCD0CaD0d0F0CbA0\" class=\"btn
-# btn-secondary copy-link\"><i class=\"fa-regular fa-copy\"></i></a>    \n"
-# | "<a data-copy=\"0xF5CFc65ee336B377C2a37EA3BCD0CaD0d0F0CbA0\"
-# role=\"button\" class=\"btn btn-info share-link\">Ethereum</a>
-# </div></li>\n"
-# | "    <a role=\"button\"
-# data-copy=\"bc1qkfp7n3wxu2zc9mdy20cf27d5pujj65myww8f60\" class=\"btn
-# btn-secondary copy-link\"><i class=\"fa-regular fa-copy\"></i></a>    \n"
-# | "<a data-copy=\"bc1qkfp7n3wxu2zc9mdy20cf27d5pujj65myww8f60\"
-# role=\"button\" class=\"btn btn-info share-link\">Bitcoin</a> </div></li>\n"
-# | "    <a role=\"button\" data-copy=\"DPerFS2vCu5XnE3He32BaPVTkUDcKLsEaj\"
-# class=\"btn btn-secondary copy-link\"><i class=\"fa-regular
-# fa-copy\"></i></a>    \n"
-# | "<a data-copy=\"DPerFS2vCu5XnE3He32BaPVTkUDcKLsEaj\" role=\"button\"
-# class=\"btn btn-info share-link\">Dogecoin</a> </div></li>\n"
+# | "<li> <div class='btn-group'>\n"
+# | "    <a role='button'
+# data-copy='EQCWnykA-YhavOXgH3sf-uxtXLjy83_9n5bJPGRPE8r2247_' class='btn
+# btn-secondary copy-link'><i class='fa-regular fa-copy'></i></a>    \n"
+# | "<a data-copy='EQCWnykA-YhavOXgH3sf-uxtXLjy83_9n5bJPGRPE8r2247_'
+# role='button' class='btn btn-info share-link'>TON</a> </div></li>\n"
+# | "    <a role='button' data-copy='TXZtFUxyBPMSykAWogu7C4zmbjySKqMcDE'
+# class='btn btn-secondary copy-link'><i class='fa-regular fa-copy'></i></a>
+# \n"
+# | "<a data-copy='TXZtFUxyBPMSykAWogu7C4zmbjySKqMcDE' role='button'
+# class='btn btn-info share-link'>USDT (TRC20)</a> </div></li>\n"
+# | "    <a role='button' data-copy='MCHoh7xwaDBBnQgANPpBtXiekagV6KpdrM'
+# class='btn btn-secondary copy-link'><i class='fa-regular fa-copy'></i></a>
+# \n"
+# | "<a data-copy='MCHoh7xwaDBBnQgANPpBtXiekagV6KpdrM' role='button'
+# class='btn btn-info share-link'>Litecoin</a> </div></li>\n"
+# | "    <a role='button'
+# data-copy='0xF5CFc65ee336B377C2a37EA3BCD0CaD0d0F0CbA0' class='btn
+# btn-secondary copy-link'><i class='fa-regular fa-copy'></i></a>    \n"
+# | "<a data-copy='0xF5CFc65ee336B377C2a37EA3BCD0CaD0d0F0CbA0' role='button'
+# class='btn btn-info share-link'>Ethereum</a> </div></li>\n"
+# | "    <a role='button'
+# data-copy='bc1qkfp7n3wxu2zc9mdy20cf27d5pujj65myww8f60' class='btn
+# btn-secondary copy-link'><i class='fa-regular fa-copy'></i></a>    \n"
+# | "<a data-copy='bc1qkfp7n3wxu2zc9mdy20cf27d5pujj65myww8f60' role='button'
+# class='btn btn-info share-link'>Bitcoin</a> </div></li>\n"
+# | "    <a role='button' data-copy='DPerFS2vCu5XnE3He32BaPVTkUDcKLsEaj'
+# class='btn btn-secondary copy-link'><i class='fa-regular fa-copy'></i></a>
+# \n"
+# | "<a data-copy='DPerFS2vCu5XnE3He32BaPVTkUDcKLsEaj' role='button'
+# class='btn btn-info share-link'>Dogecoin</a> </div></li>\n"
 # | "</ul>\n"
 # | "We need also other help:\n"
 # | "<li>👥 Share Hiddify Manager with Others</li>\n"
@@ -4462,7 +4479,7 @@ msgstr "⚠️Tem certeza que deseja fazer esta ação?"
 # | "<li>📝Go Developer</li>\n"
 # | "<li>🖥Content Providers</li>\n"
 # | "Please contact us at <a
-# href=\"mailto:info@hiddify.com\">info@hiddify.com</a> if you can help us."
+# href='mailto:info@hiddify.com'>info@hiddify.com</a> if you can help us."
 #: hiddifypanel/templates/donation.html:11
 #, fuzzy
 msgid "Donation.description"
@@ -4470,7 +4487,7 @@ msgstr ""
 "✳️ Precisamos da sua ajuda para desenvolver este projeto\n"
 "<br>\n"
 "Se você é desenvolvedor ou produtor de conteúdo, entre em contato conosco"
-" em <a href=\"mailto:hiddify@gmail.com\">hiddify@gmail.com</a>\n"
+" em <a href='mailto:hiddify@gmail.com'>hiddify@gmail.com</a>\n"
 "<br><br>\n"
 "\n"
 "ℹ️ Além disso, precisamos de ajuda financeira para desenvolver ainda mais"
@@ -4478,53 +4495,50 @@ msgstr ""
 "<br>\n"
 "<h5>Outras formas de pagamento</h5>\n"
 "<ul>\n"
-"<li> <a target=\"_blank\" "
-"href=\"https://opencollective.com/hiddify/contribute/backer-50556/checkout?interval=month&amount=25\""
-" class=\"btn btn-info\">Cartão de crédito e PayPal </a></li>\n"
-"<li> <div class=\"btn-group\">\n"
-"    <a role=\"button\" data-copy=\"EQCWnykA-YhavOXgH3sf-"
-"uxtXLjy83_9n5bJPGRPE8r2247_\" class=\"btn btn-secondary copy-link\"><i "
-"class=\"fa-regular fa-copy\"></i></a >\n"
-"<a data-copy=\"EQCWnykA-YhavOXgH3sf-uxtXLjy83_9n5bJPGRPE8r2247_\" "
-"role=\"button\" class=\"btn btn-info share-link\">TONELADA</a> "
-"</div></li>\n"
+"<li> <a target='_blank' "
+"href='https://opencollective.com/hiddify/contribute/backer-50556/checkout?interval=month&amount=25'"
+" class='btn btn-info'>Cartão de crédito e PayPal </a></li>\n"
+"<li> <div class='btn-group'>\n"
+"    <a role='button' data-copy='EQCWnykA-YhavOXgH3sf-"
+"uxtXLjy83_9n5bJPGRPE8r2247_' class='btn btn-secondary copy-link'><i class"
+"='fa-regular fa-copy'></i></a >\n"
+"<a data-copy='EQCWnykA-YhavOXgH3sf-uxtXLjy83_9n5bJPGRPE8r2247_' "
+"role='button' class='btn btn-info share-link'>TONELADA</a> </div></li>\n"
 "\n"
-"<li> <div class=\"btn-group\">\n"
-"    <a role=\"button\" data-copy=\"TXZtFUxyBPMSykAWogu7C4zmbjySKqMcDE\" "
-"class=\"btn btn-secondary copy-link\"><i class=\"fa-regular fa-"
-"copy\"></i></a>\n"
-"<a data-copy=\"TXZtFUxyBPMSykAWogu7C4zmbjySKqMcDE\" role=\"button\" "
-"class=\"btn btn-info share-link\">USDT (TRC20)</a> </div></li>\n"
+"<li> <div class='btn-group'>\n"
+"    <a role='button' data-copy='TXZtFUxyBPMSykAWogu7C4zmbjySKqMcDE' "
+"class='btn btn-secondary copy-link'><i class='fa-regular fa-"
+"copy'></i></a>\n"
+"<a data-copy='TXZtFUxyBPMSykAWogu7C4zmbjySKqMcDE' role='button' "
+"class='btn btn-info share-link'>USDT (TRC20)</a> </div></li>\n"
 "\n"
-"<li> <div class=\"btn-group\">\n"
-"    <a role=\"button\" data-copy=\"MCHoh7xwaDBBnQgANPpBtXiekagV6KpdrM\" "
-"class=\"btn btn-secondary copy-link\"><i class=\"fa-regular fa-"
-"copy\"></i></a>\n"
-"<a data-copy=\"MCHoh7xwaDBBnQgANPpBtXiekagV6KpdrM\" role=\"button\" "
-"class=\"btn btn-info share-link\">Litecoin</a> </div></li>\n"
+"<li> <div class='btn-group'>\n"
+"    <a role='button' data-copy='MCHoh7xwaDBBnQgANPpBtXiekagV6KpdrM' "
+"class='btn btn-secondary copy-link'><i class='fa-regular fa-"
+"copy'></i></a>\n"
+"<a data-copy='MCHoh7xwaDBBnQgANPpBtXiekagV6KpdrM' role='button' "
+"class='btn btn-info share-link'>Litecoin</a> </div></li>\n"
 "\n"
-"<li> <div class=\"btn-group\">\n"
-"    <a role=\"button\" data-"
-"copy=\"0xF5CFc65ee336B377C2a37EA3BCD0CaD0d0F0CbA0\" class=\"btn btn-"
-"secondary copy-link\"><i class=\"fa-regular fa-copy\"></i></a>\n"
-"<a data-copy=\"0xF5CFc65ee336B377C2a37EA3BCD0CaD0d0F0CbA0\" "
-"role=\"button\" class=\"btn btn-info share-link\">Ethereum</a> "
-"</div></li>\n"
+"<li> <div class='btn-group'>\n"
+"    <a role='button' data-"
+"copy='0xF5CFc65ee336B377C2a37EA3BCD0CaD0d0F0CbA0' class='btn btn-"
+"secondary copy-link'><i class='fa-regular fa-copy'></i></a>\n"
+"<a data-copy='0xF5CFc65ee336B377C2a37EA3BCD0CaD0d0F0CbA0' role='button' "
+"class='btn btn-info share-link'>Ethereum</a> </div></li>\n"
 "\n"
-"<li> <div class=\"btn-group\">\n"
-"    <a role=\"button\" data-"
-"copy=\"bc1qkfp7n3wxu2zc9mdy20cf27d5pujj65myww8f60\" class=\"btn btn-"
-"secondary copy-link\"><i class=\"fa-regular fa-copy\"></i></a>\n"
-"<a data-copy=\"bc1qkfp7n3wxu2zc9mdy20cf27d5pujj65myww8f60\" "
-"role=\"button\" class=\"btn btn-info share-link\">Bitcoin</a> </div></li>"
+"<li> <div class='btn-group'>\n"
+"    <a role='button' data-"
+"copy='bc1qkfp7n3wxu2zc9mdy20cf27d5pujj65myww8f60' class='btn btn-"
+"secondary copy-link'><i class='fa-regular fa-copy'></i></a>\n"
+"<a data-copy='bc1qkfp7n3wxu2zc9mdy20cf27d5pujj65myww8f60' role='button' "
+"class='btn btn-info share-link'>Bitcoin</a> </div></li>\n"
 "\n"
-"\n"
-"<li> <div class=\"btn-group\">\n"
-"    <a role=\"button\" data-copy=\"DPerFS2vCu5XnE3He32BaPVTkUDcKLsEaj\" "
-"class=\"btn btn-secondary copy-link\"><i class=\"fa-regular fa-"
-"copy\"></i></a>\n"
-"<a data-copy=\"DPerFS2vCu5XnE3He32BaPVTkUDcKLsEaj\" role=\"button\" "
-"class=\"btn btn-info share-link\">Dogecoin</a> </div></li>\n"
+"<li> <div class='btn-group'>\n"
+"    <a role='button' data-copy='DPerFS2vCu5XnE3He32BaPVTkUDcKLsEaj' "
+"class='btn btn-secondary copy-link'><i class='fa-regular fa-"
+"copy'></i></a>\n"
+"<a data-copy='DPerFS2vCu5XnE3He32BaPVTkUDcKLsEaj' role='button' "
+"class='btn btn-info share-link'>Dogecoin</a> </div></li>\n"
 "</ul>\n"
 "\n"
 "<br>\n"
@@ -4538,8 +4552,16 @@ msgstr ""
 "</ul>\n"
 "\n"
 "Entre em contato conosco em <a "
-"href=\"mailto:hiddify@gmail.com\">hiddify@gmail.com</a> se puder nos "
+"href='mailto:hiddify@gmail.com'>hiddify@gmail.com</a> se puder nos "
 "ajudar."
+
+#: hiddifypanel/templates/fake.html:1
+msgid "config.create_easysetup_link.label"
+msgstr ""
+
+#: hiddifypanel/templates/fake.html:1
+msgid "config.create_easysetup_link.description"
+msgstr ""
 
 # | msgid "SSH user database address"
 #: hiddifypanel/templates/fake.html:1
@@ -4805,7 +4827,7 @@ msgstr ""
 # | "It is used to simulate another website instead of your website in SNI.
 # therefore, GFW can not filter your Domain\n"
 # | "<a
-# href=\"https://github.com/hiddify/hiddify-config/wiki/Guide-for-domain-fronting\">Guide</a>.
+# href='https://github.com/hiddify/hiddify-config/wiki/Guide-for-domain-fronting'>Guide</a>.
 # ⚠️CloudFlare does not support Domain Fronting."
 #: hiddifypanel/templates/flaskadmin-layout.html:122
 #, fuzzy
@@ -4813,8 +4835,8 @@ msgid "domain.domain_fronting.description"
 msgstr ""
 "É usado para simular outro site em vez do seu site no SNI. portanto, o "
 "GFW não pode filtrar seu domínio\n"
-"<a href=\"https://github.com/hiddify/hiddify-config/wiki/Guide-for-"
-"domain-fronting\">Guia</a>. ⚠️CloudFlare não suporta fronting de domínio."
+"<a href='https://github.com/hiddify/hiddify-config/wiki/Guide-for-domain-"
+"fronting'>Guia</a>. ⚠️CloudFlare não suporta fronting de domínio."
 
 # | msgid "Close"
 #: hiddifypanel/templates/macros.html:29 hiddifypanel/templates/master.html:171
@@ -5003,8 +5025,8 @@ msgstr "Ações"
 # | "enabled in your SSH. To secure your server, please switch to key "
 # | "authentication mechanism and turn off PasswordAuthentication. <a "
 # |
-# "href=\"https://github.com/hiddify/Hiddify-Manager/wiki/Disable-SSH-Password-"
-# | "Authentication\">read more... </a>"
+# "href='https://github.com/hiddify/Hiddify-Manager/wiki/Disable-SSH-Password-"
+# | "Authentication'>read more... </a>"
 #~ msgid "ssh.password-login.warning."
 #~ msgstr ""
 #~ "Seu servidor está vulnerável a abusos"
@@ -5013,8 +5035,8 @@ msgstr "Ações"
 #~ "servidor, mude para o mecanismo de "
 #~ "autenticação de chave e desative "
 #~ "PasswordAuthentication. <a "
-#~ "href=\"https://github.com/hiddify/Hiddify-Manager/wiki"
-#~ "/Disable-SSH-Password-Authentication\">leia "
+#~ "href='https://github.com/hiddify/Hiddify-Manager/wiki"
+#~ "/Disable-SSH-Password-Authentication'>leia "
 #~ "mais... </a>"
 
 # | msgid "Bug/Feature"
@@ -5113,7 +5135,7 @@ msgstr "Ações"
 #~ msgid "app.hiddify.next.description"
 #~ msgstr "Hiddify Próxima Descrição"
 
-# | msgid "Couldn't find your IP addresses"
+# | msgid "Couldn't find your IP Addresses"
 #~ msgid "Couldn't find your ip addresses"
 #~ msgstr "Não foi possível encontrar seus endereços IP"
 
@@ -5293,69 +5315,349 @@ msgstr "Ações"
 #~ msgid "config.tls_trick.description"
 #~ msgstr "As configurações de fragmentação TLS podem ser definidas nesta seção"
 
+# | msgid "⚠️ Config Invalid! The Pattern Is Number-Number"
 #~ msgid "config.Invalid! The pattern is number-number"
-#~ msgstr ""
+#~ msgstr "⚠️ Configuração inválida! O padrão é número-número"
 
+# | msgid "⚠️ Config Invalid! It Should Be a Number Only"
 #~ msgid "config.Invalid! it should be a number only"
-#~ msgstr ""
+#~ msgstr "⚠️ Configuração inválida! Deve ser apenas um número"
 
+# | msgid "Ⓜ️ MUX Enable"
 #~ msgid "config.mux_enable.label"
-#~ msgstr ""
+#~ msgstr "Ⓜ️ Habilitar MUX"
 
+# | msgid "Enable MUX (Multiplex)"
 #~ msgid "config.mux_enable.description"
-#~ msgstr ""
+#~ msgstr "Habilitar MUX (Multiplex)"
 
+# | msgid "♍️ MUX Protocol"
 #~ msgid "config.mux_protocol.label"
-#~ msgstr ""
+#~ msgstr "♍️ Protocolo MUX"
 
+# | msgid ""
+# | "ℹ️ Multiplex Protocol. 'sMux' is used by default\n"
+# | "<br>\n"
+# | "➖ sMux: Stream Multiplexing\n"
+# | "➖ YaMux: Yet Another Multiplexer\n"
+# | "➖ h2Mux: Multiplexing Streams Over HTTP/2"
 #~ msgid "config.mux_protocol.description"
 #~ msgstr ""
+#~ "ℹ️ Protocolo Multiplex. 'sMux' é usado por padrão\n"
+#~ "<br>\n"
+#~ "➖ sMux: Multiplexação de fluxo\n"
+#~ "<br>\n"
+#~ "➖ YaMux: mais um multiplexador\n"
+#~ "<br>\n"
+#~ "➖ h2Mux: Multiplexação de fluxos em HTTP/2"
 
+# | msgid "⛓ MUX Max Connections"
 #~ msgid "config.mux_max_connections.label"
-#~ msgstr ""
+#~ msgstr "⛓ Conexões MUX Max"
 
+# | msgid "Maximum Connections. Conflict with Max Streams"
 #~ msgid "config.mux_max_connections.description"
-#~ msgstr ""
+#~ msgstr "Máximo de conexões. Conflito com fluxos máximos"
 
+# | msgid "↘️ MUX Min Streams"
 #~ msgid "config.mux_min_streams.label"
-#~ msgstr ""
+#~ msgstr "↘️ Fluxos mínimos MUX"
 
+# | msgid ""
+# | "Minimum Multiplexed streams in a connection before opening a new
+# connection"
 #~ msgid "config.mux_min_streams.description"
 #~ msgstr ""
+#~ "Fluxos multiplexados mínimos em uma "
+#~ "conexão antes de abrir uma nova "
+#~ "conexão"
 
+# | msgid "↗️ MUX Max Streams"
 #~ msgid "config.mux_max_streams.label"
-#~ msgstr ""
+#~ msgstr "↗️ Transmissões máximas do MUX"
 
+# | msgid ""
+# | "Maximum Multiplexed streams in a connection before opening a new
+# connection"
 #~ msgid "config.mux_max_streams.description"
 #~ msgstr ""
+#~ "Máximo de fluxos multiplexados em uma"
+#~ " conexão antes de abrir uma nova "
+#~ "conexão"
 
+# | msgid "⟹ MUX Padding"
 #~ msgid "config.mux_padding_enable.label"
-#~ msgstr ""
+#~ msgstr "⟹ Preenchimento MUX"
 
+# | msgid "Enables MUX Padding"
 #~ msgid "config.mux_padding_enable.description"
-#~ msgstr ""
+#~ msgstr "Habilita preenchimento MUX"
 
+# | msgid "☣️ MUX Brutal"
 #~ msgid "config.mux_brutal_enable.label"
-#~ msgstr ""
+#~ msgstr "☣️MUX Brutal"
 
+# | msgid "Enables TCP-Brutal congestion control algorithm"
 #~ msgid "config.mux_brutal_enable.description"
-#~ msgstr ""
+#~ msgstr "Ativa o algoritmo de controle de congestionamento TCP-Brutal"
 
+# | msgid "⬆️ MUX Brutal Upload (mbps)"
 #~ msgid "config.mux_brutal_up_mbps.label"
-#~ msgstr ""
+#~ msgstr "⬆️ Carregamento Brutal MUX (mbps)"
 
+# | msgid "TCP-Brutal Maximum Upload Speed"
 #~ msgid "config.mux_brutal_up_mbps.description"
-#~ msgstr ""
+#~ msgstr "Velocidade máxima de upload TCP-Brutal"
 
+# | msgid "⬇️ MUX Brutal Download (mbps)"
 #~ msgid "config.mux_brutal_down_mbps.label"
-#~ msgstr ""
+#~ msgstr "⬇️ Download brutal do MUX (mbps)"
 
+# | msgid "TCP-Brutal Maximum Download Speed"
 #~ msgid "config.mux_brutal_down_mbps.description"
-#~ msgstr ""
+#~ msgstr "Velocidade máxima de download TCP-Brutal"
 
+# | msgid "MUX Config"
 #~ msgid "config.mux.label"
+#~ msgstr "Configuração MUX"
+
+# | msgid "MUX (Multiplex) configurations could be set in this section"
+#~ msgid "config.mux.description"
+#~ msgstr "As configurações MUX (Multiplex) podem ser definidas nesta seção"
+
+#~ msgid "child.name.label"
 #~ msgstr ""
 
-#~ msgid "config.mux.description"
+#~ msgid "child.mode.label"
+#~ msgstr ""
+
+#~ msgid "child.uuid.label"
+#~ msgstr ""
+
+#~ msgid "child.name.dscr"
+#~ msgstr ""
+
+#~ msgid "child.mode.dscr"
+#~ msgstr ""
+
+#~ msgid "child.uuid.dscr"
+#~ msgstr ""
+
+#~ msgid "update"
+#~ msgstr ""
+
+#~ msgid "Welcome to admin bot. Choose your action"
+#~ msgstr ""
+
+#~ msgid "Create Package"
+#~ msgstr ""
+
+#~ msgid "package size?"
+#~ msgstr ""
+
+#~ msgid "Ok"
+#~ msgstr ""
+
+#~ msgid "package days?"
+#~ msgstr ""
+
+#~ msgid "How many?"
+#~ msgstr ""
+
+#~ msgid "Domain?"
+#~ msgstr ""
+
+#~ msgid "Please Wait..."
+#~ msgstr ""
+
+#~ msgid "Finished..."
+#~ msgstr ""
+
+# | msgid "Enable WireGuard"
+#~ msgid "config.wireguard_enable.label"
+#~ msgstr "Habilitar WireGuard"
+
+# | msgid ""
+# | "WireGuard is UDP based protocol.\n"
+# | "\n"
+# | "⚠️  Accounting is not yet supported."
+#~ msgid "config.wireguard_enable.description"
+#~ msgstr ""
+#~ "WireGuard é um protocolo baseado em UDP.\n"
+#~ "\n"
+#~ "⚠️ A contabilidade ainda não é suportada."
+
+#~ msgid "config.wireguard_port.label"
+#~ msgstr ""
+
+#~ msgid "config.wireguard_port.description"
+#~ msgstr ""
+
+#~ msgid "config.wireguard_ipv6.label"
+#~ msgstr ""
+
+#~ msgid "config.wireguard_ipv6.description"
+#~ msgstr ""
+
+#~ msgid "config.wireguard_ipv4.label"
+#~ msgstr ""
+
+#~ msgid "config.wireguard_ipv4.description"
+#~ msgstr ""
+
+#~ msgid "config.wireguard_private_key.label"
+#~ msgstr ""
+
+#~ msgid "config.wireguard_private_key.description"
+#~ msgstr ""
+
+#~ msgid "config.wireguard_public_key.label"
+#~ msgstr ""
+
+#~ msgid "config.wireguard_public_key.description"
+#~ msgstr ""
+
+# | msgid "WireGuard Noise Trick"
+#~ msgid "config.wireguard_noise_trick.label"
+#~ msgstr "Truque de ruído WireGuard"
+
+# | msgid ""
+# | "This method introduces extra noise to prevent detection and blocking by
+# the "
+# | "GFW."
+#~ msgid "config.wireguard_noise_trick.description"
+#~ msgstr ""
+#~ "Este método introduz ruído extra para"
+#~ " evitar detecção e bloqueio pelo GFW."
+
+# | msgid "Wireguard"
+#~ msgid "config.wireguard.label"
+#~ msgstr "Proteção de arame"
+
+# | msgid ""
+# | "WireGuard is a lightweight, UDP  based protocol known for its simplicity,
+# efficiency, and strong security. It offers quick setup, transparent code,
+# and has gained popularity for its ease of use across various operating
+# systems.\n"
+# | "\n"
+# | "⚠️ Accounting is not yet implemented for this protocol."
+#~ msgid "config.wireguard.description"
+#~ msgstr ""
+#~ "WireGuard é um protocolo leve baseado"
+#~ " em UDP conhecido por sua "
+#~ "simplicidade, eficiência e forte segurança."
+#~ " Ele oferece configuração rápida, código"
+#~ " transparente e ganhou popularidade por "
+#~ "sua facilidade de uso em vários "
+#~ "sistemas operacionais.\n"
+#~ "\n"
+#~ "⚠️ A contabilidade ainda não está implementada para este protocolo."
+
+#~ msgid "Remote nodes are not supported yet!"
+#~ msgstr ""
+
+# | msgid "Node Name"
+#~ msgid "node.name.label"
+#~ msgstr ""
+
+# | msgid "Node Mode"
+#~ msgid "node.mode.label"
+#~ msgstr ""
+
+# | msgid "Node UUID"
+#~ msgid "node.uuid.label"
+#~ msgstr ""
+
+#~ msgid "node.name.dscr"
+#~ msgstr ""
+
+#~ msgid "node.mode.dscr"
+#~ msgstr ""
+
+#~ msgid "node.uuid.dscr"
+#~ msgstr ""
+
+#~ msgid "config.dbvalues.label"
+#~ msgstr ""
+
+#~ msgid "config.dbvalues.description"
+#~ msgstr ""
+
+# | msgid "Enable Shadowsocks 2022"
+#~ msgid "config.shadowsocks2022_enable.label"
+#~ msgstr ""
+
+# | msgid ""
+# | "Shadowsocks 2022 is a secure proxy protocol for TCP and UDP traffic. The
+# "
+# | "proxy traffic is indistinguishable from a random byte stream, and
+# therefore "
+# | "can circumvent firewalls and Internet censors that rely on DPI (Deep
+# Packet "
+# | "Inspection)."
+#~ msgid "config.shadowsocks2022_enable.description"
+#~ msgstr ""
+
+# | msgid "Shadowsocks Encrypytion Method"
+#~ msgid "config.shadowsocks2022_method.label"
+#~ msgstr ""
+
+# | msgid "This method also used in ShadowTLS and SSFakeTLS"
+#~ msgid "config.shadowsocks2022_method.description"
+#~ msgstr ""
+
+# | msgid "Shadowsocks 2022 Port"
+#~ msgid "config.shadowsocks2022_port.label"
+#~ msgstr ""
+
+# | msgid "It needs both UDP and TCP to be free"
+#~ msgid "config.shadowsocks2022_port.description"
+#~ msgstr ""
+
+# | msgid "Enable Websocket"
+#~ msgid "config.ws_enable.label"
+#~ msgstr ""
+
+# | msgid ""
+# | "Websocket creates a tunnel over http that is useful to be used in CDN."
+#~ msgid "config.ws_enable.description"
+#~ msgstr ""
+
+# | msgid "Enable gRPC"
+#~ msgid "config.grpc_enable.label"
+#~ msgstr ""
+
+# | msgid ""
+# | "gRPC is a modern open source high performance Remote Procedure Call (RPC)
+# "
+# | "framework. It can be used in supported CDNs."
+#~ msgid "config.grpc_enable.description"
+#~ msgstr ""
+
+#~ msgid "config.httpupgrade_enable.label"
+#~ msgstr ""
+
+#~ msgid "config.httpupgrade_enable.description"
+#~ msgstr ""
+
+#~ msgid "config.path_httpupgrade.label"
+#~ msgstr ""
+
+#~ msgid "config.path_httpupgrade.description"
+#~ msgstr ""
+
+#~ msgid "config.shadowsocks.label"
+#~ msgstr ""
+
+#~ msgid "config.shadowsocks.description"
+#~ msgstr ""
+
+#~ msgid "%(count)s records were successfully disabled."
+#~ msgstr ""
+
+#~ msgid "%(count)s records were successfully enabled."
+#~ msgstr ""
+
+#~ msgid " Search Settings"
 #~ msgstr ""
 

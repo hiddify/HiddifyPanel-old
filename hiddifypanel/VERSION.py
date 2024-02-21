@@ -1,3 +1,3 @@
-__version__='8.8.95'
+__version__='8.8.96'
 from datetime import datetime
-__release_date__= datetime.strptime('2024-01-22','%Y-%m-%d')
+__release_date__= datetime.strptime('2024-02-21','%Y-%m-%d')
