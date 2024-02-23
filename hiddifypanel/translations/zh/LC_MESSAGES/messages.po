@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  HiddifyCH\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-21 11:57+0330\n"
+"POT-Creation-Date: 2024-02-23 15:10+0330\n"
 "PO-Revision-Date: 2024-02-17 19:54+0300\n"
 "Last-Translator: Hiddify Official\n"
 "Language: zh\n"
@@ -1546,7 +1546,8 @@ msgstr "它用于在 SNI 中模拟另一个网站而不是您的网站。因此�
 # | "It is used to simulate another website instead of your website in SNI.
 # therefore, GFW can not filter your Domain\n"
 # | "<a
-# href='https://github.com/hiddify/hiddify-config/wiki/%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87-%D8%A7%D8%B2-%D8%AF%D8%A7%D9%85%DB%8C%D9%86-%D9%81%D8%B1%D8%A7%D9%86%D8%AA%DB%8C%D9%86%DA%AF'>Guide</a>.
+# href='https://github.com/hiddify/hiddify-
+# config/wiki/%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87-%D8%A7%D8%B2-%D8%AF%D8%A7%D9%85%DB%8C%D9%86-%D9%81%D8%B1%D8%A7%D9%86%D8%AA%DB%8C%D9%86%DA%AF'>Guide</a>.
 # ⚠️CloudFlare does not support Domain Fronting."
 #: hiddifypanel/panel/admin/templates/configfake.html:6
 #: hiddifypanel/templates/fake.html:2
@@ -3216,8 +3217,8 @@ msgstr "Android 系统"
 # | "                    class='btn btn-warning orig-link'>Clash in Google
 # Play</a>\n"
 # | "            </div>\n"
-# | "                <a
-# href='/{{hconfigs[ConfigEnum.proxy_path]}}/gh/Kr328/ClashForAndroid/releases/download/v2.5.12/cfa-2.5.12-premium-universal-release.apk'\n"
+# href='/{{hconfigs[ConfigEnum.proxy_path]}}/gh/Kr328/ClashForAndroid/releases/download/v2.5.12/cfa-2.5.12-premium-
+# universal-release.apk'\n"
 # | "                    class='btn btn-warning orig-link'>Direct
 # Download</a>\n"
 # | "            <div class='alert alert-danger'>\n"
@@ -3474,7 +3475,7 @@ msgstr ""
 #: hiddifypanel/panel/user/templates/home/multi.html:22
 #, fuzzy, python-format
 msgid "Welcome %(user)s"
-msgstr "欢迎%(用户)s"
+msgstr "欢迎%(user)s"
 
 # | msgid "Telegram"
 #: copy.html:27 hiddifypanel/panel/user/templates/home/home.html:51
@@ -4283,23 +4284,15 @@ msgstr "⚠️您确定要执行此操作吗？"
 # | "<a data-copy='TXZtFUxyBPMSykAWogu7C4zmbjySKqMcDE' role='button'
 # class='btn btn-info share-link'>USDT (TRC20)</a> </div></li>\n"
 # | "    <a role='button' data-copy='MCHoh7xwaDBBnQgANPpBtXiekagV6KpdrM'
-# class='btn btn-secondary copy-link'><i class='fa-regular fa-copy'></i></a>
-# \n"
 # | "<a data-copy='MCHoh7xwaDBBnQgANPpBtXiekagV6KpdrM' role='button'
 # class='btn btn-info share-link'>Litecoin</a> </div></li>\n"
-# | "    <a role='button'
 # data-copy='0xF5CFc65ee336B377C2a37EA3BCD0CaD0d0F0CbA0' class='btn
-# btn-secondary copy-link'><i class='fa-regular fa-copy'></i></a>    \n"
 # | "<a data-copy='0xF5CFc65ee336B377C2a37EA3BCD0CaD0d0F0CbA0' role='button'
 # class='btn btn-info share-link'>Ethereum</a> </div></li>\n"
-# | "    <a role='button'
 # data-copy='bc1qkfp7n3wxu2zc9mdy20cf27d5pujj65myww8f60' class='btn
-# btn-secondary copy-link'><i class='fa-regular fa-copy'></i></a>    \n"
 # | "<a data-copy='bc1qkfp7n3wxu2zc9mdy20cf27d5pujj65myww8f60' role='button'
 # class='btn btn-info share-link'>Bitcoin</a> </div></li>\n"
 # | "    <a role='button' data-copy='DPerFS2vCu5XnE3He32BaPVTkUDcKLsEaj'
-# class='btn btn-secondary copy-link'><i class='fa-regular fa-copy'></i></a>
-# \n"
 # | "<a data-copy='DPerFS2vCu5XnE3He32BaPVTkUDcKLsEaj' role='button'
 # class='btn btn-info share-link'>Dogecoin</a> </div></li>\n"
 # | "</ul>\n"
@@ -4650,7 +4643,8 @@ msgstr ""
 # | "It is used to simulate another website instead of your website in SNI.
 # therefore, GFW can not filter your Domain\n"
 # | "<a
-# href='https://github.com/hiddify/hiddify-config/wiki/Guide-for-domain-fronting'>Guide</a>.
+# href='https://github.com/hiddify/hiddify-config/wiki/Guide-for-domain-
+# fronting'>Guide</a>.
 # ⚠️CloudFlare does not support Domain Fronting."
 #: hiddifypanel/templates/flaskadmin-layout.html:122
 #, fuzzy
@@ -4729,7 +4723,8 @@ msgstr "行动"
 # | "enabled in your SSH. To secure your server, please switch to key "
 # | "authentication mechanism and turn off PasswordAuthentication. <a "
 # |
-# "href='https://github.com/hiddify/Hiddify-Manager/wiki/Disable-SSH-Password-"
+# "href='https://github.com/hiddify/Hiddify-Manager/wiki/Disable-SSH-
+# Password-"
 # | "Authentication'>read more... </a>"
 #~ msgid "ssh.password-login.warning."
 #~ msgstr ""
@@ -5301,7 +5296,6 @@ msgstr "行动"
 # | "the connection directly. It is similar to WebSocket in the way it create
 # an "
 # | "direction channel that can be forwarded by many reverse proxies and CDNs,
-# "
 # | "without the need to deal with all the issue around WebSocket Protocol "
 # | "itself."
 #~ msgid "config.httpupgrade_enable.description"
