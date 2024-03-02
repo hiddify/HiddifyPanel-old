@@ -146,6 +146,8 @@ def get_config_form():
             continue
 
         class CategoryForm(FlaskForm):
+            class Meta():
+                csrf = False
             description_for_fieldset = wtf.fields.TextAreaField("", description=_(f'config.{cat}.description'), render_kw={"class": "d-none"})
         for c2 in cat_configs:
             if not (c2 in configs_key):

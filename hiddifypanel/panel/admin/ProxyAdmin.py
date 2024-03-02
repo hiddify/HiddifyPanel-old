@@ -102,6 +102,8 @@ def get_all_proxy_form(empty=False):
 
     for cdn in categories1:
         class CDNForm(FlaskForm):
+            class Meta():
+                csrf = False
             pass
         cdn_proxies = [c for c in proxies if c.cdn == cdn]
         pgroup = {
@@ -113,6 +115,8 @@ def get_all_proxy_form(empty=False):
         protos = sorted([c for c in {pgroup.get(c.proto, c.proto): 1 for c in cdn_proxies}])
         for proto in protos:
             class ProtoForm(FlaskForm):
+                class Meta():
+                    csrf = False
                 pass
             proto_proxies = [c for c in cdn_proxies if pgroup.get(c.proto, c.proto) == proto]
             for proxy in proto_proxies:
