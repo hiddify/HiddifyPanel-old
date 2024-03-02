@@ -1,6 +1,6 @@
 #!/bin/bash
 source .env
-
+exit 0
 PATH=/config/.local/bin:$PATH
 
 python3 -c "

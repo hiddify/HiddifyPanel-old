@@ -1,6 +1,14 @@
 # Changelog
 
 
+## 8.8.99 (2024-03-02)
+
+#### Fix
+
+* Bug (latest release on v8) 
+
+
+
 ## 8.8.96 (2024-02-21)
 
 #### New
