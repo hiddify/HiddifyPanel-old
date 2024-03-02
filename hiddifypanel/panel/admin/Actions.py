@@ -134,7 +134,7 @@ class Actions(FlaskView):
                                out_type="info",
                                out_msg=_("Success! Please wait around 4 minutes to make sure everything is updated. During this time, please save your proxy links which are:") +
                                admin_links,
-                               log_path=get_logpath("install.log"),
+                               log_path=get_logpath("0-install.log"),
                                show_success=True,
                                domains=get_domains(),
 
@@ -218,7 +218,7 @@ class Actions(FlaskView):
         for d in [test_domain, *hiddify.get_random_domains(30)]:
             if not d:
                 continue
-            if time.time()-start > 20:
+            if time.time() - start > 20:
                 break
             print(d)
             tcp_ping = hiddify.is_domain_reality_friendly(d)
@@ -237,7 +237,7 @@ class Actions(FlaskView):
                 dip_asn = (ipasn.get(dip) or {}).get('autonomous_system_organization', 'unknown')
                 res += f"<tr><td>{d}</td><td>{dip}</td><td>{dip_country}</td><td>{dip_asn}</td><td>{response_time}</td><td>{tcp_ping}<td></tr>"
 
-        return res+"</table>"
+        return res + "</table>"
 
     @hiddify.super_admin
     def update_usage(self):
