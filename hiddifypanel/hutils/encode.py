@@ -26,6 +26,13 @@ def is_valid_uuid(val: str, version: int | None = None) -> bool:
 
     return True
 
+
+def trim_ssh_key_headers(key: str) -> str:
+    begin_marker = '-----BEGIN OPENSSH PRIVATE KEY-----'
+    end_marker = '-----END OPENSSH PRIVATE KEY-----'
+
+    return key.removeprefix(begin_marker).replace(end_marker, '')
+
 # not used
 # def is_assci_alphanumeric(str):
 #     for c in str:

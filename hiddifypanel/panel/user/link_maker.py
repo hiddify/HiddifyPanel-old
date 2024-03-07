@@ -344,8 +344,13 @@ def to_link(proxy):
         strenssh = hutils.encode.do_base_64(f'{proxy["uuid"]}:0:{proxy["private_key"]}::@{proxy["server"]}:{proxy["port"]}')
         baseurl = f'ssh://{strenssh}#{name_link}'
         hk = hutils.encode.do_base_64(",".join(proxy["host_key"]))
-        pk = hutils.encode.do_base_64(proxy["private_key"])
-        baseurl += f'\nssh://{proxy["uuid"]}@{proxy["server"]}:{proxy["port"]}/?pk={pk}&hk={hk}#{name_link}'
+        if g.user_agent.get('is_hiddify'):
+            x = hutils.encode.trim_ssh_key_headers(proxy["private_key"])
+            pk = hutils.encode.do_base_64(x)
+            baseurl += f'\nssh://{proxy["uuid"]}@{proxy["server"]}:{proxy["port"]}/?pk={pk}&hk={hk}#{name_link}'
+        else:
+            pk = hutils.encode.do_base_64(proxy["private_key"])
+            baseurl += f'\nssh://{proxy["uuid"]}@{proxy["server"]}:{proxy["port"]}/?pk={pk}&hk={hk}#{name_link}'
 
         return baseurl
     if proxy['proto'] == "ssr":
@@ -374,9 +379,10 @@ def to_link(proxy):
     if proxy['proto'] == ProxyProto.wireguard:
         if g.user_agent.get('is_streisand'):
             return f'wireguard://{proxy["server"]}:{proxy["port"]}?private_key={proxy["wg_pk"]}&peer_public_key={proxy["wg_server_pub"]}&pre_shared_key={proxy["wg_psk"]}&reserved=0,0,0#{name_link}'
+        elif g.user_agent.get('is_hiddify'):
+            return f'wg://{proxy["server"]}:{proxy["port"]}/?pk={proxy["wg_pk"]}&local_address={proxy["wg_ipv4"]}/32&peerpub={proxy["wg_server_pub"]}&pre_shared_key={proxy["wg_psk"]}&workers=4&mtu=1380&reserved=0,0,0&ifp={proxy["wg_noise_trick"]}#{name_link}'
+            # return f'wg://{proxy["server"]}:{proxy["port"]}/?pk={proxy["wg_pk"]}&local_address={proxy["wg_ipv4"]}/32&peer_pk={proxy["wg_server_pub"]}&pre_shared_key={proxy["wg_psk"]}&workers=4&mtu=1380&reserved=0,0,0&ifp={proxy["wg_noise_trick"]}#{name_link}'
         else:
-            # hiddify_format =
-            # f'wg://{proxy["server"]}:{proxy["port"]}/?pk={proxy["wg_pk"]}&local_address={proxy["wg_ipv4"]}/32&peer_pk={proxy["wg_server_pub"]}&pre_shared_key={proxy["wg_psk"]}&workers=4&mtu=1380&reserved=0,0,0&ifp={proxy["wg_noise_trick"]}#{name_link}'
             return f'wg://{proxy["server"]}:{proxy["port"]}?publicKey={proxy["wg_pub"]}&privateKey={proxy["wg_pk"]}=&presharedKey={proxy["wg_psk"]}&ip=10.0.0.1&mtu=1380&keepalive=30&udp=1&reserved=0,0,0&ifp={proxy["wg_noise_trick"]}#{name_link}'
 
     baseurl = f'{proxy["proto"]}://{proxy["uuid"]}@{proxy["server"]}:{proxy["port"]}?hiddify=1'
