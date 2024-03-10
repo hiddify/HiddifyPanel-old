@@ -176,10 +176,9 @@ class DomainAdmin(AdminLTEModelView):
                 skip_check = True
             except Exception as e:
                 raise ValidationError(__("Can not connect to Cloudflare.") + f' {e}')
-        # elif model.mode==DomainType.auto_cdn_ip:
-        if model.alias and not model.alias.replace("_", "").isalnum():
-            hutils.flask.flash(__("Using alias with special charachters may cause problem in some clients like FairVPN."), 'warning')
-            # raise ValidationError(_("You have to add your cloudflare api key to use this feature: "))
+
+        # if model.alias and not model.alias.replace("_", "").isalnum():
+        #     hutils.flask.flash(__("Using alias with special charachters may cause problem in some clients like FairVPN."), 'warning')
 
         dip = hutils.network.get_domain_ip(model.domain)
         if model.sub_link_only:
