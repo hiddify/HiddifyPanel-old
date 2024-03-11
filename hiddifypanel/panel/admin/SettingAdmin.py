@@ -194,7 +194,7 @@ def get_config_form():
                 # if hconfig(ConfigEnum.telegram_lib)=='python':
                 #     continue6
                 libs = [("python", _("lib.telegram.python")), ("tgo", _("lib.telegram.go")),
-                        ("orig", _("lib.telegram.orignal")), ("erlang", _("lib.telegram.erlang"))]
+                        ("erlang", _("lib.telegram.erlang"))]
                 field = wtf.SelectField(_("config.telegram_lib.label"), choices=libs, description=_("config.telegram_lib.description"), default=hconfig(ConfigEnum.telegram_lib))
             elif c.key == ConfigEnum.mux_protocol:
                 choices = [("smux", 'smux'), ("yamux", "yamux"), ("h2mux", "h2mux")]
