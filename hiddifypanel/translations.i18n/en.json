@@ -92,7 +92,7 @@
   "HiddifyNG intro": "📌 Please install HiddifyNG from either of these links:\n<br />\n %(dl_link)s  %(play_link)s\n<br />\nThen click on the link below and open it in HiddifyNG.\n<br />",
   "HiddigyN": "HiddifyN <span class='badge badge-success'>Recommended</span>",
   "Hooray 🎉 🎉 🎉 \nWelcome to hiddifybot": {
-    "\nStart by clicking the link on the panel or entering your UUID.": "Hooray 🎉 🎉 🎉 \nWelcome to Hiddify bot\nStart by clicking the link on the Panel or entering your UUID user."
+    "\nStart by clicking the link on the panel or entering your UUID.": "Hooray 🎉 🎉 🎉 \nWelcome to Hiddify bot\nStart by clicking the link on the Panel or entering your UUID."
   },
   "Hover the user to see the reason": "Hover the user to see the reason",
   "How many days this package should be available?": "How Many Days Is This Package?",
@@ -915,7 +915,7 @@
       "label": "⚫️ Enable TUIC"
     },
     "tuic_port": {
-      "description": "Use comma to separate ports like ( 63000,60000 )",
+      "description": "Use comma to separate ports like 63000,60000",
       "label": "TUIC Ports"
     },
     "unique_id": {
@@ -1031,11 +1031,11 @@
   "ios": "iOS",
   "items": "items",
   "lang": {
-    "en": "🇺🇸 English - Английский",
-    "fa": "🇮🇷 Persian - فارسی",
-    "pt": "🇵🇹 Portuguese - پرتغالی",
-    "ru": "🇷🇺 Russian - Русский",
-    "zh": "🇨🇳 Chinese - 简体中文"
+    "en": "🇺🇸 English انگلیسی 英语",
+    "fa": "🇮🇷 Persian فارسی 波斯语",
+    "pt": "🇵🇹 Portuguese پرتغالی 葡萄牙語",
+    "ru": "🇷🇺 Russian روسی Русский",
+    "zh": "🇨🇳 Chinese چینی 简体中文"
   },
   "lib": {
     "telegram": {
